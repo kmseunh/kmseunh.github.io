@@ -1,5 +1,5 @@
 # Site settings
-title: kmseunh's TIL # site title
+title: kmseunh's Devlog # site title
 description: >- # site description
   He's writing in Bahasa about web technology and experience as a journal 
   for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
@@ -11,16 +11,15 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: kmseunh's TIL # author name
-  bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+  name: kmseunh's Devlog # author name
+  bio: >- # tell to the world]
+    To become a good developer, I think endless learning and challenges are necessary. 
   username: username # general username
   github: kmseunh # github username
   # twitter: twitter_username # twitter username
   facebook: facebook_username # facebook username
   email: tmdgus8777@gmail.com # email adress
-  avatar: /assets/img/avatar.jpg # change with your own avatar
+  avatar: /assets/img/catdev.png # change with your own avatar
 
 # URL settings
 url: "https://kmseunh.github.io/" #
