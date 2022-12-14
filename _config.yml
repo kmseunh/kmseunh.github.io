@@ -25,7 +25,7 @@ author:
 # URL settings
 url: "https://kmseunh.github.io/" #
 baseurl:
-permalink: /:s/
+permalink: /:title/
 google_analytics: # leave it blank if not wish
 fb_appid:
 
