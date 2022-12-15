@@ -11,21 +11,7 @@
     {% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{
     site.title | escape }}{% endif %}
   </title>
-  
-  <ul>
-    
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "category" %}
-          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    
-</ul>
-
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }} Feed">
   <link
     rel="alternate"
     href="{{
