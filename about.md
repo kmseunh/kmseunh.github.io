@@ -14,5 +14,6 @@ You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is 
 
 **may u needs ✨**
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- Email: {{ site.author.email }}
+- GitHub: [github.com/{{ site.author.github }}](https://github.com/kmseunh)
+-  Insta: [@kmseunh](https://www.instagram.com/kmseunh/)
