@@ -1,0 +1,392 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>기술 블로그를 시작하면서 - DevSeung</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="블로그 첫 포스팅은 개발 또는 코딩이라는 주제로 블로그를 시작한 이유, 방향성과 현재 나의 생각, 현실에 대해 적어보고자 한다." />
+  <meta name="author" content="1133" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/instagram.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="기술 블로그를 시작하면서">
+<meta itemprop="description" content="기술 블로그를 시작하게 된 이유 및 계획 정리"><meta itemprop="datePublished" content="2022-09-12T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-09-12T00:00:00+00:00" />
+<meta itemprop="wordCount" content="597">
+<meta itemprop="keywords" content="blog,git," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="기술 블로그를 시작하면서"/>
+<meta name="twitter:description" content="기술 블로그를 시작하게 된 이유 및 계획 정리"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://kmseunh.github.io/"
+      >DevSeung</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href="https://instagram.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        instagram
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://kmseunh.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">기술 블로그를 시작하면서</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Sep 12, 2022</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>블로그 첫 포스팅은 개발 또는 코딩이라는 주제로 블로그를 시작한 이유, 방향성과 현재 나의 생각, 현실에 대해 적어보고자 한다.</p>
+<h2 id="내가-블로그를-시작한-이유">내가 블로그를 시작한 이유?</h2>
+<p>내가 블로그를 시작한 이유는 총 4가지이다.</p>
+<h3 id="1-공부-습관">1. 공부 습관</h3>
+<p>코딩 공부를 시작하면서 나름 열심히 공부한다고 생각했는데 시간이 지나면 지날수록 내가 제대로 공부를 하고 있는지에 대한 의문이 생겼다.
+<br> 한 번에 이해하기에는 무리가 있고 배운 코드들을 정확하게 이해하기 전에 새로운 코드들을 학습하다 보니 머릿속에 남는 게 없는 것 같았다.</p>
+<p>내가 배운 지식들을 포스팅하면서 더 자세히 알 수 있고, 잘못 알고 있거나 어려웠던 지식들을 고쳐나갈 수 있다고 생각한다. <br> 또한 내가 올렸던 코드들을 다시 보고 공부할 일이 있을 것이라는 생각이 들어서 넓게 봤을 때 긍정적일 것 같다.</p>
+<h3 id="2-퍼스널-브랜딩personal-branding">2. 퍼스널 브랜딩(Personal Branding)</h3>
+<p>블로그를 쓰기 전에 다양한 개발자 분들의 기술 블로그를 보았다. <br> 다양한 전문가들이 개발이라는 주제에 국한되지 않고 많은 지식을 공유하며 자신의 생각과 이야기를 쓰고 있었다. <br> 그분들의 블로그를 보면서 가지고 있는 전문 지식을 알 수 있고 어떤 방식으로 성장했는지 포트폴리오처럼 자세히 알 수 있다.</p>
+<p>개발자가 되기 위해, 개발자로서 과거를 돌아볼 수 있는 좋은 방법인 것 같다. <br> 내가 성장하는 과정을 자세히 기록할 수 있고, 다른 사람들에게 나의 생각과 전문성을 보여주면서 &lsquo;나&rsquo;라는 사람을 드러낼 수 있을 것이라고 생각한다.</p>
+<h3 id="3-동기부여">3. 동기부여</h3>
+<p>현재 나는 비전공자에 아무 기초지식도 없이 개발자가 되고 싶다는 꿈 하나만으로 공부를 하고 있다. <br> 그러다 보니 초조하고 뭐라도 해야 할 것 같다는 압박을 느낄 때가 많다.</p>
+<p>그래서 무작정 공부만 하기보다 블로그를 시작하면 꾸준히 글을 쓰게 될 것이고 이것이 나에게 하나의 동기부여가 될 것 같다. <br> (제목은 기술 블로그로 하겠습니다. 근데 이제 일기를 곁들인,,,,)</p>
+<h3 id="4-개발자-감성">4. 개발자 감성</h3>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/0dc56438-8fcd-4ede-b9b8-47416beb30fc" width="500"></p>
+<p>개발자가 될 사람이라면 자고로 자신만의 블로그 하나쯤은 가지고 있어야 하지 않을까 해서&hellip;??</p>
+<hr>
+<h2 id="github-블로그를-선택한-이유">GitHub 블로그를 선택한 이유</h2>
+<p>어떤 플랫폼을 사용할까 고민을 하다가 GitHub로 블로그를 운영할 수 있다는 것을 알게 되었다. <br> 개발자라면 GitHub는 필수기도 하고 Git과 GitHub에 대한 공부도 할 수 있지 않을까 하는 생각이 들었다. <br> 블로그를 생성하던 중  <strong>submodule</strong> 에러 때문에 삽질을 좀 했지만 다행히 <span style='color: #2D3748; background-color: #fff5b1'>git submodule update &ndash;init &ndash;force</span> 로 간단하게 에러를 해결했다. <br> (물론 하루 종일 걸렸지만,,,, 좋았다면 오케입니다.)</p>
+<hr>
+<h2 id="어떻게-블로그를-만들어-갈까">어떻게 블로그를 만들어 갈까?</h2>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/d9000748-52da-43c3-8804-1661c71ad1a4" width="500"></p>
+무작정 '오늘부터 일단 게시물을 올릴 거야'가 아니라 주제를 정하고 방향성을 잡아야 꾸준하게 쓸 수 있다고 생각한다. <br> 단순히 의무로 글을 올리는 것이 아닌 내가 쓰고 싶어서 올려진 게시물들로 이루어진 블로그를 만들고 싶다.
+<h3 id="1-배운-것-정리하기">1. 배운 것 정리하기</h3>
+<p>공부를 하고 기억하기 제일 좋은 방법은 복습이라고 생각한다. <br> 그러기 위해 공부한 내용을 간단하게라도 블로그에 정리할 생각이다. <br> 보통 다른 블로그들에서 복사 붙여넣기하지 않을까 걱정되지만 짧더라도 내가 이해한 그대로 정리해 볼 생각이다.</p>
+<h3 id="2-목표를-세우고-공부하기">2. 목표를 세우고 공부하기</h3>
+<p>나는 백엔드 개발자를 목표로 공부를 하고 있다. <br> 물론 프론트엔드에 대한 지식도 필요하고 앱이나 데이터 분석, 머신러닝 등 다양한 개발 분야가 있지만 한 단계씩 올라가려 한다.</p>
+<p>현재 국비지원 부트캠프를 다니고 있어서 짧은 시간 내에 배운 것들은 많지만 제대로 이해하고 있다고 생각하지 않는다. <br> 그래서 유튜브나 구글링을 통해서 얻은 정보를 사용하여 나만의 로드맵을 만들었다. <br> 이 로드맵을 바탕으로 체계적으로 공부를 하면서 글을 작성할 생각이다.</p>
+<h3 id="3-다양한-경험-해보기">3. 다양한 경험 해보기</h3>
+<p>간단한 협업 프로젝트를 진행한 적이 있었는데 처음이다 보니 배운 대로 하면 되겠지라고 생각했지만 전혀 달랐다. <br> 이 경험을 통해 공부하고 이해하는 것만으로는 제대로 된 코드를 개발할 수 없다고 느꼈다.</p>
+<p>그래서 사이드 프로젝트를 해야 한다는 생각이 들었다. <br> 사이드 프로젝트는 개인 혼자 또는 다른 사람들과 함께 진행할 수 있고, 폭넓게 쓰이고 있어서 자세히 알아보고 진행할 생각이다.</p>
+<hr>
+<h2 id="마무리">마무리</h2>
+<blockquote>
+<p>매일매일 반복된 작은 노력이 모여 성공을 이룬다.</p>
+</blockquote>
+<p>한 3개월 정도 공부를 하면서 확신을 가지지 못하고 <em>내가 잘할 수 있을까&hellip;</em> 라는 걱정이 있었다. <br> 그 시간들은 내가 이 길을 가기 위한 맛보기라고 생각하고 다시 제대로 시작해볼 생각이다.</p>
+<p>블로그를 꾸준하게 운영하는 것도 중요하지만 지금 나에게 필요한 건 매일 공부하며 지식을 쌓는 것이라고 생각한다. <br> 백엔드 개발자라는 목표가 세워진 만큼 그 목표를 향해 달려갈 생각이다. <br> 그럼에도 내가 이 블로그를 하는 이유는 내가 하고 싶은 일을 찾은 만큼 최선을 다하고, 열정을 가지고 싶기 때문이다.</p>
+<p>또한 내가 다른 사람들의 블로그를 보면서 동기부여와 자극을 받은 것처럼 누군가 내 블로그를 보고 나와 같은 긍정적인 영향을 받았으면 좋겠다.</p></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/git"
+      >git</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2022-10-01-memoirs-of-september/"
+      ><span class="mr-1.5">←</span><span>[2022] 9월 회고록</span></a
+    >
+    
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://kmseunh.github.io/archives">DevSeung</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

@@ -7,13 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2022] 9월 회고록</title>
+      <link>https://kmseunh.github.io/post/2022-10-01-memoirs-of-september/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2022-10-01-memoirs-of-september/</guid>
+      <description>&lt;p&gt;3일 연휴라 잠깐 쉬어가는 타임으로 회고록을 써볼까 한다. &lt;br&gt; 블로그를 시작할 때부터 쓸 생각이었는데 얼마나 자주 또는 어떤 내용을 써야 할지 고민이다..&lt;/p&gt;
+&lt;p&gt;3개월이 적당하다고 생각하는데 1주일 전에 있던 일도 자주 까먹는 편이라 한 달에 한 번씩 쓰기로 했다. &lt;br&gt; 아직 직접 개발을 하기보다는 이론 공부하는 수준이라 딱히 쓸 내용이 없지 않을까 싶기도 한데 뭐라도 쥐어짜면 나오겠지..&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/243fd889-2d0c-471a-bda6-40bde17ae563&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>기술 블로그를 시작하면서</title>
-      <link>https://kmseunh.github.io/post/startblog/</link>
+      <link>https://kmseunh.github.io/post/2022-09-12-start-blog/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kmseunh.github.io/post/startblog/</guid>
+      <guid>https://kmseunh.github.io/post/2022-09-12-start-blog/</guid>
       <description>&lt;p&gt;블로그 첫 포스팅은 개발 또는 코딩이라는 주제로 블로그를 시작한 이유, 방향성과 현재 나의 생각, 현실에 대해 적어보고자 한다.&lt;/p&gt;</description>
     </item>
     
