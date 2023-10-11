@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>하루종일 테이블 만들기(with Bootstrap)</title>
+      <link>https://kmseunh.github.io/post/2023-04-26-made-table-with-bootstrap/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-04-26-made-table-with-bootstrap/</guid>
+      <description>&lt;p&gt;기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다. &lt;br&gt; 이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.&lt;/p&gt;
+&lt;p&gt;처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.&lt;/p&gt;
+&lt;p&gt;하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/70f7f521-9294-47b9-8318-a2cf06b36b6a&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>처음으로 프로젝트 미팅에 참여하게 되는데..</title>
       <link>https://kmseunh.github.io/post/2023-04-24-my-first-project-meeting/</link>
