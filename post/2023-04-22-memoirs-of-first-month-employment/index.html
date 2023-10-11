@@ -1,0 +1,396 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>자네는 누가 뽑았나? - DevSeung</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="현재 나는 작은 IT 회사에서 프리랜서로 일을 하고 있다. 
+개발자를 진로로 정하고 공부를 시작한 지 6개월 정도 지났는데, 우연히 이런 좋은 기회가 찾아와서 즐겁게 다니고 있다.
+혼자 유튜브나 책 등으로 공부를 하다 보니 실력적으로 성장이 더디다는 생각이 들어 조금 낙담하고 있었는데, 이번 기회로 많은 성장을 할 수 있기를 기대한다.
+첫 실무 경험이기도 하고 회사를 다니면서 겪은 경험을 기록하고 공유하고 싶어 1–3개월 주기로 회고록을 써보려 한다.
+" />
+  <meta name="author" content="1133" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/instagram.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="자네는 누가 뽑았나?">
+<meta itemprop="description" content="회사를 다니고 1개월차 회고록"><meta itemprop="datePublished" content="2023-04-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-22T00:00:00+00:00" />
+<meta itemprop="wordCount" content="518">
+<meta itemprop="keywords" content="2023,work,blog," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="자네는 누가 뽑았나?"/>
+<meta name="twitter:description" content="회사를 다니고 1개월차 회고록"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://kmseunh.github.io/"
+      >DevSeung</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href="https://instagram.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        instagram
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://kmseunh.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">자네는 누가 뽑았나?</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Apr 22, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>현재 나는 작은 IT 회사에서 프리랜서로 일을 하고 있다. <br>
+개발자를 진로로 정하고 공부를 시작한 지 6개월 정도 지났는데, 우연히 이런 좋은 기회가 찾아와서 즐겁게 다니고 있다.</p>
+<p>혼자 유튜브나 책 등으로 공부를 하다 보니 실력적으로 성장이 더디다는 생각이 들어 조금 낙담하고 있었는데, 이번 기회로 많은 성장을 할 수 있기를 기대한다.</p>
+<p>첫 실무 경험이기도 하고 회사를 다니면서 겪은 경험을 기록하고 공유하고 싶어 1–3개월 주기로 회고록을 써보려 한다.</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/bfa388ed-86c2-4d3b-80ba-36ba1b0320ec" width="500"></p>
+<br>
+<h2 id="회의-시간에-주목-안-받는-방법-알려줄-사람">회의 시간에 주목 안 받는 방법 알려줄 사람</h2>
+<p>9시에 출근을 하고 나면 10시 회의를 준비해야 한다. <br> 아직 막내기도 하고 맡은 프로젝트가 1개뿐이라 준비할 내용이 별로 없긴 한데, 그래도 현재 진행사항이나 에러 사항 등 기본적인 것은 체크하는 편이다.</p>
+<p>회의 주제는 날마다 다르지만 주로 각자 진행사항이나 이슈를 공유한다. <br> 또는 새로운 프로젝트나 계약 건에 대해 대표님이 브리핑을 해주신다.</p>
+<p>내가 경험했던 회의들과 살짝 다른 점이 있다면, 바로 대표님의 역질문이다. <br> 회의를 진행하시다가 갑자기 ‘지금까지 말한 내용을 이해한 대로 다 얘기해보세요’ 라는 질문을 자주 하신다.</p>
+<p>물론 회의에 열심히 참여한다면 대답하는 게 어렵지는 않다. <br> 또한 질문에 대답을 하면서 다시 한번 이해를 할 수 있다는 점에서 개인적으로 긍정적인 반응이다. <br> (그래도 나한테 질문하실까봐 눈을 피하는 편..)</p>
+<hr>
+<h2 id="이게-실무-경험">이게 실무 경험?</h2>
+<p>현재 나는 공장 별 전력/에너지 모니터링 프로젝트를 맡아서 개발을 하고 있다. <br> 다양한 선택지가 있었지만 다 비슷비슷할 것이다라고 생각해서 아무거나 골랐는데 조금 스케일이 큰 프로젝트였다.</p>
+<p>그래도 지난 시간 동안 해왔던 공부들이 있기 때문에 자신감이 넘쳤지만 출근한지 하루 만에 모든 자신감이 사라져버렸다. <br> 나는 그저 우물 안의 개구리였고, 그 우물 안에서 혼자 열심히 하고 있고, 많은 것을 알고 있다라고 착각하고 있었다는 걸 깨달았다.</p>
+<p>Develop tool도 제대로 쓸 줄 모르면서, DB에 있는 데이터가 어떻게 웹으로 뿌려지는지도 제대로 모르면서 그냥 <em>나 개발 좀 합니다!</em> 이러고 있었다니… <br>
+(코송합니다..)</p>
+<hr>
+<h2 id="꽉-잡고-놓지-말자">꽉 잡고 놓지 말자</h2>
+<p>누구에게나 기회는 찾아오고 그 기회를 잡아야지 발전하고 성장할 수 있다고 생각한다. <br> 지금 회사를 만난 것이 내 인생의 터닝포인트라고 생각하고 어렵게 온 기회를 꽉 잡고 놓치지 않으려 한다.</p>
+<p>그냥 회사만 다닌다고 발전하고 성장할 수 있는 건 아니기 때문에 몇 가지 계획을 세우려 한다.</p>
+<h3 id="1-메모하는-습관-기르기">1. 메모하는 습관 기르기</h3>
+<p>회사에 있는 시간에는 정말 다양한 정보들을 듣게 된다. <br> 가만히 듣고 있으면 전혀 모르는 용어나 주제가 많아서 ‘그게 뭔데?’ 하고 넘어가는 경우가 많기 때문에 다이어리에 보고 듣는 모든 내용들을 적으려고 한다.</p>
+<p>다이어리에 적은 메모는 노션에 따로 모아서 저장한다. <br> 구글링이나 Chat GPT에게 물어보면서 이해하고 정리를 하면 나중에 알아보기 편할 것 같아서 시작하게 되었다. <br> (Chat GPT야 도와줘~)</p>
+<br>
+<h3 id="2-자투리-시간-활용하기">2. 자투리 시간 활용하기</h3>
+<p>평일에 퇴근하고 집에 와서 사용할 수 있는 자투리 시간은 보통 2–3시간 정도 된다. <br> 이 시간들은 오로지 나를 위해서 쓰고 싶다는 생각이 들어서 책을 읽거나 토이 프로젝트를 해보고 싶다는 생각이 들었다.</p>
+<p>책을 좋아하는 편은 아니지만, 유튜브 short나 인스타 릴스를 보는 것보다는 낫지 않을까 하는 생각으로 ‘커리어 스킬’이라는 책을 샀다. <br> 이제 읽기 시작했지만 하루 종일 영어랑 숫자만 보다가 한글을 보니까 조금 힐링 되는 느낌이 든다.</p>
+<p>토이 프로젝트는 전부터 진행하고 싶다는 생각만 하고 흐지부지되었기 때문에 이번 기회에 도전해 보려 한다. <br> 우선 기본적이고 많은 사람들이 만들었던 프로젝트부터 하고 난 다음 나만의 주제를 정해서 도전해보고 싶다.</p>
+<p>지금 개발을 python과 flask로 하고 있는데 Django도 써보고 싶고, Java와 SpringBoot로 만들어보고 싶다는 생각이 든다. <br> 실력에 비해 욕심이 과한 편이기 때문에, 정신 차리고 지금 사용하는 것들로 진행할 것이다.</p>
+<hr>
+<p>입사하고 난 후 매일 하루 시작이 즐겁고 하루 종일 신나있는 것 같다. <br> 아직 앞으로 마주할 많은 일들을 마주하지 못했기 때문이지 않을까..</p>
+<p>어찌 됐든 즐겁게 일할 수 있음에 감사하고 현재에 안주하지 말고 더욱 성장하고 싶다.</p></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/2023"
+      >2023</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/work"
+      >work</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2023-01-31-memoirs-of-january/"
+      ><span>[2023] 1월 회고록</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://kmseunh.github.io/archives">DevSeung</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
