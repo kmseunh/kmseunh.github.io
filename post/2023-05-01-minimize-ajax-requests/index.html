@@ -51,7 +51,7 @@
   />
 
   
-  <title>하루종일 테이블 만들기(with Bootstrap) - DevSeung</title>
+  <title>ajax 요청을 최소화하자 - DevSeung</title>
 
   
   <meta name="theme-color" />
@@ -59,9 +59,10 @@
   
   
   
-  <meta name="description" content="기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다.  이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.
-처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.
-하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.
+  <meta name="description" content="Ajax는 Asynchronous JavaScript and XML의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다.  Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.
+Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.
+Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.
+ (서버야 버텨줘..!!)
 " />
   <meta name="author" content="1133" />
   
@@ -120,15 +121,15 @@
   
   
   
-  <meta itemprop="name" content="하루종일 테이블 만들기(with Bootstrap)">
-<meta itemprop="description" content="부트스트랩을 사용해서 테이블 만든 후기"><meta itemprop="datePublished" content="2023-04-26T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-04-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="296">
-<meta itemprop="keywords" content="2023,work,bootstrap," />
+  <meta itemprop="name" content="ajax 요청을 최소화하자">
+<meta itemprop="description" content="ajax 요청 최소화를 고려하지 않아서 생긴 이슈"><meta itemprop="datePublished" content="2023-04-28T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-28T00:00:00+00:00" />
+<meta itemprop="wordCount" content="361">
+<meta itemprop="keywords" content="2023,work,javascript," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="하루종일 테이블 만들기(with Bootstrap)"/>
-<meta name="twitter:description" content="부트스트랩을 사용해서 테이블 만든 후기"/>
+<meta name="twitter:title" content="ajax 요청을 최소화하자"/>
+<meta name="twitter:description" content="ajax 요청 최소화를 고려하지 않아서 생긴 이슈"/>
 
   
   
@@ -269,12 +270,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">하루종일 테이블 만들기(with Bootstrap)</h1>
+    <h1 class="!my-0 pb-2.5">ajax 요청을 최소화하자</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Apr 26, 2023</time>
+      <time>Apr 28, 2023</time>
       
       
       
@@ -283,29 +284,60 @@
     
   </header>
 
-  <section><p>기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다. <br> 이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.</p>
-<p>처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.</p>
-<p>하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.</p>
-<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/70f7f521-9294-47b9-8318-a2cf06b36b6a" width="500"></p>
+  <section><p>Ajax는 <code>Asynchronous JavaScript and XML</code>의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다. <br> Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.</p>
+<p>Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.</p>
+<p>Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.
+<br> (서버야 버텨줘..!!)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/86e4f977-c819-4508-a6fa-c64c423bd2fe" width="500"></p>
 <br>
-<h2 id="부트스트랩이랑-친해지기">부트스트랩이랑 친해지기</h2>
-<p>나는 부트스트랩을 반응형 웹 디자인을 지원하는 프론트 엔드 개발 프레임워크라고만 알고 있었다. <br> 부트스트랩은 기본적으로 제공되는 스타일링, 레이아웃, 그리드 시스템, 폼 등의 디자인을 사용하여 웹 페이지를 구성할 수 있다고 한다.</p>
-<p>기존 테이블도 부트스트랩을 사용했기 때문에 수정하기 전에 코드 리뷰를 살짝 해보았다.</p>
-<script src="https://gist.github.com/kmseunh/b3b9e2f826ef682118f12b80413e65c0.js"></script>
+<h2 id="한-번에-가져오기-vs-나누어-가져오기">한 번에 가져오기 vs 나누어 가져오기</h2>
+<p>데이터를 가져올 때는 상황에 따라 적절한 방식을 선택하는 것이 중요하다.</p>
+<p><em>내가 지금까지 짠 코드는 막 가져오기였다.. <br>
+공부를 하면서 알게 된 내용을 간략하게 정리해 봤다.</em></p>
+<h3 id="전체-데이터를-가져와서-각-위치에-업데이트하는-방식">전체 데이터를 가져와서 각 위치에 업데이트하는 방식</h3>
+<ul>
+<li>장점
+<ul>
+<li>한 번의 요청으로 모든 데이터를 가져올 수 있어서 네트워크 부하를 줄일 수 있다.</li>
+<li>또한, 데이터가 모두 로드된 이후에는 사용자 경험을 향상시킬 수 있다.</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>모든 데이터를 가져오기 때문에 서버에 부담이 가거나, 클라이언트의 메모리를 많이 차지할 수 있다.</li>
+<li>또한, 데이터가 계속 업데이트되면 사용자는 일정한 주기로 새로고침을 해야 한다.</li>
+</ul>
+</li>
+</ul>
 <br>
-코드를 보고 3초 만에 든 생각은 div 태그가 진짜 많고.. 많고.. 많다?? <br> HTML에서 div 태그는 다른 요소들을 그룹화하거나 레이아웃을 만들기 위해 사용된다고 한다.
-<p>이론상 ‘수많은 div 태그들로 그룹화하고 레이아웃을 만들면 된다’라고 나름 혼자서 간단하게 정의하고, 자신감이 생겨서 부트스트랩에서 기본적으로 제공되는 디자인을 사용하여 테이블을 만들기 시작했다. <br> (일단 무조건 직진하는 편)</p>
+<h3 id="각-위치마다-필요한-데이터를-각각-가져와서-업데이트하는-방식">각 위치마다 필요한 데이터를 각각 가져와서 업데이트하는 방식</h3>
+<ul>
+<li>장점
+<ul>
+<li>필요한 데이터만 가져오기 때문에 데이터를 가져오는 데 드는 시간이 줄어들어 성능이 향상될 수 있다.</li>
+<li>또한, 데이터가 자주 업데이트될 때 더 빠른 업데이트를 제공할 수 있다.</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>각 위치마다 데이터를 가져와야 하기 때문에 요청 수가 많아질 수 있다.</li>
+<li>이는 서버 부하와 네트워크 부하를 유발할 수 있습니다. 또한, 사용자 경험이 좋지 않을 수 있다.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>전체 데이터가 크고 자주 업데이트되지 않는 경우에는 전체 데이터를 가져와서 업데이트하는 방식이 적절할 수 있고, <br> 데이터가 작고 자주 업데이트되는 경우에는 각 위치마다 필요한 데이터를 가져와서 업데이트하는 방식이 적절할 수 있다.</p>
+</blockquote>
 <hr>
-<h2 id="그냥-나눠주면-안돼">그냥 나눠주면 안돼??</h2>
-<p>테이블을 만들 때 가장 신경 쓴 부분은 주어진 공간에 쉽게 알아볼 수 있는 크기로 각 칸을 나누는 것이다. <br> 부트스트랩의 그리드 시스템이 이 고민을 해결해 줄 수 있었다.</p>
-<p>12개의 열 시스템 어쩌구,, 6개의 기본 반응형 계층이 어쩌구,, 해서 모든 모양과 크기의 레이아웃을 빌드 할 수 있다고 하는데 이 그리드 시스템의 옵션이 6개가 있다고 한다. <br> 나는 이 그리드 옵션 부분에서 시간을 많이 썼던 것 같다.</p>
-<p>위의 나온 전체 테이블 코드의 일부분을 보면 <code>col</code>, <code>col-md</code>, <code>col-sm</code> 라고 div class 안에 무언가 정의되어 있다.
-느낌 상 <code>col-md</code>는 중간 크기이고, <code>col-sm</code>은 조금 작게 설정해 주는 것 같다.</p>
-<p>col은 한 열의 너비를 설정해 주는데 <code>&lt;div class=&quot;row&quot;&gt;</code> 내부에 <code>&lt;div class=&quot;col&quot;&gt;</code> 를 여러 개 생성하면 그에 따라 row가 나눠진다. <br> 나는 5개의 행과 4개의 열로 구성된 테이블을 만들어야 했는데 맨 왼쪽 열이 다른 열들에 비해 너비가 조금 좁아야 했다.<br>(근데 왜 모두 균일하게 나눠지니..)</p>
+<h2 id="이제는-잘할-수-있다">이제는 잘할 수 있다</h2>
+<p>처음에는 무슨 차이가 있을까라는 생각이 들었지만 불필요한 코드를 최소할 수 있고, 서버에 주는 부담을 최소화할 수 있다는 것을 알았다. <br> 단순하게 생각해봤을 때 Ajax 요청으로 필요한 데이터를 가져왔는데 왜 또 가져오려 했을까..??</p>
+<p>또한 데이터의 한 가지 컬럼 값에 따라 나누어서 가져와야 하는 경우 <br>
+(ex. 모든 데이터 값을 월별, 일별, 시간별로 나누어서 가져와야 할 때)</p>
+<p>위와 같은 경우에도 계속해서 Ajax 요청을 했었는데 이제는 한번 요청할 때 각각 분리해서 가져오도록 코드를 아래처럼 수정했다.</p>
+<script src="https://gist.github.com/kmseunh/d9acbd90ac3c5dd88d8c91dc303127d8.js"></script>
 <hr>
-<p align="center"><img src="https://github.com/kmseunh/react-gallery/assets/105186724/dfb2c2c3-7da8-4d1d-87a6-897ad3fbc510" width="500"></p>
-<p>위 사진은 완성된 테이블이다.</p>
-<p>Chrome Devtools에 마진 값도 넣어보고,, 패딩 값도 수정해 보고,, 이것저것 시도하면서 영혼을 갈아 넣어서 결국 만족스러운 결과를 얻었다.</p></section>
+<p>정답이 정해져 있는 것은 아니기 때문에 적절한 상황에 맞춰 Ajax 요청을 최소화해야 한다는 것을 배웠다.</p>
+<p>프로그래밍은 무조건 적인 해답이 정해져 있지 않고 상황에 따른 다양한 해결 방식들이 많기 때문에 전부 다 알지는 못해도 어느 정도 이해는 필요할 것 같다.</p></section>
 
   
   
@@ -325,8 +357,8 @@
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/bootstrap"
-      >bootstrap</a
+      href="https://kmseunh.github.io/tags/javascript"
+      >javascript</a
     >
     
   </footer>
@@ -338,17 +370,11 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/"
-      ><span class="mr-1.5">←</span><span>유연한 사고, 단순하지 않기</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-04-24-my-first-project-meeting/"
-      ><span>처음으로 프로젝트 미팅에 참여하게 되는데..</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/"
+      ><span>유연한 사고, 단순하지 않기</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
