@@ -1,0 +1,395 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>[2023] 1월 회고록 - DevSeung</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="2023년도가 시작되고 벌써 1달이 지나버렸다.  6월이 와야 2살 어려질 텐데.. 언제 오니??
+새해에는 역시 새로운 마음가짐으로 다양한 목표들을 세우고 하나씩 실패하는 모습을 보는 재미가 있다.  올해는 좀 덜 실패하기 위해 다양한 시도들을 하고 있는데 참..
+아 눈오리 만들어 보려고 눈오리 집게를 샀는데 눈이 쌓여 있는 날이 없었다.  하루 정도 있었는데 눈이 무슨 설빙처럼 뭉쳐지지 않는 느낌??  다음에는 물 들고나가서 불법 개조를 해보려 한다.
+" />
+  <meta name="author" content="1133" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/instagram.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="[2023] 1월 회고록">
+<meta itemprop="description" content="2023년 1월 회고록"><meta itemprop="datePublished" content="2023-01-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-31T00:00:00+00:00" />
+<meta itemprop="wordCount" content="614">
+<meta itemprop="keywords" content="2023,blog," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[2023] 1월 회고록"/>
+<meta name="twitter:description" content="2023년 1월 회고록"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://kmseunh.github.io/"
+      >DevSeung</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href="https://instagram.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        instagram
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://kmseunh.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">[2023] 1월 회고록</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Jan 31, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>2023년도가 시작되고 벌써 1달이 지나버렸다. <br> 6월이 와야 2살 어려질 텐데.. 언제 오니??</p>
+<p>새해에는 역시 새로운 마음가짐으로 다양한 목표들을 세우고 하나씩 실패하는 모습을 보는 재미가 있다. <br> 올해는 좀 덜 실패하기 위해 다양한 시도들을 하고 있는데 참..</p>
+<p>아 눈오리 만들어 보려고 눈오리 집게를 샀는데 눈이 쌓여 있는 날이 없었다. <br> 하루 정도 있었는데 눈이 무슨 설빙처럼 뭉쳐지지 않는 느낌?? <br> 다음에는 물 들고나가서 불법 개조를 해보려 한다.</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/e7f4419e-cddd-4ff3-ae25-16d88548b540" width="500"></p>
+<h2 id="새해가-밝았어-연진아">새해가 밝았어, 연진아</h2>
+<p>뭔가 하고 싶다는 욕심은 많은 편이라 연말부터 새로운 계획을 세워가기 시작했다. <br> 식상하게 일찍 일어나는 것부터 GitHub 활성화를 시켜보자는 생각도 하고 정말 많은 계획들이 있었지만, 올해 나의 목표는 &lsquo;<strong>사소한 것 하나까지 기록하는 습관을 가지는 것</strong>&lsquo;이다.</p>
+<p>포트폴리오나 이력서를 위해서라도 기록을 해야 하겠지만, 그냥 올해 어떻게 살았고 노력했는지 알고 싶다. <br> 항상 무언가 열심히 한다고는 하지만 막상 아무것도 없는 것 같아 자존감이 떨어질 때가 많았기 때문에 &lsquo;내가 이렇게 열심히 하고 있구나&rsquo;라는 생각이 들면 조금 덜 지치지 않을까?? <br> (물론 열심히만 해서는 소용이 없지만..)</p>
+<p>그래서 <span style='color: #2D3748; background-color: #fff5b1'>To-Do list</span>를 쓰기로 했다. <br> 다이어리에 수기로 작성해야 하나 했지만 요즘 괜찮은 앱이 많아서 그중 하나를 사용하기 시작했는데 나름 나쁘지 않은 것 같다. <br> 사소한 일상적인 목표들도 있지만 내가 제일 중요하게 생각하는 것은 깃허브에 1일 1 커밋 하려고 하는 TIL과 알고리즘 총 2가지다.</p>
+<p>일명 &lsquo;잔디 채우기&rsquo;라고 많은 개발자나 취준생 분들이 하고 계신데 나도 슬쩍 참여해보려고 한다. <br> (시작하기 전엔 몰랐어요.. GitHub가 이렇게 머리가 깨지는 줄&hellip;)</p>
+<p>너도 열심히 살고 있더라 연진아?</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/78833121-5786-4ff1-961d-19e98dd65252" width="500"></p>
+<hr>
+<h2 id="머나몸고-머리가-나쁘면-몸이-고생한다는-뜻">머나몸고 (머리가 나쁘면 몸이 고생한다는 뜻)</h2>
+<p>위에 1일 1커밋을 목표를 잡고 있다고 했는데 쉬운 일이 아니었다. <br> 그냥 폴더를 만들고 관리하면 되는 줄 알았는데.. 다양한 시행착오를 통해 조금 친해지고 있는 것 같다.</p>
+<p>시작하고 2주 정도 지났을 때쯤, 폴더 이름을 변경하거나 폴더를 추가해야 하는 상황이 생겨서 아무 생각 없이 폴더를 추가하고 커밋을 했는데 오류가 발생했다. <br> 우여곡절 폴더 추가까지는 성공했는데 뭔가 깔끔하지 않은 느낌이랄까??</p>
+<p>&lsquo;폴더명/폴더명..&lsquo;처럼 표시가 되어서 살짝 당황했다. <br> (상위 폴더명만 나오면 안 되는 거니..)</p>
+<p>그리고 폴더 이름을 한글로 설정했다가 영어로 바꿔볼까 하는 생각이 들어서 도전해 봤다. <br> (왜 그랬을까..)</p>
+<p>처음에는 폴더 이름만 사악 바뀔 줄 알았는데 폴더 내부에 파일들의 기존 커밋까지 다 최신화가 되어버렸다. <br> 4주 동안 기록했던 게 다 사라지는 기분.. 너는 알까 연진아?</p>
+<p>그냥 눈 딱 감고 하나씩 다 바꿨다. <br> 그러고는 이미 진행한 건 삭제하지 않을 거면 최대한 건드리면 안 된다라는 교훈을.. 얻었다. <br> (구글링해서 알게 된 명령어를 사용하기엔 너무 겁이 났다..)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/01a70852-461f-4807-9883-0424a24a7cd2" width="500"></p>
+<hr>
+<h2 id="내-꿈은-너야-연진아">내 꿈은 너야, 연진아</h2>
+<p>취준 기간이다 보니 다른 사람들 만나는 것도 피하게 되고 막상 책상에 앉아 있어도 불안함만 가득한 나날이 반복되는 것 같다. <br> 딱히 누가 눈치 주거나 그런 건 아닌데 괜히 혼자 조급한??</p>
+<p>올해 꼭 취업을 해야 한다라는 부담스러운 생각 말고, 취업과 가까워질 수 있는 목표를 세워보려고 한다.</p>
+<ol>
+<li>백준 티어 골드 달성 <br> 알고리즘은 필수까지는 아니지만 중요하다.
+한번 시작해 봤는데 재밌기도 하고 많이 어렵기도 하다. <br> 어려운 내용을 고민하고 해결하는 그 쾌락을 좋아하는 나에게는 적합하다고 생각한다.</li>
+<li>SQLD 도전 <br> 이력서에 한 줄이라도 쓸 수 있는 몇 안 되는 자격증이다. <br> DB 지식도 얻을 수 있고 추후에 취업하고 도움도 되는 부분이라 시간적 여유가 많을 때 도전하는 게 맞지 않나 싶다.</li>
+<li>프로젝트 진행 <br> 혼자 해야 하나 어쩌나 걱정했는데 다행히 프론트엔드에 관심이 있는 분과 둘이서 사소하게 진행해 보려 한다. <br>
+둘 다 시작한 지 얼마 안 됐기 때문에 작은 기능 구현부터 시작해서 점차 완성된 하나의 웹 사이트를 만들어보고 싶다.</li>
+</ol>
+<p>올해 아직 11개월 남았으니까 할 수 있겠지 연진아?</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/e5ad3a17-d19c-493d-966d-b8bad61820e3" width="500"></p>
+<hr>
+<h2 id="마무리">마무리</h2>
+<p>작년은 나에게 하고 싶은 일과 꿈을 알게 된 소중한 해였다면, 올해는 그 2가지에 가까워지는 해로 만들고 싶다. <br> 취업 관련 공고가 계속 올라와서 지원해 볼까 하고 사이트에 접속하면 현실을 깨닫게 되는 것 같다. <br> 그럴수록 뭔가 더 자신을 채찍질하게 되기도 하고 어떤 부분이 필요하고 발전시켜야 하는지 배우기도 한다.</p>
+<p>자소서에 지원 동기 파트가 정말 쓰기 어려운 것 같다. <br> 물론 그렇다고 다른 건 쉽다는 건 아니지만.. 글 솜씨가 이렇게 없나 싶기도 하고 독서의 필요성도 느낀다.</p>
+<p>친구들도 대부분 취준 시즌이라 비슷한 고민을 공유할 수 있는 것도 가장 큰 도움이 되는 것 같다. <br> 다들 열심히 하니까 나도 따라서 조금이라도 더 앉아 있으려 하는 것 같고 자주 보지는 못하지만 멀리서 진심으로 성공하기를 응원해 주고 응원하는 사람들이 있다는 점에 힘이 된달까..?</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/073d8550-ad23-4675-8370-d85553205d7f" width="500"></p></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/2023"
+      >2023</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2022-12-31-memoirs-of-december/"
+      ><span>[2022] 12월 회고록</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://kmseunh.github.io/archives">DevSeung</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
