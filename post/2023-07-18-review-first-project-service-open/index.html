@@ -51,7 +51,7 @@
   />
 
   
-  <title>iTerm2 vs VSCode in Linux - DevSeung</title>
+  <title>[Review] 나의 첫 번째 프로젝트 - DevSeung</title>
 
   
   <meta name="theme-color" />
@@ -59,9 +59,8 @@
   
   
   
-  <meta name="description" content="리눅스 환경에서 원격 접속으로 개발하는 경우, 효율적인 작업 환경을 선택하는 것은 매우 중요하다.
-입사하고 나서는 iTerm2에서 작업을 했는데, 최근에 Visual Studio Code로 작업을 해보니 너무 편하고 좋았다.  (현재 맥북으로 개발을 하고 있기 때문에 터미널 에뮬레이터로 iTerm2를 사용하고 있다.)
-따라서, iTerm2와 Visual Studio Code의 작업환경의 차이점에 대해 알아보려 한다.
+  <meta name="description" content="지난 3월에 처음으로 실무 프로젝트에 참여하고 약 4개월 만에 프로젝트를 서비스하게 되었다.  원래는 훨씬 전에 서비스를 했어야 하는데 진행하던 프로젝트에 추가 개발이 생겨서 조금 길어지게 되었다.
+내가 개발한 프로젝트를 사람들이 사용한다는 것에 기분이 이상하기도 하고 뿌듯하기도 하다.  완벽하게 완성한 것은 아니지만 다른 프로젝트를 맡을 예정이라서 이번 프로젝트에 참여하면서 배운 점들을 기록하려 한다.
 " />
   <meta name="author" content="1133" />
   
@@ -120,14 +119,14 @@
   
   
   
-  <meta itemprop="name" content="iTerm2 vs VSCode in Linux">
+  <meta itemprop="name" content="[Review] 나의 첫 번째 프로젝트">
 <meta itemprop="description" content="Linux 환경에서 원격으로 개발할 경우 iTerm2와 VSCode"><meta itemprop="datePublished" content="2023-07-09T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-07-09T00:00:00+00:00" />
-<meta itemprop="wordCount" content="357">
-<meta itemprop="keywords" content="2023,work,linux," />
+<meta itemprop="wordCount" content="321">
+<meta itemprop="keywords" content="2023,work,review," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="iTerm2 vs VSCode in Linux"/>
+<meta name="twitter:title" content="[Review] 나의 첫 번째 프로젝트"/>
 <meta name="twitter:description" content="Linux 환경에서 원격으로 개발할 경우 iTerm2와 VSCode"/>
 
   
@@ -269,7 +268,7 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">iTerm2 vs VSCode in Linux</h1>
+    <h1 class="!my-0 pb-2.5">[Review] 나의 첫 번째 프로젝트</h1>
 
     
     <div class="text-sm antialiased opacity-60">
@@ -283,44 +282,24 @@
     
   </header>
 
-  <section><p>리눅스 환경에서 원격 접속으로 개발하는 경우, 효율적인 작업 환경을 선택하는 것은 매우 중요하다.</p>
-<p>입사하고 나서는 iTerm2에서 작업을 했는데, 최근에 Visual Studio Code로 작업을 해보니 너무 편하고 좋았다. <br> (현재 맥북으로 개발을 하고 있기 때문에 터미널 에뮬레이터로 iTerm2를 사용하고 있다.)</p>
-<p><strong><em>따라서, iTerm2와 Visual Studio Code의 작업환경의 차이점에 대해 알아보려 한다.</em></strong></p>
-<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/d36d926d-6618-4003-ae8b-7150b1b8a453" width="500"></p>
+  <section><p>지난 3월에 처음으로 실무 프로젝트에 참여하고 약 4개월 만에 프로젝트를 서비스하게 되었다. <br> 원래는 훨씬 전에 서비스를 했어야 하는데 진행하던 프로젝트에 추가 개발이 생겨서 조금 길어지게 되었다.</p>
+<p>내가 개발한 프로젝트를 사람들이 사용한다는 것에 기분이 이상하기도 하고 뿌듯하기도 하다. <br> 완벽하게 완성한 것은 아니지만 다른 프로젝트를 맡을 예정이라서 이번 프로젝트에 참여하면서 배운 점들을 기록하려 한다.</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/9a1b787a-8c9b-4aa5-a102-a9238b530088" width="500"></p>
 <br>
-<h2 id="vscode-그는-신인가">VSCode 그는 신인가..?</h2>
-<p>처음 터미널에서 작업했을 때는 vim 편집기에 적응하느라 오래 걸렸다. <br> 마우스를 사용하지 못하는 부분도 힘들었지만, 단축키를 몰라서 작업을 할 때 크롬에 ‘맥 Vim 단축키 모음’을 검색하고 창을 따로 띄워놔야 했다. <br> (마우스는 중요한 도구였구나..)</p>
-<p>하지만 어느 정도 익숙해지니 작업 속도가 점점 빨라졌다. <br> 이제는 타자를 치다가 마우스를 잡아야 할 때 생기는 그 잠깐의 멈춤이 거슬리는 수준이 되었다. <br> (마우스는 중요한 도구였을까..?)</p>
-<p>사실 VSCode가 너무 인기가 많아서 홍대병 말기인 나는 사용하지 않으려 했는데, VSCode 신봉자이신 책임분이 자꾸 ‘VSCode가 최고다’라며 계속 영업을 하셔가지고 원격 접속 플러그인을 설치하고 작업을 해봤다.</p>
-<p>확실히 VSCode에서 사용할 수 있는 플러그인으로 인해 개발이 편해지고 코드 정렬이나, 오류 체크 등 터미널에서는 직접적으로 확인할 수 없는 기능들을 제공받아서 너무 편하다고 생각했다. <br> (하지만 이제 ‘vim 편집기’ 플러그인도 깔아버린&hellip;)</p>
+<h2 id="지속적인-커뮤니케이션의-중요성">지속적인 커뮤니케이션의 중요성</h2>
+<p>초반에는 PM과 직접적으로 소통하지 않고 대표님을 통해서 전달받거나, 회의할 때 옆에 가만히 앉아있는 경우가 많았다. <br> 매일 2–3번씩 크고 작은 회의를 진행했는데 신기하게도 회의만 하면 긴장해서 그런지 기가 빨려서 하루 종일 텐션이 낮아진다. <br> (그럴 땐 칼퇴가 만병통치약이죠..?)</p>
+<p>지금은 거의 나 혼자 커뮤니케이션을 하는 일이 많아졌다. <br> 대표님이 바쁘시기도 하고, 내가 담당하는 프로젝트니까 바로바로 대응해 줘야 한다.. <br> 그러다 보니 뭔가 개발하는 시간보다 회의하고 소통하는 시간이 더 많을 때도 있었다<br> (강조되고 반복되는 전화 벨 소리는 개발자를 불안하게 해요..)</p>
+<p>꾸준하게 프로젝트의 진행 상황을 공유하고 의견을 나누는 시간을 가지다 보니 문제점을 빠르게 파악하고 조치할 수 있었다. <br> 미리 회의할 내용을 잘 정리하는 것과, 회의하면서 나온 얘기들 중 중요 사항을 메모하여 빠르게 이해하고 파악 하는 게 중요한 것 같다.</p>
 <hr>
-<h2 id="작업환경의-차이점">작업환경의 차이점</h2>
-<h3 id="기능">기능</h3>
-<ul>
-<li>iTerm2는 주로 터미널 작업에 초점을 맞추고 있으며, 기본적으로 명령줄 인터페이스를 사용한다.</li>
-<li>반면에 VS Code는 강력한 편집기와 다양한 개발 도구를 포함한 통합 개발 환경으로서, 코드 편집, 디버깅, 플러그인 등의 기능을 제공한다.</li>
-</ul>
-<h3 id="사용자-인터페이스">사용자 인터페이스</h3>
-<ul>
-<li>iTerm2는 터미널 창을 중심으로 한 사용자 인터페이스를 가지고 있으며, 다중 탭, 분할 창 등의 터미널 관리 기능을 제공한다.</li>
-<li>VS Code는 편집기 창을 중심으로 한 사용자 인터페이스를 가지고 있으며, 편집기와 탐색기, 터미널 등을 조합하여 개발 작업을 수행할 수 있다.</li>
-</ul>
-<h3 id="확장성">확장성</h3>
-<ul>
-<li>VS Code는 플러그인 시스템을 통해 다양한 기능을 확장할 수 있으며, 개발자들은 원하는 기능을 플러그인으로 설치하고 사용할 수 있다.</li>
-<li>iTerm2도 일부 기능을 확장할 수 있는 플러그인을 제공하지만, 그 범위는 상대적으로 제한적이다.</li>
-</ul>
-<h3 id="목적">목적</h3>
-<ul>
-<li>iTerm2는 주로 터미널 기반의 작업을 위해 사용된다.</li>
-<li>반면에 VS Code는 통합 개발 환경으로서, 코드 편집, 디버깅, 버전 관리 등 다양한 개발 작업이 가능하다.</li>
-</ul>
-<blockquote>
-<p>즉, iTerm2는 터미널 작업에 특화된 터미널 에뮬레이터로, VS Code는 강력한 통합 개발 환경으로서 다양한 개발 작업을 지원한다. <br> 개발자의 작업 성격과 개인적인 기호에 따라 선택이 달라진다.</p>
-</blockquote>
-<hr>
-<p>개발 환경은 회사마다, 개인마다 각각 다르기 때문에 정답은 없다고 생각한다. <br> (세상에는 수많은 IDE들이 존재하고 개발되고 있으니까,,)</p>
-<p>지금은 VSCode을 사용하여 주로 작업을 하고 있지만, 다른 IDE를 사용해야 하는 상황이 생길 수도 있다. <br> 또한 리눅스를 공부할 생각이기 때문에 터미널에서 작업하는 방법도 익혀두어야겠다.</p></section>
+<h2 id="예상치-못한-문제들이-생기는-것은-정상적인-현상">예상치 못한 문제들이 생기는 것은 정상적인 현상</h2>
+<p>프로젝트를 진행하면서 예상치 못한 문제들이 발생할 때마다 처음에는 당황스러웠다. <br> 분명히 어제 퇴근하기 전까지는 아무 이상 없이 돌아가는 걸 확인했는데, 다음날 출근하면 갑자기 에러가 생기고,, 버그 잡다가 하루가 다 가버리는 날들이 자주 있었다.</p>
+<p>특히 괄호를 안 닫거나 오타를 치는 사소한 실수로 생긴 에러를 바로 해결하지 못하고 삽질했을 때는 현타가 쎄게 온다. <br> (버그 잘 잡는 것도 훌륭한 개발자랍니다??)</p>
+<p>하지만, 이런 크고 작은 이슈들을 해결하면서 더 큰 성취감과 자신감을 얻을 수 있었다. <br> 해결해 나가는 과정에서 새로운 기술, 도구 및 접근 방식에 대한 지식을 습득하고, 비슷한 상황에서 동일한 실수를 줄이는 등 실력이나 경험적으로 성장할 수 있는 점도 긍정적이었던 것 같다. <br> (앞으로 마주칠 수많은 문제들을 달게.. 받아야겠지??)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/94b27d1b-5428-4154-9074-fbdac5076008" width="300"></p>
+<br>
+<p><strong><em>마지막으로 내가 가장 크게 느낀 것은 기간이 아무리 길어도 빠듯하다는 것이다.</em></strong> <br></p>
+<p>뭐든지 계획한 대로 진행되는 일은 없고 어떠한 예외 상황이 일어날지 모르기 때문에 여유 부리지 말고 매일 최대한의 아웃풋을 내야 한다고 생각한다.</p>
+<p>아직 많이 부족하고 배워야 할 부분이 많지만 조급해하지 않고 단계를 하나씩 밟아가면서 발전하고 싶다.</p></section>
 
   
   
@@ -340,8 +319,8 @@
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/linux"
-      >linux</a
+      href="https://kmseunh.github.io/tags/review"
+      >review</a
     >
     
   </footer>
@@ -353,17 +332,11 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-07-18-review-first-project-service-open/"
-      ><span class="mr-1.5">←</span><span>[Review] 나의 첫 번째 프로젝트</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/"
-      ><span>Form과 Ajax 차이를 알자</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2023-07-09-iterm2-vs-vscode-in-linux-environment/"
+      ><span>iTerm2 vs VSCode in Linux</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
