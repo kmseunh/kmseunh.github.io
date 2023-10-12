@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>데이터: ㅇㅇ없어줄게</title>
+      <link>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</guid>
+      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;
+&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;
+&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>에러체크 딱딱딱</title>
       <link>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</link>
