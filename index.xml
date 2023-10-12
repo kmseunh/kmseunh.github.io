@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>업무이해도의 중요성</title>
+      <link>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</guid>
+      <description>&lt;p&gt;프로젝트를 진행할 때 업무 이해도는 매우 중요하다.&lt;/p&gt;
+&lt;p&gt;개발자는 개발만 잘하면 되는 거 아니냐라는 생각을 할 수 있지만, 본인이 개발을 할 프로젝트를 파악하지 못하고 클라이언트의 요구대로 완성시킨다는 건 불가능한 일이다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bdca6e1d-53ef-44f5-b97c-2c53308d4342&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>그래프 좋아하세요?</title>
       <link>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</link>
@@ -186,15 +197,6 @@ https://github.com/yuin/goldmark https://github.</description>
       
       <guid>https://kmseunh.github.io/contact/</guid>
       <description> github.com/nanxiaobei lee.so </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</guid>
-      <description></description>
     </item>
     
   </channel>
