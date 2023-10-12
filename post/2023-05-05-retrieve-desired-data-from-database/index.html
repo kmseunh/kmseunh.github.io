@@ -51,7 +51,7 @@
   />
 
   
-  <title>ajax 요청을 최소화하자 - DevSeung</title>
+  <title>싱글벙글(?) 쿼리문 체험기 - DevSeung</title>
 
   
   <meta name="theme-color" />
@@ -59,10 +59,8 @@
   
   
   
-  <meta name="description" content="Ajax는 Asynchronous JavaScript and XML의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다.  Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.
-Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.
-Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.
- (서버야 버텨줘..!!)
+  <meta name="description" content="데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다.  저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.
+이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다.  (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)
 " />
   <meta name="author" content="1133" />
   
@@ -121,15 +119,15 @@ Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지
   
   
   
-  <meta itemprop="name" content="ajax 요청을 최소화하자">
-<meta itemprop="description" content="ajax 요청 최소화를 고려하지 않아서 생긴 이슈"><meta itemprop="datePublished" content="2023-05-01T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-05-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="361">
-<meta itemprop="keywords" content="2023,work,javascript," />
+  <meta itemprop="name" content="싱글벙글(?) 쿼리문 체험기">
+<meta itemprop="description" content="데이터베이스에서 원하는 데이터 검색 이슈"><meta itemprop="datePublished" content="2023-05-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-05-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="356">
+<meta itemprop="keywords" content="2023,work,database," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ajax 요청을 최소화하자"/>
-<meta name="twitter:description" content="ajax 요청 최소화를 고려하지 않아서 생긴 이슈"/>
+<meta name="twitter:title" content="싱글벙글(?) 쿼리문 체험기"/>
+<meta name="twitter:description" content="데이터베이스에서 원하는 데이터 검색 이슈"/>
 
   
   
@@ -270,12 +268,12 @@ Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">ajax 요청을 최소화하자</h1>
+    <h1 class="!my-0 pb-2.5">싱글벙글(?) 쿼리문 체험기</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>May 1, 2023</time>
+      <time>May 5, 2023</time>
       
       
       
@@ -284,60 +282,42 @@ Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지
     
   </header>
 
-  <section><p>Ajax는 <code>Asynchronous JavaScript and XML</code>의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다. <br> Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.</p>
-<p>Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.</p>
-<p>Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.
-<br> (서버야 버텨줘..!!)</p>
-<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/86e4f977-c819-4508-a6fa-c64c423bd2fe" width="500"></p>
+  <section><p>데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다. <br> 저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.</p>
+<p>이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다. <br> (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1" width="500"></p>
 <br>
-<h2 id="한-번에-가져오기-vs-나누어-가져오기">한 번에 가져오기 vs 나누어 가져오기</h2>
-<p>데이터를 가져올 때는 상황에 따라 적절한 방식을 선택하는 것이 중요하다.</p>
-<p><em>내가 지금까지 짠 코드는 막 가져오기였다.. <br>
-공부를 하면서 알게 된 내용을 간략하게 정리해 봤다.</em></p>
-<h3 id="전체-데이터를-가져와서-각-위치에-업데이트하는-방식">전체 데이터를 가져와서 각 위치에 업데이트하는 방식</h3>
-<ul>
-<li>장점
-<ul>
-<li>한 번의 요청으로 모든 데이터를 가져올 수 있어서 네트워크 부하를 줄일 수 있다.</li>
-<li>또한, 데이터가 모두 로드된 이후에는 사용자 경험을 향상시킬 수 있다.</li>
-</ul>
-</li>
-<li>단점
-<ul>
-<li>모든 데이터를 가져오기 때문에 서버에 부담이 가거나, 클라이언트의 메모리를 많이 차지할 수 있다.</li>
-<li>또한, 데이터가 계속 업데이트되면 사용자는 일정한 주기로 새로고침을 해야 한다.</li>
-</ul>
-</li>
-</ul>
+<h2 id="무수히-이어진-sql-쿼리문">무수히 이어진 SQL 쿼리문</h2>
+<p>처음 DB 쪽 파이썬 코드를 봤을 때 당황스러웠다.</p>
+<p>특정 함수의 stmt 변수에 SQL 쿼리문이 담겨 있고, 해당 쿼리를 실행하여 결괏값을 변수에 저장하는 Python 코드들이었는데 우선 SQL 쿼리문 부터 굉장히 길고 복잡해 보였다.</p>
+<p>아래는 Python 코드 중 하나의 쿼리문의 구조를 나타낸 코드이다.</p>
+<script src="https://gist.github.com/kmseunh/3ec5eeabc8706d354ba0f59eed57714a.js"></script>
 <br>
-<h3 id="각-위치마다-필요한-데이터를-각각-가져와서-업데이트하는-방식">각 위치마다 필요한 데이터를 각각 가져와서 업데이트하는 방식</h3>
-<ul>
-<li>장점
-<ul>
-<li>필요한 데이터만 가져오기 때문에 데이터를 가져오는 데 드는 시간이 줄어들어 성능이 향상될 수 있다.</li>
-<li>또한, 데이터가 자주 업데이트될 때 더 빠른 업데이트를 제공할 수 있다.</li>
-</ul>
+위 쿼리문은 다음과 같은 기능을 수행한다.
+<ol>
+<li>
+<p><code>table_name</code> 테이블에서 <code>type</code>을 &lsquo;<strong>타입이름 1</strong>&lsquo;로 설정하고, <code>group2</code> 값이 비어있으면 &lsquo;<strong>전체</strong>&lsquo;로 대체하며, 특정 날짜 범위와 &lsquo;<strong>cycle 이름</strong>&lsquo;을 충족하는 데이터를 추출한다.</p>
 </li>
-<li>단점
-<ul>
-<li>각 위치마다 데이터를 가져와야 하기 때문에 요청 수가 많아질 수 있다.</li>
-<li>이는 서버 부하와 네트워크 부하를 유발할 수 있습니다. 또한, 사용자 경험이 좋지 않을 수 있다.</li>
-</ul>
+<li>
+<p>두 부분의 데이터 추출을 하나로 결합한다. <br> 첫 번째 부분은 <code>b_date</code>를 입력 날짜(&rsquo;<strong>%s</strong>&rsquo;)와 비교하고, 두 번째 부분은 입력 날짜의 전 월의 마지막 날부터 전 월의 첫 날까지의 범위를 검색한다.</p>
 </li>
-</ul>
-<blockquote>
-<p>전체 데이터가 크고 자주 업데이트되지 않는 경우에는 전체 데이터를 가져와서 업데이트하는 방식이 적절할 수 있고, <br> 데이터가 작고 자주 업데이트되는 경우에는 각 위치마다 필요한 데이터를 가져와서 업데이트하는 방식이 적절할 수 있다.</p>
-</blockquote>
+<li>
+<p>각 <code>type</code>에 대해 <code>b_date</code>를 형식화하고 &lsquo;<strong>컬럼 6</strong>&rsquo; 및 &lsquo;<strong>컬럼 7</strong>&lsquo;의 평균, 그리고 &lsquo;<strong>컬럼 8</strong>&rsquo; 및 &lsquo;<strong>컬럼 9</strong>&lsquo;의 합계를 계산한다.</p>
+</li>
+<li>
+<p>최종 결과 집합에 <code>type</code>, <code>group1</code>, <code>group2</code>, <code>cycle</code>, <code>b_date</code>, 계산된 평균 및 합계 값들을 포함하여 결과를 반환한다.</p>
+</li>
+</ol>
 <hr>
-<h2 id="이제는-잘할-수-있다">이제는 잘할 수 있다</h2>
-<p>처음에는 무슨 차이가 있을까라는 생각이 들었지만 불필요한 코드를 최소할 수 있고, 서버에 주는 부담을 최소화할 수 있다는 것을 알았다. <br> 단순하게 생각해봤을 때 Ajax 요청으로 필요한 데이터를 가져왔는데 왜 또 가져오려 했을까..??</p>
-<p>또한 데이터의 한 가지 컬럼 값에 따라 나누어서 가져와야 하는 경우 <br>
-(ex. 모든 데이터 값을 월별, 일별, 시간별로 나누어서 가져와야 할 때)</p>
-<p>위와 같은 경우에도 계속해서 Ajax 요청을 했었는데 이제는 한번 요청할 때 각각 분리해서 가져오도록 코드를 아래처럼 수정했다.</p>
-<script src="https://gist.github.com/kmseunh/d9acbd90ac3c5dd88d8c91dc303127d8.js"></script>
-<hr>
-<p>정답이 정해져 있는 것은 아니기 때문에 적절한 상황에 맞춰 Ajax 요청을 최소화해야 한다는 것을 배웠다.</p>
-<p>프로그래밍은 무조건 적인 해답이 정해져 있지 않고 상황에 따른 다양한 해결 방식들이 많기 때문에 전부 다 알지는 못해도 어느 정도 이해는 필요할 것 같다.</p></section>
+<p>Python 코드를 보고 나도 모르게 감탄해버렸다.</p>
+<p>출근하고 일을 배우면서 이런 경우가 2번이 있었는데,
+첫 번째는 지저분하고 나열되어 있는 코드를 함수를 사용해서 깔끔하게 분리하는 리팩토링을 했을 때였고,
+두 번째는 위 쿼리문을 보고 SQL에 직접 입력해서 데이터를 조회했을 때다.</p>
+<p>깔끔하게 코드를 분리하여 가독성을 높이는 부분은 어느 정도 할 수 있지만 쿼리문은 많은 공부가 필요할 것 같다.</p>
+<p>단순하게 생각하면 &lsquo;<em>SQL 쿼리문을 실행하여 결과 값을 변수에 저장한 후, json_data의 값을 기반으로 데이터베이스에서 쿼리를 실행하여 결과를 반환한다.</em>’ 라고 할 수 있다. <br> SQL 문법을 정확히 이해하고 사용할 줄 알아야 원하는 데이터를 가져올 수 있고, 그래야 결과를 반환하기 위한 파이썬 코드를 구현할 수 있을 것 같다. <br> (넓게는 2가지 부족한 부분을 채워야 하고 구체적으로 들어가면…)</p>
+<br>
+<p>매일매일 부족한 부분을 발견하면서 해야 할 공부가 쌓여가는데, 배우는 내용도 많아지고 있다. <br> 특히 DB는 내가 좋아한다고만 하고 제대로 공부해 보려 하지 않았기 때문에 더 어렵다고 느껴진다.</p>
+<p>이제라도 중요하다는 것을 깨달아서 다행이라고 생각하고 조금 더 비중을 두고 공부해야겠다. <br> 그래야지 나에게 데이터 처리 코드나 데이터베이스 코드를 코딩할 기회가 생길 수 있을 것 같다.</p>
+<p><strong><em>아니면 그냥.. ‘제가 해볼게요’라고 할까..??</em></strong></p></section>
 
   
   
@@ -357,8 +337,8 @@ Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/javascript"
-      >javascript</a
+      href="https://kmseunh.github.io/tags/database"
+      >database</a
     >
     
   </footer>
@@ -370,17 +350,11 @@ Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/"
-      ><span class="mr-1.5">←</span><span>싱글벙글(?) 쿼리문 체험기</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/"
-      ><span>유연한 사고, 단순하지 않기</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/"
+      ><span>ajax 요청을 최소화하자</span><span class="ml-1.5">→</span></a
     >
     
   </nav>

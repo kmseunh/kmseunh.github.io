@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>싱글벙글(?) 쿼리문 체험기</title>
+      <link>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</guid>
+      <description>&lt;p&gt;데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다. &lt;br&gt; 저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.&lt;/p&gt;
+&lt;p&gt;이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다. &lt;br&gt; (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ajax 요청을 최소화하자</title>
       <link>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</link>
