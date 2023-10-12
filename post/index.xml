@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Form과 Ajax 차이를 알자</title>
+      <link>https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/</guid>
+      <description>&lt;p&gt;웹 개발에서 form과 Ajax는 사용자와 상호작용하고 데이터를 전송하는 데 중요한 요소이다. &lt;br&gt; 그러나 이러한 방법들을 제대로 이해하지 못하고 개발하는 것은 문제와 위험성을 야기할 수 있다.&lt;/p&gt;
+&lt;p&gt;기존의 프로젝트를 마무리하면서 다른 프로젝트를 지원하고 있는데, 두 가지 방법에 대한 이해도가 조금 미흡해서 곤란할 뻔한 적이 있었다. &lt;br&gt; 어떻게 기본을 모를 수가 있을까 하고 부끄러웠지만, 이번 일로 두 가지 방법에 대하여 제대로 이해할 수 있었다.&lt;/p&gt;
+&lt;p&gt;따라서 form과 Ajax의 차이점과 각각의 사용법을 명확하게 이해하고 적절하게 활용하는 방법에 대해 알아보려 한다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/26f40f49-e21d-4f09-8791-a3a96c6332e5&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>데이터: ㅇㅇ없어줄게</title>
       <link>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</link>
