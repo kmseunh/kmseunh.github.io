@@ -240,23 +240,21 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://kmseunh.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kmseunh.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://kmseunh.github.io/contact/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kmseunh.github.io/contact/</guid>
       <description> github.com/nanxiaobei lee.so </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kmseunh.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/about/</guid>
+      <description>아직 준비중입니다..</description>
     </item>
     
   </channel>
