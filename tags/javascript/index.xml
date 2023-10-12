@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 28 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ajax 요청을 최소화하자</title>
       <link>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</link>
-      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</guid>
       <description>&lt;p&gt;Ajax는 &lt;code&gt;Asynchronous JavaScript and XML&lt;/code&gt;의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다. &lt;br&gt; Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.&lt;/p&gt;
