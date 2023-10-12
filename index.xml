@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>에러체크</title>
+      <link>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</guid>
+      <description>&lt;p&gt;코드를 작성하다 보면 밥 먹듯이 에러가 발생하지만, 원인 모를 에러를 마주치면 하루 종일 또는 그 이상이 걸려도 해결하지 못할 때가 있다.&lt;/p&gt;
+&lt;p&gt;만약 에러를 제대로 체크하지 않는다면 정말 간단한 에러를 해결하지 못하고 시간 낭비할 수 있다. &lt;br&gt; (그게… 접니다?)&lt;/p&gt;
+&lt;p&gt;항상 대표님이 에러 로그를 확인하라고 강조하셨는데, 아직 익숙지 않아서 별거 아닌 에러에 삽질하는 상황이 자주 일어났다.&lt;/p&gt;
+&lt;p&gt;따라서 이러한 실수를 줄이기 위해 에러 조치를 어떻게 하면 잘할 수 있을지에 대해 알아보려 한다.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9692a045-ef58-4a1c-adff-7ed533852eb3&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>업무이해도의 중요성</title>
       <link>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</link>
