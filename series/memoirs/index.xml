@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/series/memoirs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/series/memoirs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iTerm2 vs VSCode in Linux</title>
+      <link>https://kmseunh.github.io/post/2023-07-09-iterm2-vs-vscode-in-linux-environment/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-07-09-iterm2-vs-vscode-in-linux-environment/</guid>
+      <description>&lt;p&gt;리눅스 환경에서 원격 접속으로 개발하는 경우, 효율적인 작업 환경을 선택하는 것은 매우 중요하다.&lt;/p&gt;
+&lt;p&gt;입사하고 나서는 iTerm2에서 작업을 했는데, 최근에 Visual Studio Code로 작업을 해보니 너무 편하고 좋았다. &lt;br&gt; (현재 맥북으로 개발을 하고 있기 때문에 터미널 에뮬레이터로 iTerm2를 사용하고 있다.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;따라서, iTerm2와 Visual Studio Code의 작업환경의 차이점에 대해 알아보려 한다.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/d36d926d-6618-4003-ae8b-7150b1b8a453&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Form과 Ajax 차이를 알자</title>
       <link>https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/</link>
