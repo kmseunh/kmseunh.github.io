@@ -51,7 +51,7 @@
   />
 
   
-  <title>싱글벙글(?) 쿼리문 체험기 - DevSeung</title>
+  <title>그래프 - DevSeung</title>
 
   
   <meta name="theme-color" />
@@ -59,8 +59,9 @@
   
   
   
-  <meta name="description" content="데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다.  저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.
-이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다.  (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)
+  <meta name="description" content="프로그래밍을 하다 보면 그래프를 작성해야 하는 상황이 많다.  학생 때 수학 문제를 풀다가 그래프가 나오는 문제가 있으면 완전 땡큐였는데, 프로그래밍에서 그래프를 만나면 그 정도는 아닌 것 같다.
+그래프는 데이터를 시각적으로 표현하는데 수학적 함수, 수치 데이터, 통계 자료 등을 포함하여 다양한 유형의 데이터를 시각적으로 나타낼 수 있기 때문에 그래프를 사용하여 데이터의 관계와 추세를 분석할 수 있다.
+하지만 종류가 매우 다양하기 때문에 적절한 선택이 필요하다.  (많은 건 좋은데 애매하게 많다면..?)
 " />
   <meta name="author" content="1133" />
   
@@ -119,15 +120,15 @@
   
   
   
-  <meta itemprop="name" content="싱글벙글(?) 쿼리문 체험기">
-<meta itemprop="description" content="데이터베이스에서 원하는 데이터 검색 이슈"><meta itemprop="datePublished" content="2023-05-05T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-05-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="356">
-<meta itemprop="keywords" content="2023,work,database," />
+  <meta itemprop="name" content="그래프">
+<meta itemprop="description" content="다양한 그래프 만들어야 하는 이슈"><meta itemprop="datePublished" content="2023-05-09T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-05-09T00:00:00+00:00" />
+<meta itemprop="wordCount" content="384">
+<meta itemprop="keywords" content="2023,work,graph," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="싱글벙글(?) 쿼리문 체험기"/>
-<meta name="twitter:description" content="데이터베이스에서 원하는 데이터 검색 이슈"/>
+<meta name="twitter:title" content="그래프"/>
+<meta name="twitter:description" content="다양한 그래프 만들어야 하는 이슈"/>
 
   
   
@@ -268,12 +269,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">싱글벙글(?) 쿼리문 체험기</h1>
+    <h1 class="!my-0 pb-2.5">그래프</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>May 5, 2023</time>
+      <time>May 9, 2023</time>
       
       
       
@@ -282,42 +283,32 @@
     
   </header>
 
-  <section><p>데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다. <br> 저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.</p>
-<p>이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다. <br> (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)</p>
-<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1" width="500"></p>
+  <section><p>프로그래밍을 하다 보면 그래프를 작성해야 하는 상황이 많다. <br> 학생 때 수학 문제를 풀다가 그래프가 나오는 문제가 있으면 완전 땡큐였는데, 프로그래밍에서 그래프를 만나면 그 정도는 아닌 것 같다.</p>
+<p>그래프는 데이터를 시각적으로 표현하는데 수학적 함수, 수치 데이터, 통계 자료 등을 포함하여 다양한 유형의 데이터를 시각적으로 나타낼 수 있기 때문에 그래프를 사용하여 데이터의 관계와 추세를 분석할 수 있다.</p>
+<p>하지만 종류가 매우 다양하기 때문에 적절한 선택이 필요하다. <br> (많은 건 좋은데 애매하게 많다면..?)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/50d4f27b-e41f-4f7b-9a08-573b12ff7275" width="500"></p>
 <br>
-<h2 id="무수히-이어진-sql-쿼리문">무수히 이어진 SQL 쿼리문</h2>
-<p>처음 DB 쪽 파이썬 코드를 봤을 때 당황스러웠다.</p>
-<p>특정 함수의 stmt 변수에 SQL 쿼리문이 담겨 있고, 해당 쿼리를 실행하여 결괏값을 변수에 저장하는 Python 코드들이었는데 우선 SQL 쿼리문 부터 굉장히 길고 복잡해 보였다.</p>
-<p>아래는 Python 코드 중 하나의 쿼리문의 구조를 나타낸 코드이다.</p>
-<script src="https://gist.github.com/kmseunh/3ec5eeabc8706d354ba0f59eed57714a.js"></script>
+<h2 id="plotlyjs-사용하기">Plotly.js 사용하기</h2>
+<p><strong>Plotly.js</strong>는 오픈 소스 데이터 시각화 라이브러리로 다양한 차트 유형(선 그래프, 막대그래프, 히스토그램, 산점도 등)을 지원하며, 인터랙티브한 기능(툴팁, 축 슬라이더, 드래그 및 드롭, 축 교환 등)을 포함한다.</p>
+<p>또한 오픈 소스로 제공되며, 사용 가능한 소스 코드와 예제를 찾을 수 있고, Plotly.js를 사용하면 매우 활발한 개발자 커뮤니티와 지원을 받을 수 있다. <br> 이러한 이점 때문에 데이터 시각화를 위한 오픈 소스 라이브러리 중에서 인기가 매우 높다고 한다. <br> (개발자 친화적인 게 최고야…)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/90bc58e7-cf6e-404e-bee7-8bbffa0b8823" width="500"></p>
 <br>
-위 쿼리문은 다음과 같은 기능을 수행한다.
-<ol>
-<li>
-<p><code>table_name</code> 테이블에서 <code>type</code>을 &lsquo;<strong>타입이름 1</strong>&lsquo;로 설정하고, <code>group2</code> 값이 비어있으면 &lsquo;<strong>전체</strong>&lsquo;로 대체하며, 특정 날짜 범위와 &lsquo;<strong>cycle 이름</strong>&lsquo;을 충족하는 데이터를 추출한다.</p>
-</li>
-<li>
-<p>두 부분의 데이터 추출을 하나로 결합한다. <br> 첫 번째 부분은 <code>b_date</code>를 입력 날짜(&rsquo;<strong>%s</strong>&rsquo;)와 비교하고, 두 번째 부분은 입력 날짜의 전 월의 마지막 날부터 전 월의 첫 날까지의 범위를 검색한다.</p>
-</li>
-<li>
-<p>각 <code>type</code>에 대해 <code>b_date</code>를 형식화하고 &lsquo;<strong>컬럼 6</strong>&rsquo; 및 &lsquo;<strong>컬럼 7</strong>&lsquo;의 평균, 그리고 &lsquo;<strong>컬럼 8</strong>&rsquo; 및 &lsquo;<strong>컬럼 9</strong>&lsquo;의 합계를 계산한다.</p>
-</li>
-<li>
-<p>최종 결과 집합에 <code>type</code>, <code>group1</code>, <code>group2</code>, <code>cycle</code>, <code>b_date</code>, 계산된 평균 및 합계 값들을 포함하여 결과를 반환한다.</p>
-</li>
-</ol>
+<p><strong><em>내가 사용한 그래프는 막대 + 꺾은선 그래프와 히트맵이다.</em></strong>
+막대 + 꺾은선 그래프는 가장 많이 쓰는 그래프기 때문에 무난하게 어려움 없이 코딩할 수 있었다. <br> x 값과 y 값은 서버로부터 가져온 데이터를 filter 해서 각각 넣어주었는데 세부적인 설정은 공식 문서를 참고했다.</p>
+<p>히트맵(heatmap)은 데이터를 시각화하는 기법 중 하나로, 색상을 사용하여 값의 상대적인 크기를 나타내는 그래프를 말한다. <br> 주로 2차원 배열로 표시되며, 각 요소는 값에 따라 색상으로 나타내어진다.</p>
+<p>이를 통해 데이터의 분포와 패턴을 쉽게 파악할 수 있다. <br> 나는 축구를 좋아하기 때문에 히트맵이 익숙했고, 그 분야에 사용될 줄 알았는데 지리 정보 시스템(GIS)이나 시장 세분화, 빅데이터 분석 등 다양한 분야에 사용된다고 한다.</p>
+<blockquote>
+<p>히트맵 기준 값을 나누고 각 기준값에 따른 색상을 Hex 값으로 설정했는데 입력한 Hex 값과 전혀 다른 색이 나와서 조금 헤맸다.</p>
+</blockquote>
 <hr>
-<p>Python 코드를 보고 나도 모르게 감탄해버렸다.</p>
-<p>출근하고 일을 배우면서 이런 경우가 2번이 있었는데,
-첫 번째는 지저분하고 나열되어 있는 코드를 함수를 사용해서 깔끔하게 분리하는 리팩토링을 했을 때였고,
-두 번째는 위 쿼리문을 보고 SQL에 직접 입력해서 데이터를 조회했을 때다.</p>
-<p>깔끔하게 코드를 분리하여 가독성을 높이는 부분은 어느 정도 할 수 있지만 쿼리문은 많은 공부가 필요할 것 같다.</p>
-<p>단순하게 생각하면 &lsquo;<em>SQL 쿼리문을 실행하여 결과 값을 변수에 저장한 후, json_data의 값을 기반으로 데이터베이스에서 쿼리를 실행하여 결과를 반환한다.</em>’ 라고 할 수 있다. <br> SQL 문법을 정확히 이해하고 사용할 줄 알아야 원하는 데이터를 가져올 수 있고, 그래야 결과를 반환하기 위한 파이썬 코드를 구현할 수 있을 것 같다. <br> (넓게는 2가지 부족한 부분을 채워야 하고 구체적으로 들어가면…)</p>
-<br>
-<p>매일매일 부족한 부분을 발견하면서 해야 할 공부가 쌓여가는데, 배우는 내용도 많아지고 있다. <br> 특히 DB는 내가 좋아한다고만 하고 제대로 공부해 보려 하지 않았기 때문에 더 어렵다고 느껴진다.</p>
-<p>이제라도 중요하다는 것을 깨달아서 다행이라고 생각하고 조금 더 비중을 두고 공부해야겠다. <br> 그래야지 나에게 데이터 처리 코드나 데이터베이스 코드를 코딩할 기회가 생길 수 있을 것 같다.</p>
-<p><strong><em>아니면 그냥.. ‘제가 해볼게요’라고 할까..??</em></strong></p></section>
+<h2 id="gaugejs-사용하기">Gauge.js 사용하기</h2>
+<p><strong>Gauge.js</strong>는 JavaScript를 사용하여 생성된 동적으로 그려지는 게이지 또는 메터를 구현하는 데 사용되는 오픈 소스 라이브러리로 여러 가지 다른 종류의 게이지를 지원하며, 쉽게 사용할 수 있는 API를 제공한다.</p>
+<p>또한 많은 사용자 지정 설정을 제공하여 디자인 및 기능을 개별적으로 조정할 수 있다. <br> Plotly.js와 마찬가지로 오픈 소스이므로 누구나 무료로 사용할 수 있다는 장점이 있다. <br> (게이지 전문 맛집이구먼…)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/bfa96f2f-95bf-45c4-a2ff-026dfd29e09e" width="500"></p>
+<p>코드는 생각보다 복잡하지 않아서 다행이었지만 적용했을 때 화면 UI 부분에서 크기나 비율이 틀어지는 경우가 발생해서 수정하느라 힘들었다. <br> Plotly.js로 다 작성하려 했지만 마음에 드는 UI나 기능이 없어서 Guage.js를 사용하게 되었는데 무난하게 사용하기에는 좋았다.</p>
+<hr>
+<p>레이아웃(Layout)이 뭔지 몰라서 그래프를 디자인하는 부분에 있어서 버벅였던 것 같다. <br> 레이아웃은 디자인의 기본적인 개념으로, 컨텐츠의 배치와 구조를 결정하는 요소이며, 디자인의 시각적인 요소를 결정한다는데.. 예술적 감각이 없는 나로서는..</p>
+<p><strong><em>그래프를 만들다 보니 그래프를 사용한 웹 페이지나 작은 프로젝트의 주제들이 몇 개 떠올라서 쉬는 날에 도전해 볼 생각이다.</em></strong></p></section>
 
   
   
@@ -337,8 +328,8 @@
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/database"
-      >database</a
+      href="https://kmseunh.github.io/tags/graph"
+      >graph</a
     >
     
   </footer>
@@ -350,17 +341,11 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/"
-      ><span class="mr-1.5">←</span><span>그래프</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/"
-      ><span>ajax 요청을 최소화하자</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/"
+      ><span>싱글벙글(?) 쿼리문 체험기</span><span class="ml-1.5">→</span></a
     >
     
   </nav>

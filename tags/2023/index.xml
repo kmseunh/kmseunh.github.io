@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>그래프</title>
+      <link>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</guid>
+      <description>&lt;p&gt;프로그래밍을 하다 보면 그래프를 작성해야 하는 상황이 많다. &lt;br&gt; 학생 때 수학 문제를 풀다가 그래프가 나오는 문제가 있으면 완전 땡큐였는데, 프로그래밍에서 그래프를 만나면 그 정도는 아닌 것 같다.&lt;/p&gt;
+&lt;p&gt;그래프는 데이터를 시각적으로 표현하는데 수학적 함수, 수치 데이터, 통계 자료 등을 포함하여 다양한 유형의 데이터를 시각적으로 나타낼 수 있기 때문에 그래프를 사용하여 데이터의 관계와 추세를 분석할 수 있다.&lt;/p&gt;
+&lt;p&gt;하지만 종류가 매우 다양하기 때문에 적절한 선택이 필요하다. &lt;br&gt; (많은 건 좋은데 애매하게 많다면..?)&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/50d4f27b-e41f-4f7b-9a08-573b12ff7275&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>싱글벙글(?) 쿼리문 체험기</title>
       <link>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</link>
