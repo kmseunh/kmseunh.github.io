@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>어서와 출장은 처음이지?</title>
+      <link>https://kmseunh.github.io/post/2023-08-02-it-aint-over-till-its-over/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kmseunh.github.io/post/2023-08-02-it-aint-over-till-its-over/</guid>
+      <description>&lt;p&gt;새로운 프로젝트를 맡게 되었다. &lt;br&gt; 기존에 마무리한 프로젝트와 유사하지만 데이터 구성이 전혀 다르기 때문에 설렘 반 긴장 반이다. &lt;br&gt; 또한 지난 프로젝트는 이미 40% 정도 진행된 상태에서 참여했다면, 이번에는 처음부터 내가 맡아서 진행하게 된다. &lt;br&gt; 당황스러운 것은 회의를 하러 출장을 가야 한다는 점이다..&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/react-quiz/assets/105186724/7f1cd473-2b7b-4eb8-90dd-206975f4ca65&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Review] 나의 첫 번째 프로젝트</title>
       <link>https://kmseunh.github.io/post/2023-07-18-review-first-project-service-open/</link>
