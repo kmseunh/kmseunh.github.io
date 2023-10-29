@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Review on DevSeung</title>
-    <link>https://kmseunh.github.io/series/review/</link>
-    <description>Recent content in Review on DevSeung</description>
+    <title>projects on DevSeung</title>
+    <link>https://kmseunh.github.io/categories/projects/</link>
+    <description>Recent content in projects on DevSeung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/series/review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Review] 나의 첫 번째 프로젝트</title>
       <link>https://kmseunh.github.io/post/2023-07-18-review-first-project-service-open-copy/</link>
