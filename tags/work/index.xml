@@ -7,173 +7,112 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>프로젝트 진행 전 체크사항</title>
+      <link>https://kmseunh.github.io/post/2023-08-10-check-before-project-development/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-08-10-check-before-project-development/</guid>
+      <description>&lt;p&gt;프로젝트를 진행하기 전에는 개발에만 집중하면 무난하게 흘러갈 줄 알았다. &lt;br&gt; 이 생각은 정확히 업무메일을 받은지 10분 만에 산산조각 나버렸다. &lt;br&gt; (근거없는 자신감은 저를 불안하게 해요)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/b10d883b-46a0-4794-be35-c8a781e98a89&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>어서와 출장은 처음이지?</title>
       <link>https://kmseunh.github.io/post/2023-08-02-it-aint-over-till-its-over/</link>
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-08-02-it-aint-over-till-its-over/</guid>
-      <description>&lt;p&gt;새로운 프로젝트를 맡게 되었다. &lt;br&gt; 기존에 마무리한 프로젝트와 유사하지만 데이터 구성이 전혀 다르기 때문에 설렘 반 긴장 반이다. &lt;br&gt; 또한 지난 프로젝트는 이미 40% 정도 진행된 상태에서 참여했다면, 이번에는 처음부터 내가 맡아서 진행하게 된다. &lt;br&gt; 당황스러운 것은 회의를 하러 출장을 가야 한다는 점이다..&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/react-quiz/assets/105186724/7f1cd473-2b7b-4eb8-90dd-206975f4ca65&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;새로운 프로젝트를 맡게 되었다. &lt;br&gt; 기존에 마무리한 프로젝트와 유사하지만 데이터 구성이 전혀 다르기 때문에 설렘 반 긴장 반이다. &lt;br&gt; 또한 지난 프로젝트는 이미 40% 정도 진행된 상태에서 참여했다면, 이번에는 처음부터 내가 맡아서 진행하게 된다. &lt;br&gt; 당황스러운 것은 회의를 하러 출장을 가야 한다는 점이다..&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/react-quiz/assets/105186724/7f1cd473-2b7b-4eb8-90dd-206975f4ca65&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Review] 나의 첫 번째 프로젝트</title>
       <link>https://kmseunh.github.io/post/2023-07-18-review-first-project-service-open/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-07-18-review-first-project-service-open/</guid>
-      <description>&lt;p&gt;지난 3월에 처음으로 실무 프로젝트에 참여하고 약 4개월 만에 프로젝트를 서비스하게 되었다. &lt;br&gt; 원래는 훨씬 전에 서비스를 했어야 하는데 진행하던 프로젝트에 추가 개발이 생겨서 조금 길어지게 되었다.&lt;/p&gt;
-&lt;p&gt;내가 개발한 프로젝트를 사람들이 사용한다는 것에 기분이 이상하기도 하고 뿌듯하기도 하다. &lt;br&gt; 완벽하게 완성한 것은 아니지만 다른 프로젝트를 맡을 예정이라서 이번 프로젝트에 참여하면서 배운 점들을 기록하려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9a1b787a-8c9b-4aa5-a102-a9238b530088&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;지난 3월에 처음으로 실무 프로젝트에 참여하고 약 4개월 만에 프로젝트를 서비스하게 되었다. &lt;br&gt; 원래는 훨씬 전에 서비스를 했어야 하는데 진행하던 프로젝트에 추가 개발이 생겨서 조금 길어지게 되었다.&lt;/p&gt;&#xA;&lt;p&gt;내가 개발한 프로젝트를 사람들이 사용한다는 것에 기분이 이상하기도 하고 뿌듯하기도 하다. &lt;br&gt; 완벽하게 완성한 것은 아니지만 다른 프로젝트를 맡을 예정이라서 이번 프로젝트에 참여하면서 배운 점들을 기록하려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9a1b787a-8c9b-4aa5-a102-a9238b530088&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>iTerm2 vs VSCode in Linux</title>
       <link>https://kmseunh.github.io/post/2023-07-09-iterm2-vs-vscode-in-linux-environment/</link>
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-07-09-iterm2-vs-vscode-in-linux-environment/</guid>
-      <description>&lt;p&gt;리눅스 환경에서 원격 접속으로 개발하는 경우, 효율적인 작업 환경을 선택하는 것은 매우 중요하다.&lt;/p&gt;
-&lt;p&gt;입사하고 나서는 iTerm2에서 작업을 했는데, 최근에 Visual Studio Code로 작업을 해보니 너무 편하고 좋았다. &lt;br&gt; (현재 맥북으로 개발을 하고 있기 때문에 터미널 에뮬레이터로 iTerm2를 사용하고 있다.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;따라서, iTerm2와 Visual Studio Code의 작업환경의 차이점에 대해 알아보려 한다.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/d36d926d-6618-4003-ae8b-7150b1b8a453&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;리눅스 환경에서 원격 접속으로 개발하는 경우, 효율적인 작업 환경을 선택하는 것은 매우 중요하다.&lt;/p&gt;&#xA;&lt;p&gt;입사하고 나서는 iTerm2에서 작업을 했는데, 최근에 Visual Studio Code로 작업을 해보니 너무 편하고 좋았다. &lt;br&gt; (현재 맥북으로 개발을 하고 있기 때문에 터미널 에뮬레이터로 iTerm2를 사용하고 있다.)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;따라서, iTerm2와 Visual Studio Code의 작업환경의 차이점에 대해 알아보려 한다.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/d36d926d-6618-4003-ae8b-7150b1b8a453&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Form과 Ajax 차이를 알자</title>
       <link>https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/</link>
       <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/</guid>
-      <description>&lt;p&gt;웹 개발에서 form과 Ajax는 사용자와 상호작용하고 데이터를 전송하는 데 중요한 요소이다. &lt;br&gt; 그러나 이러한 방법들을 제대로 이해하지 못하고 개발하는 것은 문제와 위험성을 야기할 수 있다.&lt;/p&gt;
-&lt;p&gt;기존의 프로젝트를 마무리하면서 다른 프로젝트를 지원하고 있는데, 두 가지 방법에 대한 이해도가 조금 미흡해서 곤란할 뻔한 적이 있었다. &lt;br&gt; 어떻게 기본을 모를 수가 있을까 하고 부끄러웠지만, 이번 일로 두 가지 방법에 대하여 제대로 이해할 수 있었다.&lt;/p&gt;
-&lt;p&gt;따라서 form과 Ajax의 차이점과 각각의 사용법을 명확하게 이해하고 적절하게 활용하는 방법에 대해 알아보려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/26f40f49-e21d-4f09-8791-a3a96c6332e5&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;웹 개발에서 form과 Ajax는 사용자와 상호작용하고 데이터를 전송하는 데 중요한 요소이다. &lt;br&gt; 그러나 이러한 방법들을 제대로 이해하지 못하고 개발하는 것은 문제와 위험성을 야기할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;기존의 프로젝트를 마무리하면서 다른 프로젝트를 지원하고 있는데, 두 가지 방법에 대한 이해도가 조금 미흡해서 곤란할 뻔한 적이 있었다. &lt;br&gt; 어떻게 기본을 모를 수가 있을까 하고 부끄러웠지만, 이번 일로 두 가지 방법에 대하여 제대로 이해할 수 있었다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 form과 Ajax의 차이점과 각각의 사용법을 명확하게 이해하고 적절하게 활용하는 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/26f40f49-e21d-4f09-8791-a3a96c6332e5&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>데이터: ㅇㅇ없어줄게</title>
       <link>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</guid>
-      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;
-&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;
-&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;&#xA;&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>에러체크 딱딱딱</title>
       <link>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</link>
       <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</guid>
-      <description>&lt;p&gt;코드를 작성하다 보면 밥 먹듯이 에러가 발생하지만, 원인 모를 에러를 마주치면 하루 종일 또는 그 이상이 걸려도 해결하지 못할 때가 있다.&lt;/p&gt;
-&lt;p&gt;만약 에러를 제대로 체크하지 않는다면 정말 간단한 에러를 해결하지 못하고 시간 낭비할 수 있다. &lt;br&gt; (그게… 접니다?)&lt;/p&gt;
-&lt;p&gt;항상 대표님이 에러 로그를 확인하라고 강조하셨는데, 아직 익숙지 않아서 별거 아닌 에러에 삽질하는 상황이 자주 일어났다.&lt;/p&gt;
-&lt;p&gt;따라서 이러한 실수를 줄이기 위해 에러 조치를 어떻게 하면 잘할 수 있을지에 대해 알아보려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9692a045-ef58-4a1c-adff-7ed533852eb3&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;코드를 작성하다 보면 밥 먹듯이 에러가 발생하지만, 원인 모를 에러를 마주치면 하루 종일 또는 그 이상이 걸려도 해결하지 못할 때가 있다.&lt;/p&gt;&#xA;&lt;p&gt;만약 에러를 제대로 체크하지 않는다면 정말 간단한 에러를 해결하지 못하고 시간 낭비할 수 있다. &lt;br&gt; (그게… 접니다?)&lt;/p&gt;&#xA;&lt;p&gt;항상 대표님이 에러 로그를 확인하라고 강조하셨는데, 아직 익숙지 않아서 별거 아닌 에러에 삽질하는 상황이 자주 일어났다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 이러한 실수를 줄이기 위해 에러 조치를 어떻게 하면 잘할 수 있을지에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9692a045-ef58-4a1c-adff-7ed533852eb3&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>업무이해도의 중요성</title>
       <link>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</guid>
-      <description>&lt;p&gt;프로젝트를 진행할 때 업무 이해도는 매우 중요하다.&lt;/p&gt;
-&lt;p&gt;개발자는 개발만 잘하면 되는 거 아니냐라는 생각을 할 수 있지만, 본인이 개발을 할 프로젝트를 파악하지 못하고 클라이언트의 요구대로 완성시킨다는 건 불가능한 일이다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bdca6e1d-53ef-44f5-b97c-2c53308d4342&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;프로젝트를 진행할 때 업무 이해도는 매우 중요하다.&lt;/p&gt;&#xA;&lt;p&gt;개발자는 개발만 잘하면 되는 거 아니냐라는 생각을 할 수 있지만, 본인이 개발을 할 프로젝트를 파악하지 못하고 클라이언트의 요구대로 완성시킨다는 건 불가능한 일이다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bdca6e1d-53ef-44f5-b97c-2c53308d4342&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>그래프 좋아하세요?</title>
       <link>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</guid>
-      <description>&lt;p&gt;프로그래밍을 하다 보면 그래프를 작성해야 하는 상황이 많다. &lt;br&gt; 학생 때 수학 문제를 풀다가 그래프가 나오는 문제가 있으면 완전 땡큐였는데, 프로그래밍에서 그래프를 만나면 그 정도는 아닌 것 같다.&lt;/p&gt;
-&lt;p&gt;그래프는 데이터를 시각적으로 표현하는데 수학적 함수, 수치 데이터, 통계 자료 등을 포함하여 다양한 유형의 데이터를 시각적으로 나타낼 수 있기 때문에 그래프를 사용하여 데이터의 관계와 추세를 분석할 수 있다.&lt;/p&gt;
-&lt;p&gt;하지만 종류가 매우 다양하기 때문에 적절한 선택이 필요하다. &lt;br&gt; (많은 건 좋은데 애매하게 많다면..?)&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/50d4f27b-e41f-4f7b-9a08-573b12ff7275&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;프로그래밍을 하다 보면 그래프를 작성해야 하는 상황이 많다. &lt;br&gt; 학생 때 수학 문제를 풀다가 그래프가 나오는 문제가 있으면 완전 땡큐였는데, 프로그래밍에서 그래프를 만나면 그 정도는 아닌 것 같다.&lt;/p&gt;&#xA;&lt;p&gt;그래프는 데이터를 시각적으로 표현하는데 수학적 함수, 수치 데이터, 통계 자료 등을 포함하여 다양한 유형의 데이터를 시각적으로 나타낼 수 있기 때문에 그래프를 사용하여 데이터의 관계와 추세를 분석할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 종류가 매우 다양하기 때문에 적절한 선택이 필요하다. &lt;br&gt; (많은 건 좋은데 애매하게 많다면..?)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/50d4f27b-e41f-4f7b-9a08-573b12ff7275&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>싱글벙글(?) 쿼리문 체험기</title>
       <link>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</guid>
-      <description>&lt;p&gt;데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다. &lt;br&gt; 저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.&lt;/p&gt;
-&lt;p&gt;이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다. &lt;br&gt; (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다. &lt;br&gt; 저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.&lt;/p&gt;&#xA;&lt;p&gt;이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다. &lt;br&gt; (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ajax 요청을 최소화하자</title>
       <link>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</guid>
-      <description>&lt;p&gt;Ajax는 &lt;code&gt;Asynchronous JavaScript and XML&lt;/code&gt;의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다. &lt;br&gt; Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.&lt;/p&gt;
-&lt;p&gt;Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.&lt;/p&gt;
-&lt;p&gt;Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.
-&lt;br&gt; (서버야 버텨줘..!!)&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/86e4f977-c819-4508-a6fa-c64c423bd2fe&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ajax는 &lt;code&gt;Asynchronous JavaScript and XML&lt;/code&gt;의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다. &lt;br&gt; Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.&lt;/p&gt;&#xA;&lt;p&gt;Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.&#xA;&lt;br&gt; (서버야 버텨줘..!!)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/86e4f977-c819-4508-a6fa-c64c423bd2fe&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>유연한 사고, 단순하지 않기</title>
       <link>https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/</link>
       <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/</guid>
-      <description>&lt;p&gt;어느 날 개발자는 항상 모든 일에 생각을 해야 한다는 말을 들었다.&lt;/p&gt;
-&lt;p&gt;코드 한 줄을 짤 때에도 단순하게 ‘이렇게 하면 되겠지?’ 하고 바로 완성하는 게 아니라 어떻게 해야 더 간단하고 가독성이 높은 코드로 완성할 수 있을까에 대한 생각을 해야 한다.&lt;/p&gt;
-&lt;p&gt;다른 주니어 개발자들은 어떤지 모르겠지만 나는 단순하게 코드를 완성하고 잘 작동이 되면 더 이상 신경을 쓰지 않았다. &lt;br&gt; 처음에는 에러만 안 나면 상관없겠지라는 생각이었지만, 점점 코드가 많아지면 많아질수록 가독성이나 효율적인 부분에서 떨어지게 된다는 것을 알았다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/4814cdda-194e-466a-8592-b102d05c7a4d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;어느 날 개발자는 항상 모든 일에 생각을 해야 한다는 말을 들었다.&lt;/p&gt;&#xA;&lt;p&gt;코드 한 줄을 짤 때에도 단순하게 ‘이렇게 하면 되겠지?’ 하고 바로 완성하는 게 아니라 어떻게 해야 더 간단하고 가독성이 높은 코드로 완성할 수 있을까에 대한 생각을 해야 한다.&lt;/p&gt;&#xA;&lt;p&gt;다른 주니어 개발자들은 어떤지 모르겠지만 나는 단순하게 코드를 완성하고 잘 작동이 되면 더 이상 신경을 쓰지 않았다. &lt;br&gt; 처음에는 에러만 안 나면 상관없겠지라는 생각이었지만, 점점 코드가 많아지면 많아질수록 가독성이나 효율적인 부분에서 떨어지게 된다는 것을 알았다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/4814cdda-194e-466a-8592-b102d05c7a4d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>하루종일 테이블 만들기(with Bootstrap)</title>
       <link>https://kmseunh.github.io/post/2023-04-26-made-table-with-bootstrap/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-04-26-made-table-with-bootstrap/</guid>
-      <description>&lt;p&gt;기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다. &lt;br&gt; 이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.&lt;/p&gt;
-&lt;p&gt;처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.&lt;/p&gt;
-&lt;p&gt;하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/70f7f521-9294-47b9-8318-a2cf06b36b6a&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다. &lt;br&gt; 이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.&lt;/p&gt;&#xA;&lt;p&gt;처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/70f7f521-9294-47b9-8318-a2cf06b36b6a&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>처음으로 프로젝트 미팅에 참여하게 되는데..</title>
       <link>https://kmseunh.github.io/post/2023-04-24-my-first-project-meeting/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-04-24-my-first-project-meeting/</guid>
-      <description>&lt;p&gt;프로젝트를 진행하려면 많은 과정을 거쳐야 한다.&lt;/p&gt;
-&lt;p&gt;만약 내가 아이디어를 가지고 프로젝트를 진행하고 싶다면 같이 협업을 할 수 있게 다른 사람들을 설득할 수 있어야 하고,
-프로젝트를 제안받은 경우에는 본인의 특정 기준에 따라 해당 프로젝트를 판단하여 진행할지 여부를 정할 것이다.&lt;/p&gt;
-&lt;p&gt;항상 개인 프로젝트나 팀 단위 프로젝트만 진행했기 때문에 회사끼리 계약하는 단체 프로젝트는 굉장히 낯설고 신기했다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/2b279d61-d51e-4af5-96d0-9102da00e314&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;프로젝트를 진행하려면 많은 과정을 거쳐야 한다.&lt;/p&gt;&#xA;&lt;p&gt;만약 내가 아이디어를 가지고 프로젝트를 진행하고 싶다면 같이 협업을 할 수 있게 다른 사람들을 설득할 수 있어야 하고,&#xA;프로젝트를 제안받은 경우에는 본인의 특정 기준에 따라 해당 프로젝트를 판단하여 진행할지 여부를 정할 것이다.&lt;/p&gt;&#xA;&lt;p&gt;항상 개인 프로젝트나 팀 단위 프로젝트만 진행했기 때문에 회사끼리 계약하는 단체 프로젝트는 굉장히 낯설고 신기했다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/2b279d61-d51e-4af5-96d0-9102da00e314&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>자네는 누가 뽑았나?</title>
       <link>https://kmseunh.github.io/post/2023-04-22-memoirs-of-first-month-employment/</link>
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-04-22-memoirs-of-first-month-employment/</guid>
-      <description>&lt;p&gt;현재 나는 작은 IT 회사에서 프리랜서로 일을 하고 있다. &lt;br&gt;
-개발자를 진로로 정하고 공부를 시작한 지 6개월 정도 지났는데, 우연히 이런 좋은 기회가 찾아와서 즐겁게 다니고 있다.&lt;/p&gt;
-&lt;p&gt;혼자 유튜브나 책 등으로 공부를 하다 보니 실력적으로 성장이 더디다는 생각이 들어 조금 낙담하고 있었는데, 이번 기회로 많은 성장을 할 수 있기를 기대한다.&lt;/p&gt;
-&lt;p&gt;첫 실무 경험이기도 하고 회사를 다니면서 겪은 경험을 기록하고 공유하고 싶어 1–3개월 주기로 회고록을 써보려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bfa388ed-86c2-4d3b-80ba-36ba1b0320ec&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;현재 나는 작은 IT 회사에서 프리랜서로 일을 하고 있다. &lt;br&gt;&#xA;개발자를 진로로 정하고 공부를 시작한 지 6개월 정도 지났는데, 우연히 이런 좋은 기회가 찾아와서 즐겁게 다니고 있다.&lt;/p&gt;&#xA;&lt;p&gt;혼자 유튜브나 책 등으로 공부를 하다 보니 실력적으로 성장이 더디다는 생각이 들어 조금 낙담하고 있었는데, 이번 기회로 많은 성장을 할 수 있기를 기대한다.&lt;/p&gt;&#xA;&lt;p&gt;첫 실무 경험이기도 하고 회사를 다니면서 겪은 경험을 기록하고 공유하고 싶어 1–3개월 주기로 회고록을 써보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bfa388ed-86c2-4d3b-80ba-36ba1b0320ec&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

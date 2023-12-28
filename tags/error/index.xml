@@ -7,31 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kmseunh.github.io/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/error/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>데이터: ㅇㅇ없어줄게</title>
       <link>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</guid>
-      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;
-&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;
-&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;&#xA;&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>에러체크 딱딱딱</title>
       <link>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</link>
       <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</guid>
-      <description>&lt;p&gt;코드를 작성하다 보면 밥 먹듯이 에러가 발생하지만, 원인 모를 에러를 마주치면 하루 종일 또는 그 이상이 걸려도 해결하지 못할 때가 있다.&lt;/p&gt;
-&lt;p&gt;만약 에러를 제대로 체크하지 않는다면 정말 간단한 에러를 해결하지 못하고 시간 낭비할 수 있다. &lt;br&gt; (그게… 접니다?)&lt;/p&gt;
-&lt;p&gt;항상 대표님이 에러 로그를 확인하라고 강조하셨는데, 아직 익숙지 않아서 별거 아닌 에러에 삽질하는 상황이 자주 일어났다.&lt;/p&gt;
-&lt;p&gt;따라서 이러한 실수를 줄이기 위해 에러 조치를 어떻게 하면 잘할 수 있을지에 대해 알아보려 한다.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9692a045-ef58-4a1c-adff-7ed533852eb3&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;코드를 작성하다 보면 밥 먹듯이 에러가 발생하지만, 원인 모를 에러를 마주치면 하루 종일 또는 그 이상이 걸려도 해결하지 못할 때가 있다.&lt;/p&gt;&#xA;&lt;p&gt;만약 에러를 제대로 체크하지 않는다면 정말 간단한 에러를 해결하지 못하고 시간 낭비할 수 있다. &lt;br&gt; (그게… 접니다?)&lt;/p&gt;&#xA;&lt;p&gt;항상 대표님이 에러 로그를 확인하라고 강조하셨는데, 아직 익숙지 않아서 별거 아닌 에러에 삽질하는 상황이 자주 일어났다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 이러한 실수를 줄이기 위해 에러 조치를 어떻게 하면 잘할 수 있을지에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9692a045-ef58-4a1c-adff-7ed533852eb3&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
