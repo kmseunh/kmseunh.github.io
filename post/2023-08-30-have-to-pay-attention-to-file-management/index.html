@@ -51,7 +51,7 @@
   />
 
   
-  <title>blog - DevHvun</title>
+  <title>파일 관리 - DevHvun</title>
 
   
   <meta name="theme-color" />
@@ -59,11 +59,13 @@
   
   
   
-  
-  <meta
-    name="description"
-    content="A personal blog"
-  />
+  <meta name="description" content="오늘 크론탭을 수정해야 하는 이슈가 생겨서 코드를 수정하고 실행하고 반복하고 있었다. 
+그런데 로그 찍히는 속도가 많이 더뎌서 코드의 문제인가 하고 살펴보니 디렉토리에 파일이 1000개 정도 있는 것이었다. 
+바로 대표님의 호출.. 백업도 틈틈히 안한 이슈도 스윽 얹어서 파일 관리의 중요성에 대한 설명을 들었다.
+(평소에 정리랑 친하지가 않아서..)
+
+따라서 이번 글에서는 파일 관리에 대해 정리해 보려 한다.
+" />
   <meta name="author" content="1020" />
   
 
@@ -75,6 +77,12 @@
   
   <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
 
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
   
 
   
@@ -109,24 +117,20 @@
 
   
   
-  <link
-    rel="alternate"
-    type="application/rss&#43;xml"
-    href="https://kmseunh.github.io/categories/blog/index.xml"
-    title="DevHvun"
-  />
-  
 
   
   
   
   
   
-  <meta itemprop="name" content="blog">
-<meta itemprop="description" content="">
+  <meta itemprop="name" content="파일 관리">
+<meta itemprop="description" content="파일 관리에 주의를 기울여야 한다."><meta itemprop="datePublished" content="2023-08-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-08-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="199">
+<meta itemprop="keywords" content="2023,work,blog," />
   
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="blog"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="파일 관리"/>
+<meta name="twitter:description" content="파일 관리에 주의를 기울여야 한다."/>
 
   
   
@@ -265,94 +269,94 @@
     >
       
 
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">파일 관리</h1>
 
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Aug 30, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
 
+  <section><p>오늘 크론탭을 수정해야 하는 이슈가 생겨서 코드를 수정하고 실행하고 반복하고 있었다. <br>
+그런데 로그 찍히는 속도가 많이 더뎌서 코드의 문제인가 하고 살펴보니 디렉토리에 파일이 1000개 정도 있는 것이었다. <br>
+바로 대표님의 호출.. 백업도 틈틈히 안한 이슈도 스윽 얹어서 파일 관리의 중요성에 대한 설명을 들었다.<br>
+(평소에 정리랑 친하지가 않아서..)
+<br></p>
+<p>따라서 이번 글에서는 파일 관리에 대해 정리해 보려 한다.</p>
+<p align="center"><img src="https://github.com/kmseunh/css-design-tools/assets/105186724/99a2d689-8622-4840-a424-64b7b23a7b1e" width="500"></p>
+<h2 id="백업은-생명줄">백업은 생명줄..??</h2>
+<p>내가 백업이 중요하다고 느꼈던 것은 이전 버전(?)의 코드를 가져와야 했을 때 다. <br>
+Git을 사용하고 싶었지만 (잘 몰라서 배우고 싶었는데..) 그럴 수 없는 상황이라 백업 스크립트를 만들어서 사용하고 있는데 제일 피하고 싶은 상황은 백업을 하지 않고 코드를 수정하고 저장했을 때 수정 전으로 돌려달라 하는 상황이다. <br>
+<br></p>
+<p>백업이 필요한 가장 큰 이유는 데이터 손실을 방지하고 데이터를 빠르게 복구할 수 있도록 도와주기 때문이다. <br>
+하지만 나처럼 디렉토리에 파일이 1000개 정도 있는 상황이라면 문제를 발생시킬 수 있다. <br>
+디렉토리가 꽉 차있기 때문에 백업 파일도 저장 공간을 많이 차지할 것이고, 백업 시간이 오래 걸릴 것이다. <br>
+또한 파일이 많으면 백업 및 복구 중에 파일 간의 충돌이나 중복으로 인한 오류가 발생할 가능성이 높다고 한다.
+<br></p>
+<p>따라서 파일이 많을 경우에는 다양한 접근 방법을 고려해야 한다. <br>
+우선 디렉토리와 파일을 구조화하여 효율적으로 관리할 수 있도록 구성해야 하고, 사용하지 않는 파일이나 불핋요한 파일을 정기적으로 정리해야 한다. <br>
+아니며 중요한 파일이나 변경된 파일에 중점을 두어 선택적으로 백업하는 방법도 있다.</p>
+<p align="center"><img src="https://github.com/kmseunh/css-design-tools/assets/105186724/ae1c0fe9-d835-487e-93e8-f833a95caafa" width="500"></p></section>
 
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">iTerm2 vs VSCode in Linux</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Jul 9, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://kmseunh.github.io/post/2023-07-09-iterm2-vs-vscode-in-linux-environment/">iTerm2 vs VSCode in Linux</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Form과 Ajax 차이를 알자</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Jun 19, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://kmseunh.github.io/post/2023-06-19-difference-between-form-and-ajax/">Form과 Ajax 차이를 알자</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">데이터: ㅇㅇ없어줄게</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Jun 7, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/">데이터: ㅇㅇ없어줄게</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">에러체크 딱딱딱</h2>
-  <time class="text-sm antialiased opacity-60"
-    >May 27, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/">에러체크 딱딱딱</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">업무이해도의 중요성</h2>
-  <time class="text-sm antialiased opacity-60"
-    >May 14, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/">업무이해도의 중요성</a>
-</section>
-
-
-
-
-<nav class="mt-16 flex">
-  
-  <a class="btn" href="/categories/blog/">← </a>
   
   
-  <a class="btn ml-auto" href="/categories/blog/page/3/"
-    > →</a
-  >
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/2023"
+      >2023</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/work"
+      >work</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
+    >
+    
+  </footer>
   
-</nav>
 
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/"
+      ><span>데이터 비만에서 살아남기</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
 
 
     </main>

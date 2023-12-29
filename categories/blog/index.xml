@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Aug 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>파일 관리</title>
+      <link>https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/</guid>
+      <description>&lt;p&gt;오늘 크론탭을 수정해야 하는 이슈가 생겨서 코드를 수정하고 실행하고 반복하고 있었다. &lt;br&gt;&#xA;그런데 로그 찍히는 속도가 많이 더뎌서 코드의 문제인가 하고 살펴보니 디렉토리에 파일이 1000개 정도 있는 것이었다. &lt;br&gt;&#xA;바로 대표님의 호출.. 백업도 틈틈히 안한 이슈도 스윽 얹어서 파일 관리의 중요성에 대한 설명을 들었다.&lt;br&gt;&#xA;(평소에 정리랑 친하지가 않아서..)&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 파일 관리에 대해 정리해 보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/99a2d689-8622-4840-a424-64b7b23a7b1e&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>데이터 비만에서 살아남기</title>
       <link>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</link>
