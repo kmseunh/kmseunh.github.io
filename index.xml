@@ -10,11 +10,11 @@
     <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>데이터 증가</title>
+      <title>데이터 비만에서 살아남기</title>
       <link>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</link>
       <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</guid>
-      <description>&lt;p&gt;프로젝트를 진행하기 전에는 개발에만 집중하면 무난하게 흘러갈 줄 알았다. &lt;br&gt; 이 생각은 정확히 업무메일을 받은지 10분 만에 산산조각 나버렸다. &lt;br&gt; (근거없는 자신감은 저를 불안하게 해요,,)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/b10d883b-46a0-4794-be35-c8a781e98a89&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;주간 회의 시간에 대표님께서 항상 말씀하시는 것이 있다. &lt;br&gt;&#xA;&lt;em&gt;현재 맡고 있는 프로젝트에 대해 항상 더 발전시키고 향상시킬 생각을 하자.&lt;/em&gt; 라는 말인데 이를 내가 맡은 프로젝트에 적용해 보면 어떤 부분이 있을까 하는 생각이 들었다. &lt;br&gt;&#xA;고민을 해보니 대시보드 특성상 데이터가 늘어나고 이에 따라 처리가 느려지는 이슈가 생각이 났다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;데이터가 늘어날수록 대량의 데이터를 빠르게 저장하고 검색하는 것은 쉽지 않으며, 이로 인해 성능 저하와 함께 데이터 분석에 소요되는 시간이 길어지는 문제가 발생한다. &lt;br&gt;&#xA;검색해 보니 이에 대한 해결책으로 일라스틱 서치와 키바나의 조합이 빛을 발하고 있다고 한다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 위 두가지에 대해 정리해보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/e08f6238-1cd3-4964-88a4-ec7c61daf13d&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>프로젝트 진행 전 체크사항</title>
