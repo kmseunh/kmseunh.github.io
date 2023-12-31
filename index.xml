@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UI 수정지옥</title>
+      <link>https://kmseunh.github.io/post/2023-10-19-endless-requests-for-ui-modification/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-10-19-endless-requests-for-ui-modification/</guid>
+      <description>&lt;p&gt;프로젝트를 진행하기 전 개발하기로 한 대시보드는 사무용 대시보드 한 개였다. &lt;br&gt;&#xA;하지만 프로젝트 마감이 한 달 정도 남은 시점에서 현장용 대시보드도 필요하다는 요청이 있었다.&lt;br&gt;&#xA;지금은 SCADA에서 가져오는 데이터를 화면에 뿌려야 하는 작업을 하고 있는데 데이터 맞추는 것에 시간을 많이 투자하고 있었다.&lt;br&gt;&#xA;결론적으로는 추가적으로 현장용 대시보드를 개발했지만 UI 부분에서 많은 대화(?)를 해도 계속되는 수정에 지치기도 했고 배울 점도 있어서 정리해 보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/65806413-e4b5-4934-8c17-6d8beb267be2&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>크론탭 #!bin/sh</title>
       <link>https://kmseunh.github.io/post/2023-09-21-clone-tab-and-shell-scripts/</link>
