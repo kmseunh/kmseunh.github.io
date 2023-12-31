@@ -51,7 +51,7 @@
   />
 
   
-  <title>점화식적 사고를 하자 - DevHvun</title>
+  <title>크론탭 #!bin/sh - DevHvun</title>
 
   
   <meta name="theme-color" />
@@ -59,12 +59,12 @@
   
   
   
-  <meta name="description" content="프로젝트에서 문제가 발생하면 나는 항상 발생한 문제에 대응하여 해결책을 찾는 데 집중한다. 
-하지만 문제를 해결하고 나면 별생각 없이 넘어가는 편이었다. 
-그러나 비슷한 문제가 반복해서 발생하는 경우 매우 귀찮기도 하고 답답할 때가 많아서 대표님에게 조언을 구한 적이 있었다. 
-대표님은 &lsquo;하나의 문제는 단 한 번만 발생해야 하며, 어떠한 문제에서 DP 규칙성을 찾아 그 규칙성으로 하여금 점화식을 찾아서 해결해야 한다.&rsquo; 라고 말씀하셨다.
+  <meta name="description" content="크론탭은 리눅스 시스템에서 주기적으로 작업을 실행할 수 있게 해주는 유용한 도구이다.
+이를 활용하여 특정 시간에 스크립트를 실행하고 싶을 때, 쉘 스크립트는 강력한 도구가 된다.
+쉘 스크립트를 작성할 때 가장 먼저 보이는 #!/bin/sh는 해당 스크립트가 어떤 쉘에서 실행되어야 하는지 지정하는 부분이다.
+하지만 아직 크론탭에 익숙해져 있지 않아서 쉘의 경로를 지정하지 않고 작업하려고 하다가 삽질을 오래 한 적이 있다.
 
-따라서 이번 글에서는 점화식적 사고를 도입하여 문제를 해결하는 방법에 대해 알아보려 한다.
+따라서 이번 글에는 다양한 환경에서 스크립트가 어떻게 작동하는지 알아보려 한다.
 " />
   <meta name="author" content="1020" />
   
@@ -123,14 +123,14 @@
   
   
   
-  <meta itemprop="name" content="점화식적 사고를 하자">
-<meta itemprop="description" content="문제 해결의 점화식적 사고로, 반복되는 문제에 효과적으로 대응하기"><meta itemprop="datePublished" content="2023-09-02T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-09-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="236">
+  <meta itemprop="name" content="크론탭 #!bin/sh">
+<meta itemprop="description" content="#!/bin/sh가 의미하는 것"><meta itemprop="datePublished" content="2023-09-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-09-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="212">
 <meta itemprop="keywords" content="2023,work,blog," />
   
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="점화식적 사고를 하자"/>
-<meta name="twitter:description" content="문제 해결의 점화식적 사고로, 반복되는 문제에 효과적으로 대응하기"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="크론탭 #!bin/sh"/>
+<meta name="twitter:description" content="#!/bin/sh가 의미하는 것"/>
 
   
   
@@ -271,12 +271,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">점화식적 사고를 하자</h1>
+    <h1 class="!my-0 pb-2.5">크론탭 #!bin/sh</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Sep 2, 2023</time>
+      <time>Sep 21, 2023</time>
       
       
       
@@ -285,29 +285,28 @@
     
   </header>
 
-  <section><p>프로젝트에서 문제가 발생하면 나는 항상 발생한 문제에 대응하여 해결책을 찾는 데 집중한다. <br>
-하지만 문제를 해결하고 나면 별생각 없이 넘어가는 편이었다. <br>
-그러나 비슷한 문제가 반복해서 발생하는 경우 매우 귀찮기도 하고 답답할 때가 많아서 대표님에게 조언을 구한 적이 있었다. <br>
-대표님은 <em>&lsquo;하나의 문제는 단 한 번만 발생해야 하며, 어떠한 문제에서 DP 규칙성을 찾아 그 규칙성으로 하여금 점화식을 찾아서 해결해야 한다.&rsquo;</em> 라고 말씀하셨다.
+  <section><p>크론탭은 리눅스 시스템에서 주기적으로 작업을 실행할 수 있게 해주는 유용한 도구이다.<br>
+이를 활용하여 특정 시간에 스크립트를 실행하고 싶을 때, 쉘 스크립트는 강력한 도구가 된다.<br>
+쉘 스크립트를 작성할 때 가장 먼저 보이는 <code>#!/bin/sh</code>는 해당 스크립트가 어떤 쉘에서 실행되어야 하는지 지정하는 부분이다.
+하지만 아직 크론탭에 익숙해져 있지 않아서 쉘의 경로를 지정하지 않고 작업하려고 하다가 삽질을 오래 한 적이 있다.<br>
 <br></p>
-<p>따라서 이번 글에서는 점화식적 사고를 도입하여 문제를 해결하는 방법에 대해 알아보려 한다.</p>
-<p align="center"><img src="https://github.com/kmseunh/problem-solving-python/assets/105186724/9a349e82-1fb2-4189-ba22-81f08cd2f909" width="500"></p>
-<h2 id="점화식적-사고란">점화식적 사고란</h2>
-<p>점화식은 이전 단계의 값을 기반으로 다음 값을 찾는 수학적 원리를 말한다.<br>
-즉, 처음 문제가 발생했을 때, 그 문제를 근본적으로 이해하고 해결하는 데 초점을 맞추는 것이다.<br>
-이를 바탕으로 비슷한 문제들에 대한 해결책을 파악해냄으로써, 미래에도 비슷한 문제에 대처할 수 있는 능력을 키울 수 있다고 한다.
+<p>따라서 이번 글에는 다양한 환경에서 스크립트가 어떻게 작동하는지 알아보려 한다.</p>
+<p align="center"><img src="https://github.com/kmseunh/css-design-tools/assets/105186724/ed89e9fc-fbc6-4276-9047-259dc857bb5a" width="450"></p>
+<h2 id="binsh을-아세요">#!/bin/sh을 아세요??</h2>
+<p>쉘 스크립트를 작성할 때 가장 먼저 보이는 <code>#!/bin/sh</code>는 해당 스크립트가 어떤 쉘에서 실행되어야 하는지 지정하는 부분이다.<br>
+하지만 이 경로는 서로 다른 환경에서 다를 수 있기 때문에 종종 <code>#!/bin/sh</code>가 의미하는 바를 다르게 이해하기도 한다.
 <br></p>
-<p>점화식적 사고를 적용하려면 처음 문제가 발생했을 때, 그 원인과 특성을 꼼꼼히 파악하고, 이를 해결하기 위한 첫 번째 단계를 찾아야 한다.<br>
-이 단계를 마치 점화식의 초기 항처럼 여기고, 이를 바탕으로 비슷한 상황에 대응할 수 있는 해결책을 찾아내면 된다고 한다.<br>
-(말은 쉽지&hellip;)
+<p><code>#!/bin/sh</code>에서 <code>/bin/sh</code>는 일반적으로 시스템의 기본 쉘을 나타낸다.<br>
+이것은 쉘 스크립트가 리눅스나 유닉스 기반 시스템에서 실행될 때 사용되는 기본적인 경로를 말한다.<br>
+하지만 다양한 리눅스 배포판이나 다른 운영체제에서는 이 경로가 다를 수 있다.
 <br></p>
-<p align="center"><img src="https://github.com/kmseunh/problem-solving-python/assets/105186724/71c29dd2-137e-44c7-b30d-291fdbc990ca" width="450"></p>
-<p>이러한 방식은 문제의 본질을 깊이 이해하고, 비슷한 문제들에 대한 효과적인 해결책을 만들어내는 데 도움이 된다고 한다.<br>
-한 번의 문제 해결을 통해 비슷한 상황에 대한 해결책을 만들어냄으로써 효율성을 높일 수 있다.
+<p>따라서 <code>#!/bin/sh</code>는 실제 스크립트가 실행될 환경에 따라 쉘의 경로를 지정하는 것이라고 볼 수 있다.<br>
+예를 들어, 서로 다른 환경에서는 각기 다른 경로로 설정될 수 있으며, 이는 해당 시스템에서 사용하는 기본 쉘의 위치에 따라 달라진다.
 <br></p>
-<p>문제가 발생했을 때 그 문제 자체에만 집중하는 것이 아니라, 문제 해결의 점화식적 사고를 통해 해당 문제를 해결하는 방법을 배우고, 미래에 반복되는 문제에 대처할 수 있는 능력을 기르는 것이 중요하다고 한다.<br>
-이를 통해 더욱 효과적으로 문제를 해결하고, 지속적인 성장을 이룰 수 있을 것이라 기대한다.<br>
-천천히 적용해가면서 이해하고 익숙해져야 될 것 같다.</p></section>
+<p>이러한 유동적인 경로 설정은 스크립트를 다른 환경으로 이동시킬 때 특히 중요하다.<br>
+다양한 운영체제나 다른 시스템에서도 스크립트가 동작할 수 있도록 유연하게 작성할 수 있도록 도와준다.
+<br></p>
+<p>요약하자면, <code>#!/bin/sh</code>는 해당 스크립트가 실행될 환경의 기본 쉘을 나타내며, 다양한 환경에서의 호환성을 유지하며 유연하게 작동할 수 있도록 도와주는 중요한 역할을 한다.</p></section>
 
   
   
@@ -340,17 +339,11 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-09-21-clone-tab-and-shell-scripts/"
-      ><span class="mr-1.5">←</span><span>크론탭 #!bin/sh</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/"
-      ><span>백업하기 vs 백업 안 하고 백억 받기</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2023-09-02-approach-as-a-problem-solving-to-recursive-formula/"
+      ><span>점화식적 사고를 하자</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
