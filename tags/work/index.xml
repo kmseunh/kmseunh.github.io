@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 30 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>점화식</title>
+      <link>https://kmseunh.github.io/post/2023-09-02-approach-as-a-problem-solving-to-recursive-formula/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-09-02-approach-as-a-problem-solving-to-recursive-formula/</guid>
+      <description>&lt;p&gt;프로젝트에서 문제가 발생하면 나는 항상 발생한 문제에 대응하여 해결책을 찾는 데 집중한다. &lt;br&gt;&#xA;하지만 문제를 해결하고 나면 별생각 없이 넘어가는 편이었다. &lt;br&gt;&#xA;그러나 비슷한 문제가 반복해서 발생하는 경우 매우 귀찮기도 하고 답답할 때가 많아서 대표님에게 조언을 구한 적이 있었다. &lt;br&gt;&#xA;대표님은 &lt;em&gt;&amp;lsquo;하나의 문제는 단 한 번만 발생해야 하며, 어떠한 문제에서 DP 규칙성을 찾아 그 규칙성으로 하여금 점화식을 찾아서 해결해야 한다.&amp;rsquo;&lt;/em&gt; 라고 말씀하셨다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 점화식적 사고를 도입하여 문제를 해결하는 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/problem-solving-python/assets/105186724/9a349e82-1fb2-4189-ba22-81f08cd2f909&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>백업하기 vs 백업 안 하고 백억 받기</title>
       <link>https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/</link>
