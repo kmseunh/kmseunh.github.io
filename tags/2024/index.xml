@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2024 on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/2024/</link>
+    <description>Recent content in 2024 on DevHvun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>새해</title>
+      <link>https://kmseunh.github.io/post/2024-01-02-date-issue-as-the-year-changes/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-01-02-date-issue-as-the-year-changes/</guid>
+      <description>&lt;p&gt;새해가 되면서 기존에 진행했던 프로젝트의 &lt;code&gt;Date&lt;/code&gt; 이슈가 우수수 쏟아졌다. &lt;br&gt;&#xA;현재 년도와 이전 년도의 데이터를 DB에서 &lt;code&gt;Date&lt;/code&gt; 기준으로 조회를 해서 가져와야하는데 그러지 못했다. &lt;br&gt;&#xA;&lt;code&gt;devtools&lt;/code&gt;에서 수많은 에러 로그들을 마주했을 때 기분이란 참.. 허허&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/til/assets/105186724/1ee48d9f-997f-409c-8663-1f4740b26131&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
