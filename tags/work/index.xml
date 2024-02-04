@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>괜히 JavsScript로 화면 그린 그날</title>
+      <link>https://kmseunh.github.io/post/2024-01-30-problems-when-drawing-a-screen-with-javascript/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-01-30-problems-when-drawing-a-screen-with-javascript/</guid>
+      <description>&lt;p&gt;평소에는 HTML로 화면을 그리는 편인데, 오늘 처음으로 JavsScript로 도전하고 싶은 생각이 들었다. &lt;br&gt;&#xA;참지 못하고 저질러버렸는데&amp;hellip; div 태그로 각각 그리드 나누고 패딩 조절하는 것보다 훨씬 코드량도 적고 간단해서 좋았다. &lt;br&gt;&#xA;라고 생각한 지 10분도 안 돼서 문제가 생겼다..&lt;br&gt;&#xA;(코드가 짧고 단순하면 좋은 건 줄 알았지..)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/react-memo/assets/105186724/b74e60d9-a43a-4451-9652-f6322752e19a&#34; width=&#34;350&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>기획하는 승현 감성 모르면 나가라</title>
       <link>https://kmseunh.github.io/post/2024-01-22-experience-project-planning/</link>
