@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 30 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>타임스탬프 우습게 보지마라</title>
+      <link>https://kmseunh.github.io/post/2024-02-02-html-caching-timestamp-on-real-time-queries/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-02-02-html-caching-timestamp-on-real-time-queries/</guid>
+      <description>&lt;p&gt;실시간으로 화면을 보여주는 기능을 구현해야 해서 개발을 하고 있었는데 브라우저를 리프레시만 하는 간단한 기능이라 크게 어려움은 없었다. &lt;br&gt;&#xA;그러나 살짝 쎄한 느낌이 들었는데, 아니나 다를까 실시간으로 업데이트된 내용이 화면에 보여져야 되는데 제대로 전달되지 않는 문제가 생긴 것이다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/svelte-projects/assets/105186724/91e763ba-b366-4cc7-896f-e60dc173435f&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>괜히 JavsScript로 화면 그린 그날</title>
       <link>https://kmseunh.github.io/post/2024-01-30-problems-when-drawing-a-screen-with-javascript/</link>
