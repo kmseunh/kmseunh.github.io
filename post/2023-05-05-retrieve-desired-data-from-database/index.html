@@ -122,7 +122,7 @@
   <meta itemprop="name" content="싱글벙글(?) 쿼리문 체험기">
 <meta itemprop="description" content="데이터베이스에서 원하는 데이터 검색 이슈"><meta itemprop="datePublished" content="2023-05-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-05-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="356">
+<meta itemprop="wordCount" content="417">
 <meta itemprop="keywords" content="2023,work,database," />
   
   <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="싱글벙글(?) 쿼리문 체험기"/>
@@ -286,11 +286,42 @@
 <p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1" width="500"></p>
 <br>
 <h2 id="무수히-이어진-sql-쿼리문">무수히 이어진 SQL 쿼리문</h2>
-<p>처음 DB 쪽 파이썬 코드를 봤을 때 당황스러웠다.</p>
+<p>처음 백엔드 쪽 파이썬 코드를 봤을 때 당황스러웠다.</p>
 <p>특정 함수의 stmt 변수에 SQL 쿼리문이 담겨 있고, 해당 쿼리를 실행하여 결괏값을 변수에 저장하는 Python 코드들이었는데 우선 SQL 쿼리문 부터 굉장히 길고 복잡해 보였다.</p>
-<p>아래는 Python 코드 중 하나의 쿼리문의 구조를 나타낸 코드이다.</p>
-<script src="https://gist.github.com/kmseunh/3ec5eeabc8706d354ba0f59eed57714a.js"></script>
-<br>
+<p>아래는 Python 코드 중 대시보드를 조회하는 쿼리문의 구조를 나타낸 코드이다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span>, 
+</span></span><span style="display:flex;"><span>    IFNULL(group2, <span style="color:#e6db74">&#39;전체&#39;</span>) <span style="color:#66d9ef">AS</span> group2, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">cycle</span>, 
+</span></span><span style="display:flex;"><span>    b_date, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">AVG</span>(column6) <span style="color:#66d9ef">AS</span> avg_column6, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">AVG</span>(column7) <span style="color:#66d9ef">AS</span> avg_column7, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(column8) <span style="color:#66d9ef">AS</span> sum_column8, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(column9) <span style="color:#66d9ef">AS</span> sum_column9 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">table_name</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;타입이름 1&#39;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">AND</span> (
+</span></span><span style="display:flex;"><span>        b_date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;%s&#39;</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">OR</span> (
+</span></span><span style="display:flex;"><span>            b_date <span style="color:#66d9ef">BETWEEN</span> DATE_FORMAT(
+</span></span><span style="display:flex;"><span>                LAST_DAY(
+</span></span><span style="display:flex;"><span>                    DATE_SUB(<span style="color:#e6db74">&#39;%s&#39;</span>, INTERVAL <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">MONTH</span>)
+</span></span><span style="display:flex;"><span>                ), 
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;%Y-%m-01&#39;</span>
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">AND</span> LAST_DAY(
+</span></span><span style="display:flex;"><span>                DATE_SUB(<span style="color:#e6db74">&#39;%s&#39;</span>, INTERVAL <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">MONTH</span>)
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>    ) 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span>, 
+</span></span><span style="display:flex;"><span>    group2, 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">cycle</span>, 
+</span></span><span style="display:flex;"><span>    b_date;
+</span></span></code></pre></div><br>
 위 쿼리문은 다음과 같은 기능을 수행한다.
 <ol>
 <li>
@@ -313,7 +344,7 @@
 두 번째는 위 쿼리문을 보고 SQL에 직접 입력해서 데이터를 조회했을 때다.</p>
 <p>깔끔하게 코드를 분리하여 가독성을 높이는 부분은 어느 정도 할 수 있지만 쿼리문은 많은 공부가 필요할 것 같다.</p>
 <p>단순하게 생각하면 &lsquo;<em>SQL 쿼리문을 실행하여 결과 값을 변수에 저장한 후, json_data의 값을 기반으로 데이터베이스에서 쿼리를 실행하여 결과를 반환한다.</em>’ 라고 할 수 있다. <br> SQL 문법을 정확히 이해하고 사용할 줄 알아야 원하는 데이터를 가져올 수 있고, 그래야 결과를 반환하기 위한 파이썬 코드를 구현할 수 있을 것 같다. <br> (넓게는 2가지 부족한 부분을 채워야 하고 구체적으로 들어가면…)</p>
-<br>
+<hr>
 <p>매일매일 부족한 부분을 발견하면서 해야 할 공부가 쌓여가는데, 배우는 내용도 많아지고 있다. <br> 특히 DB는 내가 좋아한다고만 하고 제대로 공부해 보려 하지 않았기 때문에 더 어렵다고 느껴진다.</p>
 <p>이제라도 중요하다는 것을 깨달아서 다행이라고 생각하고 조금 더 비중을 두고 공부해야겠다. <br> 그래야지 나에게 데이터 처리 코드나 데이터베이스 코드를 코딩할 기회가 생길 수 있을 것 같다.</p>
 <p><strong><em>아니면 그냥.. ‘제가 해볼게요’라고 할까..??</em></strong></p></section>
