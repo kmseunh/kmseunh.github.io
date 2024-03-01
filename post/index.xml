@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>테이블구조를 안본건 너무 심했잖아..</title>
+      <link>https://kmseunh.github.io/post/2024-02-18-need-to-understand-the-structure-of-database-tables/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-02-18-need-to-understand-the-structure-of-database-tables/</guid>
+      <description>&lt;p&gt;기존에 진행한 프로젝트에 계정 관리 페이지를 만들어 달라는 요청이 있었다. &lt;br&gt;&#xA;이전에 비슷한 작업을 많이 해보았기 때문에 큰 어려움 없이 개발할 수 있을 거라고 생각했다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;하지만 로그에 에러가 계속 찍혀서 확인해 보니 회원가입 양식에 정보를 입력하고 제출하면, 해당 정보를 데이터베이스에 저장하는 과정에서 문제가 발생한 것이었다. &lt;br&gt;&#xA;(기존 로그들이 너무 많아서 정신 나가는 줄&amp;hellip;)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/kmseunh/assets/105186724/44fdb377-9ae9-4ff9-91dd-ee4383eea7ae&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>타임스탬프 우습게 보지마라</title>
       <link>https://kmseunh.github.io/post/2024-02-02-html-caching-timestamp-on-real-time-queries/</link>
