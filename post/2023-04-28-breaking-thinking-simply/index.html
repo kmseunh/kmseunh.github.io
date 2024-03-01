@@ -123,7 +123,7 @@
   <meta itemprop="name" content="유연한 사고, 단순하지 않기">
 <meta itemprop="description" content="코드를 짤 때 가독성을 고려하지 않아서 생긴 이슈"><meta itemprop="datePublished" content="2023-04-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-04-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="258">
+<meta itemprop="wordCount" content="372">
 <meta itemprop="keywords" content="2023,work," />
   
   <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="유연한 사고, 단순하지 않기"/>
@@ -293,11 +293,44 @@
 <p>다른 사람들의 문제풀이를 볼 수 있어서 살짝 구경해 볼까 하고 들어가 봤는데 신선한 충격을 받았다. <br> 1시간 동안 머리 쥐어짜서 10줄 넘게 작성되어 있는 내 코드를 보다가 4줄도 안되는 코드를 봤을 때의 기분이란..</p>
 <p>프로젝트에 실제 사용되는 코드랑 알고리즘이랑은 연관되어 있는 듯 없는 듯 아직 내가 판단하기에는 애매하기 때문에 좋은 예시라고 할 수는 없다. <br> (그래도 공감..해줘)</p>
 <p>항상 일정 부분 개발을 완료하거나 이슈사항이 생기면 대표님과 함께 동료검토를 한다. <br> 그러면서 코드 리뷰도 하는 경우도 있는데 한번은 <code>if ~ else</code> 문이 범벅이거나 계속 코드를 나열해가면서 데이터를 필터링하는 내 코드를 <code>for</code> 문으로 간략하게 리팩토링을 해주셨다.</p>
-<h3 id="수정-전">수정 전</h3>
-<script src="https://gist.github.com/kmseunh/aec476d255d2b4e556b72c6f86878fd7.js"></script>
-<h3 id="수정-후">수정 후</h3>
-<script src="https://gist.github.com/kmseunh/72f37079e5362a99b21020e5f5fcb193.js"></script>
-<p><em>확실히 가독성도 높아지고 간단해보인다.</em></p>
+<h3 id="수정-전-예시">수정 전 예시</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processData</span>(<span style="color:#a6e22e">data</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;A&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Apple&#39;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;B&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Banana&#39;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;C&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Cherry&#39;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;D&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Date&#39;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;E&#39;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Elderberry&#39;</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Unknown&#39;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="수정-후-예시">수정 후 예시</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// for 문을 사용한 코드
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processData</span>(<span style="color:#a6e22e">data</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dataMap</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Apple&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;B&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Banana&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;C&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Cherry&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;D&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Date&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;E&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Elderberry&#39;</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Unknown&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">key</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">dataMap</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">key</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dataMap</span>[<span style="color:#a6e22e">key</span>];
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>확실히 가독성도 높아지고 간단해보인다.</em></p>
 <hr>
 <p>코드는 사람에 따라서 다르게 짜일 수 있기 때문에 재밌는 것 같다. <br> 어디선가 ‘<em>컴퓨터가 이해할 수 있는 코드는 누구나 짤 수 있고, 좋은 프로그래머는 사람이 이해할 수 있는 코드를 짠다.</em>’는 문구를 본 적이 있다.</p>
 <p>항상 다양하게 생각하는 습관을 가져서 리팩토링뿐만 아니라 개발하는 데에 있어 좋은 프로그래머가 되고 싶다.</p></section>
