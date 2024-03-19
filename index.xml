@@ -11,9 +11,9 @@
     <atom:link href="https://kmseunh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>김승현 세션 DB 사건</title>
-      <link>https://kmseunh.github.io/post/2024-03-19/</link>
+      <link>https://kmseunh.github.io/post/2024-03-19-session-db-incident/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/post/2024-03-19/</guid>
+      <guid>https://kmseunh.github.io/post/2024-03-19-session-db-incident/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;김승현이 SpringBoot로 작업하면서 로그인 시 세션을 생성할 때 DB에 저장해버린 사건을 말한다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;세션(Session)은 웹 애플리케이션에서 사용자의 상태를 유지하고 추적하는 데 중요한 역할을 한다. &lt;br&gt;&#xA;일반적으로 세션은 서버 측에서 관리되며, 클라이언트와 서버 간의 통신을 통해 식별된다고 한다.&lt;/p&gt;&#xA;&lt;p&gt;이러한 세션 기반 로그인 기능을 구현하는 중에 세션의 관리 및 수명에 대한 부분을 잘 이해하지 못해서 바보 같은 짓을 벌이고 말았다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/FastAPI/assets/105186724/d2724ff5-7b00-44d3-9239-299712ddfe04&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
