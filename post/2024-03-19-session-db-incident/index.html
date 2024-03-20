@@ -126,7 +126,7 @@
   <meta itemprop="name" content="김승현 세션 DB 사건">
 <meta itemprop="description" content="김승현이 세션을 생성하고 db에 저장한 사건이다."><meta itemprop="datePublished" content="2024-03-19T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-03-19T00:00:00+00:00" />
-<meta itemprop="wordCount" content="301">
+<meta itemprop="wordCount" content="303">
 <meta itemprop="keywords" content="2024,work,blog," />
   
   <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="김승현 세션 DB 사건"/>
@@ -292,7 +292,7 @@
 일반적으로 세션은 서버 측에서 관리되며, 클라이언트와 서버 간의 통신을 통해 식별된다고 한다.</p>
 <p>이러한 세션 기반 로그인 기능을 구현하는 중에 세션의 관리 및 수명에 대한 부분을 잘 이해하지 못해서 바보 같은 짓을 벌이고 말았다.</p>
 <p align="center"><img src="https://github.com/kmseunh/FastAPI/assets/105186724/d2724ff5-7b00-44d3-9239-299712ddfe04" width="450"></p>
-<h2 id="문제점">문제점</h2>
+<h2 id="어떤-이슈를-만들었나">어떤 이슈를 만들었나</h2>
 <p>SpringBoot에서 HttpSession을 사용하여 세션을 관리하는 코드를 작성하고 있었는데 로그인 시 세션이 생성되고 DB에 저장되도록 구현했다. <br>
 다 끝낸 것 같았지만, 실행 중인 창을 닫으면 세션이 삭제되지 않는 문제가 발생했다. <br></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span>(<span style="color:#e6db74">&#34;/login&#34;</span>)
