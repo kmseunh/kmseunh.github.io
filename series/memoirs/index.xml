@@ -4,11 +4,18 @@
     <title>Memoirs on DevHvun</title>
     <link>https://kmseunh.github.io/series/memoirs/</link>
     <description>Recent content in Memoirs on DevHvun</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/series/memoirs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>역시 파일 전송은 SFTP</title>
+      <link>https://kmseunh.github.io/post/2024-04-23-mac/</link>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-04-23-mac/</guid>
+      <description>&lt;p&gt;추가 개발을 위한 개발 환경을 구축하고 있었는데, 새로운 테이블이 필요해서 다른 서버의 테이블을 가져와야 하는 상황이 발생했다. &lt;br&gt;&#xA;전에는 Window로 파일을 보내 FileZilla(FTP 프로그램)를 사용하여 서버로 파일을 보냈었다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;하지만 이번에는 SFTP 기능을 사용하여 Mac에서 바로 업로드를 시도했다. &lt;br&gt;&#xA;SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호화되므로 보안적인 이점을 제공하며, 이를 통해 중간에서의 데이터 유출을 방지하고 안전하게 파일을 전송할 수 있다고 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/til/assets/105186724/a949cb2a-1872-420b-a8cd-016c1f61aef9&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>김승현 세션 DB 사건</title>
       <link>https://kmseunh.github.io/post/2024-03-19-session-db-incident/</link>

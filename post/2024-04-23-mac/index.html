@@ -1,0 +1,396 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>역시 파일 전송은 SFTP - DevHvun</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="추가 개발을 위한 개발 환경을 구축하고 있었는데, 새로운 테이블이 필요해서 다른 서버의 테이블을 가져와야 하는 상황이 발생했다. 
+전에는 Window로 파일을 보내 FileZilla(FTP 프로그램)를 사용하여 서버로 파일을 보냈었다. 
+하지만 이번에는 SFTP 기능을 사용하여 Mac에서 바로 업로드를 시도했다. 
+SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호화되므로 보안적인 이점을 제공하며, 이를 통해 중간에서의 데이터 유출을 방지하고 안전하게 파일을 전송할 수 있다고 한다.
+" />
+  <meta name="author" content="1020" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/linkedin.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.125.3">
+
+  
+  
+
+  
+  
+  
+  
+  
+
+
+  
+  
+  <meta itemprop="name" content="역시 파일 전송은 SFTP">
+  <meta itemprop="description" content="맥에서 서버에 파일 업로드 하기">
+  <meta itemprop="datePublished" content="2024-04-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-04-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="254">
+  <meta itemprop="keywords" content="2024,Work,Blog">
+  
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="역시 파일 전송은 SFTP">
+<meta name="twitter:description" content="맥에서 서버에 파일 업로드 하기">
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://kmseunh.github.io/"
+      >DevHvun</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="404.html"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="404.html"
+        >Portfolio</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/seunghyun-kim-250b562a6"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://kmseunh.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">역시 파일 전송은 SFTP</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Apr 23, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>추가 개발을 위한 개발 환경을 구축하고 있었는데, 새로운 테이블이 필요해서 다른 서버의 테이블을 가져와야 하는 상황이 발생했다. <br>
+전에는 Window로 파일을 보내 FileZilla(FTP 프로그램)를 사용하여 서버로 파일을 보냈었다. <br></p>
+<p>하지만 이번에는 SFTP 기능을 사용하여 Mac에서 바로 업로드를 시도했다. <br>
+SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호화되므로 보안적인 이점을 제공하며, 이를 통해 중간에서의 데이터 유출을 방지하고 안전하게 파일을 전송할 수 있다고 한다.</p>
+<p align="center"><img src="https://github.com/kmseunh/til/assets/105186724/a949cb2a-1872-420b-a8cd-016c1f61aef9" width="450"></p>
+<h2 id="sftp-너도-쓸-수-있어">SFTP 너도 쓸 수 있어</h2>
+<p>SFTP 연결방법은 다음과 같다. <br>
+( iTerm2를 열며.. )</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sftp -oPort<span style="color:#f92672">=</span>port번호 username@server<span style="color:#f92672">(</span>ip 또는 url<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>비밀번호를 입력하고 &ldquo;sftp&gt;&rdquo; 프롬프트가 나타나면,  SFTP에 성공적으로 로그인한 것이다. <br>
+이제 로컬 파일을 서버로 전송하려면 다음 명령을 사용한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>put /로컬/파일/경로/예시.txt /서버/디렉토리/경로/예시.txt
+</span></span></code></pre></div><ul>
+<li><code>/로컬/파일/경로/예시.txt</code>는 로컬 시스템의 파일 경로</li>
+<li><code>/서버/디렉토리/경로/예시.txt</code>는 서버의 대상 디렉토리 경로</li>
+</ul>
+<p>이렇게 하면 파일 업로드가 된다는데 나는 <code>No such file or directory</code> 에러가 발생했다. <br></p>
+<p>이 에러는 일반적으로 서버에 대상 디렉토리가 없거나 업로드할 파일의 경로가 잘못되었을 때 발생한다고 한다. <br>
+하지만 로컬과 서버에서 <code>pwd</code> 명령어로 경로를 출력해서 사용했는데, 에러가 발생해서 당황스러웠다. <br></p>
+<h2 id="도커는-벽이야">도커는 벽이야</h2>
+<p>파일 업로드가 실패한 이유로 도커(Docker)의 영향이 있었다. <br>
+일반적으로 SSH나 SFTP를 통해 서버에 연결할 때는 서버의 파일 시스템에 직접 접근할 수 있지만 Docker와 같은 컨테이너 기술을 사용할 때는 이러한 접근이 제한될 수 있다고 한다. <br></p>
+<p>도커 컨테이너 내부에서 실행 중인 서비스나 어플리케이션은 호스트 시스템과 완전히 분리되어 있으며, 도커 호스트와는 별도의 파일 시스템을 가지고 있기 때문에 도커 컨테이너 내부에서는 호스트 시스템의 파일 시스템에 직접 접근할 수 없다고 한다.</p>
+<blockquote>
+<p>따라서 파일을 서버로 업로드할 때는 도커 컨테이너 내부의 경로가 아닌 도커 호스트의 경로를 사용해야 한다.</p>
+</blockquote>
+<p align="center"><img src="https://github.com/kmseunh/til/assets/105186724/a0f66fc2-e5ab-4430-851c-0c6f1513607c" width="450"></p>
+<p>새로 알게 된 부분 중에 제일 인상적인 것은 도커 호스트의 데이터베이스를 수정하면 서버 내부의 데이터베이스도 영향을 받는다는 점이었다. <br>
+도커 컨테이너 내부로 sql 파일을 어떻게 옮길지 고민했는데 다행이었다. <br></p></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/2024"
+      >2024</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/work"
+      >work</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2024-03-19-session-db-incident/"
+      ><span>김승현 세션 DB 사건</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://kmseunh.github.io/">DevHvun</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
