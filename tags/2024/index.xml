@@ -7,20 +7,27 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/2024/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>좌충우돌 권한관리 기능 구현하기</title>
+      <link>https://kmseunh.github.io/post/2024-06-24-implement-authorization-management-functions/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-06-24-implement-authorization-management-functions/</guid>
+      <description>&lt;p&gt;매일 데이터 집계 로직을 작성하고 검증하는 작업을 주로 하던 중, 프로젝트에서 권한 관리 기능이 필요하게 되었다. &lt;br&gt;&#xA;권한 관리는 이전부터 구현해보고 싶었던 기능 중 하나였고, 머릿속으로는 이미 구상이 다 되어 있어 자신만만하게 시작했지만, 역시나 쉽지 않았다. &lt;br&gt;&#xA;( 특히, 관리 측면에서 신경 써야 할 부분이 많았다. )&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/f6802f08-1949-4c7c-80c5-5fac10830551&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>signed unsigned 데이터 타입</title>
-      <link>https://kmseunh.github.io/post/2024-05-20-mac/</link>
+      <link>https://kmseunh.github.io/post/2024-05-20-signed-unsigned-data-type/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/post/2024-05-20-mac/</guid>
+      <guid>https://kmseunh.github.io/post/2024-05-20-signed-unsigned-data-type/</guid>
       <description>&lt;p&gt;항상 출근하면 첫 번째로 하는 일은 대시보드 페이지에 접속해 어제와 현재의 각 공장별 데이터를 확인하여 이상이 없는지 점검하는 것이다.&lt;br&gt;&#xA;한동안 이상이 없었던 그래프가 지난주 금요일 데이터만 기하급수적으로 높게 치솟았고, SCADA에서 받아오는 데이터가 너무 높게 나오는 현상이 발생했다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/java-study/assets/105186724/b008d927-9053-4248-9bcf-d5cb87b922ec&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>역시 파일 전송은 SFTP</title>
-      <link>https://kmseunh.github.io/post/2024-04-23-mac/</link>
+      <link>https://kmseunh.github.io/post/2024-04-23-file-transfer-to-sftp/</link>
       <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/post/2024-04-23-mac/</guid>
+      <guid>https://kmseunh.github.io/post/2024-04-23-file-transfer-to-sftp/</guid>
       <description>&lt;p&gt;추가 개발을 위한 개발 환경을 구축하고 있었는데, 새로운 테이블이 필요해서 다른 서버의 테이블을 가져와야 하는 상황이 발생했다. &lt;br&gt;&#xA;전에는 Window로 파일을 보내 FileZilla(FTP 프로그램)를 사용하여 서버로 파일을 보냈었다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;하지만 이번에는 SFTP 기능을 사용하여 Mac에서 바로 업로드를 시도했다. &lt;br&gt;&#xA;SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호화되므로 보안적인 이점을 제공하며, 이를 통해 중간에서의 데이터 유출을 방지하고 안전하게 파일을 전송할 수 있다고 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/til/assets/105186724/a949cb2a-1872-420b-a8cd-016c1f61aef9&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>

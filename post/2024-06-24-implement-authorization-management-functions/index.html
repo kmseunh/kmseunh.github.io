@@ -1,0 +1,400 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>좌충우돌 권한관리 기능 구현하기 - DevHvun</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="매일 데이터 집계 로직을 작성하고 검증하는 작업을 주로 하던 중, 프로젝트에서 권한 관리 기능이 필요하게 되었다. 
+권한 관리는 이전부터 구현해보고 싶었던 기능 중 하나였고, 머릿속으로는 이미 구상이 다 되어 있어 자신만만하게 시작했지만, 역시나 쉽지 않았다. 
+( 특히, 관리 측면에서 신경 써야 할 부분이 많았다. )
+" />
+  <meta name="author" content="1020" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/linkedin.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.127.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+
+
+  
+  
+  <meta itemprop="name" content="좌충우돌 권한관리 기능 구현하기">
+  <meta itemprop="description" content="좌충우돌 권한관리 기능 구현하기">
+  <meta itemprop="datePublished" content="2024-06-24T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-06-24T00:00:00+00:00">
+  <meta itemprop="wordCount" content="333">
+  <meta itemprop="keywords" content="2024,Work,Blog">
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="좌충우돌 권한관리 기능 구현하기">
+  <meta name="twitter:description" content="좌충우돌 권한관리 기능 구현하기">
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://kmseunh.github.io/"
+      >DevHvun</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="404.html"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="404.html"
+        >Portfolio</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/seunghyun-kim-250b562a6"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://kmseunh.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">좌충우돌 권한관리 기능 구현하기</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Jun 24, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>매일 데이터 집계 로직을 작성하고 검증하는 작업을 주로 하던 중, 프로젝트에서 권한 관리 기능이 필요하게 되었다. <br>
+권한 관리는 이전부터 구현해보고 싶었던 기능 중 하나였고, 머릿속으로는 이미 구상이 다 되어 있어 자신만만하게 시작했지만, 역시나 쉽지 않았다. <br>
+( 특히, 관리 측면에서 신경 써야 할 부분이 많았다. )</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/f6802f08-1949-4c7c-80c5-5fac10830551" width="450"></p>
+<h2 id="문제">문제</h2>
+<p>처음엔 각 팀별로 접근 가능한 아이디와 전체 접근 가능한 아이디를 만들어, 각 아이디의 권한에 따라 페이지 접근 시 보여지는 기능을 구분하면 될 것이라고 생각했다.</p>
+<p>기존 계정 관리 테이블에 각 공장과 팀별 고유 시퀀스를 할당할 수 있도록 <code>user_acc</code> 테이블을 만들어 UserId를 매핑했다. <br>
+이후, 웹 페이지에서 DataTable을 사용해 각 계정별 접근 권한이 주어진 팀을 체크할 수 있는 권한 관리 페이지를 만들었다. <br>
+(원래는 HandersonTable을 사용하려고 했지만&hellip;)</p>
+<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/db15686d-bea0-49d5-9b88-c4383d990f53" width="450"></p>
+<p>하지만, 예기치 못한 문제가 발생했다. <br>
+Flask를 사용하고 있었기 때문에 전역 객체 <code>g</code>를 활용하여 로그인 시 해당 ID의 권한 목록을 가져오려 했다. <br>
+그러나 전체 접근이 가능한 아이디로 권한 목록을 세션에 저장하려 할 때, 허용된 권한이 5개라면 유저 정보도 5개를 가져와 저장하기 어려운 상황이 발생했다.</p>
+<p>또 다른 문제는 JavaScript를 사용해 <code>selectbox</code>를 처리할 때, 특정 팀의 데이터만 볼 수 있도록 고정했지만, js 코드 중복으로 인해 의도한 대로 작동하지 않았다. <br>
+다른 js 파일에서 <code>selectbox</code>를 생성하는 방식 때문에, 렌더링 템플릿으로 적용되지 않았습니다.</p>
+<h2 id="해결방안">해결방안</h2>
+<h4 id="1-유저-정보-중복-문제-해결">1. 유저 정보 중복 문제 해결</h4>
+<p>권한 개수만큼 유저 정보를 가져오는 이슈는 테이블을 분리하는 방법으로 해결했다. <br>
+먼저, 로그인을 위해 아이디와 비밀번호로 유저 정보를 확인하고, 해당 유저의 ID로 권한을 조회하여 가져왔다. <br>
+이후, 세션에서 사용하기 쉽게 딕셔너리로 데이터를 변환하여 저장했다.</p>
+<h4 id="2-javascript-중복-문제-해결">2. JavaScript 중복 문제 해결</h4>
+<p>JavaScript가 중복되는 문제는 다른 js 파일에서 <code>select box</code>를 생성하기 때문에 렌더 템플릿으로 적용되지 않았다. <br>
+해당 함수를 수정하여 일반 유저로 로그인 시 담당 공장만 선택할 수 있도록 변경했다. <br>
+구체적으로, <code>select box</code>를 동적으로 생성하여 사용자에게 허용된 선택지만 제공하는 방식으로 변경하여 중복 문제를 해결했다.</p>
+<hr>
+<h3 id="배운점">배운점</h3>
+<p>비록 간단한 권한 관리 기능이었지만, 생각보다 신경 쓸 부분이 많았고, 특히 다음과 같은 점을 배웠다.</p>
+<ul>
+<li>테이블 분리의 중요성: 기능을 한 테이블에 모두 담으려 하지 말고, 세분화하여 관리하는 것이 중요하다는 교훈을 얻었다.</li>
+<li>JavaScript 코드 관리: JavaScript 코드가 중복되지 않도록 신경 써서 관리해야 함을 깨달았다.
+권한 관리 기능을 통해 작은 문제라도 놓치지 말고 세심하게 살피는 것이 중요하다는 점을 다시 한 번 되새기게 되었다.</li>
+</ul></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/2024"
+      >2024</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/work"
+      >work</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2024-05-20-signed-unsigned-data-type/"
+      ><span>signed unsigned 데이터 타입</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://kmseunh.github.io/">DevHvun</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
