@@ -14,7 +14,7 @@
       <link>https://kmseunh.github.io/post/2024-06-24-implement-authorization-management-functions/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2024-06-24-implement-authorization-management-functions/</guid>
-      <description>&lt;p&gt;매일 데이터 집계 로직을 작성하고 검증하는 작업을 주로 하던 중, 프로젝트에서 권한 관리 기능이 필요하게 되었다. &lt;br&gt;&#xA;권한 관리는 이전부터 구현해보고 싶었던 기능 중 하나였고, 머릿속으로는 이미 구상이 다 되어 있어 자신만만하게 시작했지만, 역시나 쉽지 않았다. &lt;br&gt;&#xA;( 특히, 관리 측면에서 신경 써야 할 부분이 많았다. )&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/f6802f08-1949-4c7c-80c5-5fac10830551&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;매일 데이터 집계 로직을 작성하고 검증하는 작업을 주로 하던 중, 프로젝트에서 권한 관리 기능이 필요하게 되었다. &lt;br&gt;&#xA;권한 관리는 이전부터 구현해 보고 싶었던 기능 중 하나였고, 머릿속으로는 이미 구상이 다 되어 있어 자신만만하게 시작했지만, 역시나 쉽지 않았다. &lt;br&gt;&#xA;( 특히, 관리 측면에서 신경 써야 할 부분이 많았다. )&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/f6802f08-1949-4c7c-80c5-5fac10830551&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>signed unsigned 데이터 타입</title>
