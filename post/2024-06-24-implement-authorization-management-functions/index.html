@@ -110,7 +110,7 @@
   <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
 
   
-  <meta name="generator" content="Hugo 0.127.0">
+  <meta name="generator" content="Hugo 0.128.2">
 
   
   
@@ -128,7 +128,7 @@
   <meta itemprop="description" content="좌충우돌 권한관리 기능 구현하기">
   <meta itemprop="datePublished" content="2024-06-24T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-06-24T00:00:00+00:00">
-  <meta itemprop="wordCount" content="333">
+  <meta itemprop="wordCount" content="341">
   <meta itemprop="keywords" content="2024,Work,Blog">
   
   
@@ -303,12 +303,12 @@
 Flask를 사용하고 있었기 때문에 전역 객체 <code>g</code>를 활용하여 로그인 시 해당 ID의 권한 목록을 가져오려 했다. <br>
 그러나 전체 접근이 가능한 아이디로 권한 목록을 세션에 저장하려 할 때, 허용된 권한이 5개라면 유저 정보도 5개를 가져와 저장하기 어려운 상황이 발생했다.</p>
 <p>또 다른 문제는 JavaScript를 사용해 <code>selectbox</code>를 처리할 때, 특정 팀의 데이터만 볼 수 있도록 고정했지만, js 코드 중복으로 인해 의도한 대로 작동하지 않았다. <br>
-다른 js 파일에서 <code>selectbox</code>를 생성하는 방식 때문에, 렌더링 템플릿으로 적용되지 않았습니다.</p>
+다른 js 파일에서 <code>selectbox</code>를 생성하는 방식 때문에, 렌더링 템플릿으로 적용되지 않았다.</p>
 <h2 id="해결방안">해결방안</h2>
 <h4 id="1-유저-정보-중복-문제-해결">1. 유저 정보 중복 문제 해결</h4>
-<p>권한 개수만큼 유저 정보를 가져오는 이슈는 테이블을 분리하는 방법으로 해결했다. <br>
-먼저, 로그인을 위해 아이디와 비밀번호로 유저 정보를 확인하고, 해당 유저의 ID로 권한을 조회하여 가져왔다. <br>
-이후, 세션에서 사용하기 쉽게 딕셔너리로 데이터를 변환하여 저장했다.</p>
+<p>권한 개수만큼 유저 정보를 가져오는 문제를 해결하기 위해 <code>g</code> 객체에 권한 데이터를 딕셔너리로 추가하는 방법을 사용했다. <br>
+먼저, 로그인 시 아이디와 비밀번호를 통해 유저 정보를 확인하고, 해당 유저의 ID로 DB에서 권한을 조회하여 가져왔다. <br>
+마지막으로, 세션에서 사용하기 쉽게 딕셔너리 형태로 변환하여 저장했다.</p>
 <h4 id="2-javascript-중복-문제-해결">2. JavaScript 중복 문제 해결</h4>
 <p>JavaScript가 중복되는 문제는 다른 js 파일에서 <code>select box</code>를 생성하기 때문에 렌더 템플릿으로 적용되지 않았다. <br>
 해당 함수를 수정하여 일반 유저로 로그인 시 담당 공장만 선택할 수 있도록 변경했다. <br>
