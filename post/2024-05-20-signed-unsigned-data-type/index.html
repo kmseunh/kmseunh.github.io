@@ -127,7 +127,7 @@
   <meta itemprop="description" content="테이블 값 오류 해결하기">
   <meta itemprop="datePublished" content="2024-05-21T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-05-21T00:00:00+00:00">
-  <meta itemprop="wordCount" content="314">
+  <meta itemprop="wordCount" content="322">
   <meta itemprop="keywords" content="2024,Work,Blog">
   
   
@@ -291,7 +291,7 @@
   <section><p>항상 출근하면 첫 번째로 하는 일은 대시보드 페이지에 접속해 어제와 현재의 각 공장별 데이터를 확인하여 이상이 없는지 점검하는 것이다.<br>
 한동안 이상이 없었던 그래프가 지난주 금요일 데이터만 기하급수적으로 높게 치솟았고, SCADA에서 받아오는 데이터가 너무 높게 나오는 현상이 발생했다.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/fecc2a85-8bc1-44de-b4f7-68601dc4ff8e" width="450"></p>
-<h2 id="문제">문제</h2>
+<h2 id="데이터가-이상하게-저장되다니-완전-럭키비키잔앙">데이터가 이상하게 저장되다니 완전 럭키비키잔앙</h2>
 <p>DB 테이블을 조회해 보니 <code>-1.812019e-41</code>과 같은 이상한 값이 저장되어 있었다. <br>
 SCADA 에서 받아오는 값이 저장되는 거라 이상한 값이 저장되는 부분은 어쩔 수 없지만 데이터를 가져올 때 쿼리문에서 0으로 변환하려고 했다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">&lt;!</span><span style="color:#75715e">-- 사용한 쿼리문 --&gt;
@@ -309,7 +309,7 @@ SCADA 에서 받아오는 값이 저장되는 거라 이상한 값이 저장되�
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> feedname
 </span></span></code></pre></div><p>데이터베이스 테이블에서 확인된 값 <code>-1.812019e-41</code>는 부동 소수점 형식으로 저장되어 있는데, 이 값은 <code>unsigned</code>로 형변환할 수 없는 형식으로, <code>amount</code> 컬럼이 varchar(20)으로 지정되어 있어서 숫자로 처리할 수 없었다. <br>
 ( 이러한 이슈로 인해 해당 쿼리문에서는 데이터를 올바르게 처리할 수 없었다. )</p>
-<h2 id="해결방안">해결방안</h2>
+<h2 id="해결을-하다니-완전-럭키비키니시티-잔앙">해결을 하다니 완전 럭키비키니시티 잔앙</h2>
 <p>쿼리문을 수정하여 발생한 이슈를 해결하려고 했는데, <code>amount</code> 컬럼이 <code>varchar(20)</code> 형식이었고, <code>-1.812019e-41</code> 값만 계속해서 들어오는 문제만 발생했기 때문에, <br>
 이를 해결하기 위해 <code>WHEN amount LIKE '%e-%' THEN 0</code> 구문을 추가하여 해당 값을 0으로 변경하였고, 또한 <code>unsigned</code>를 <code>signed</code>로 수정하여 음수 값이 발생할 경우에도 적절히 처리할 수 있도록 했다.</p>
 <p>수정된 쿼리문은 다음과 같다.</p>
