@@ -51,7 +51,7 @@
   />
 
   
-  <title>하루종일 테이블 만들기(with Bootstrap) - DevHvun</title>
+  <title>Spring 첫 개발 - DevHvun</title>
 
   
   <meta name="theme-color" />
@@ -59,9 +59,12 @@
   
   
   
-  <meta name="description" content="기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다.  이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.
-처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.
-하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.
+  <meta name="description" content="이번 달부터 새로운 프로젝트에 참여하게 되었다.  프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. 
+( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )
+특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. 
+이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. 
+처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. 
+( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )
 " />
   <meta name="author" content="1020" />
   
@@ -124,17 +127,17 @@
 
   
   
-  <meta itemprop="name" content="하루종일 테이블 만들기(with Bootstrap)">
-  <meta itemprop="description" content="부트스트랩을 사용해서 테이블 만든 후기">
-  <meta itemprop="datePublished" content="2023-04-26T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2023-04-26T00:00:00+00:00">
-  <meta itemprop="wordCount" content="293">
-  <meta itemprop="keywords" content="2023,Work,Bootstrap">
+  <meta itemprop="name" content="Spring 첫 개발">
+  <meta itemprop="description" content="JSP Spring을 사용한 프로젝트 참여 경험 기록">
+  <meta itemprop="datePublished" content="2024-07-31T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-31T00:00:00+00:00">
+  <meta itemprop="wordCount" content="402">
+  <meta itemprop="keywords" content="2024,Work,Blog">
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="하루종일 테이블 만들기(with Bootstrap)">
-  <meta name="twitter:description" content="부트스트랩을 사용해서 테이블 만든 후기">
+  <meta name="twitter:title" content="Spring 첫 개발">
+  <meta name="twitter:description" content="JSP Spring을 사용한 프로젝트 참여 경험 기록">
 
   
   
@@ -275,12 +278,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">하루종일 테이블 만들기(with Bootstrap)</h1>
+    <h1 class="!my-0 pb-2.5">Spring 첫 개발</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Apr 26, 2023</time>
+      <time>Jul 31, 2024</time>
       
       
       
@@ -289,28 +292,35 @@
     
   </header>
 
-  <section><p>기존 웹 페이지에 있던 테이블의 UI를 수정해야 하는 작업을 요청받았다. <br> 이전 테이블은 테이블의 크기나 폰트가 작아서 잘 보이지 않아 불편하다는 이유였다.</p>
-<p>처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.</p>
-<p>하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.</p>
-<p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/70f7f521-9294-47b9-8318-a2cf06b36b6a" width="500"></p>
-<br>
-<h2 id="부트스트랩이랑-친해지기">부트스트랩이랑 친해지기</h2>
-<p>나는 부트스트랩을 반응형 웹 디자인을 지원하는 프론트 엔드 개발 프레임워크라고만 알고 있었다. <br> 부트스트랩은 기본적으로 제공되는 스타일링, 레이아웃, 그리드 시스템, 폼 등의 디자인을 사용하여 웹 페이지를 구성할 수 있다고 한다.</p>
-<p>기존 테이블도 부트스트랩을 사용했기 때문에 수정하기 전에 코드 리뷰를 살짝 해보았다. <br>
-코드를 보고 3초 만에 든 생각은 div 태그가 진짜 많고.. 많고.. 많다?? <br>
-HTML에서 div 태그는 다른 요소들을 그룹화하거나 레이아웃을 만들기 위해 사용된다고 한다.</p>
-<p>이론상 ‘수많은 div 태그들로 그룹화하고 레이아웃을 만들면 된다’라고 나름 혼자서 간단하게 정의하고, 자신감이 생겨서 부트스트랩에서 기본적으로 제공되는 디자인을 사용하여 테이블을 만들기 시작했다. <br> (일단 무조건 직진하는 편)</p>
+  <section><p>이번 달부터 새로운 프로젝트에 참여하게 되었다. <br> 프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. <br>
+( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )</p>
+<p>특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. <br>
+이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. <br>
+처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. <br>
+( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e" width="450"></p>
+<h2 id="어려웠던-점">어려웠던 점</h2>
+<p>데이터 수집과 DB 저장 과정에서 예상보다 많은 어려움을 겪었다. <br>
+데이터 수집이 예상했던 것보다 원활하지 않았고, 수집된 데이터를 적재하는 과정도 쉽지 않았다. <br>
+구체적으로는 데이터를 Vertica 테이블에 먼저 넣고, 이를 ETL(Extract, Transform, Load) 과정에서 변환한 후, 다시 Tibero 데이터베이스에 적재하는 작업이 포함되었는데, 이 과정에서 처음 접하는 ETL 도구에 익숙해지기까지 시간이 걸렸고, 예상치 못한 문제들도 발생했다.</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/f802e12e-6924-420b-bf02-ee45c7a64364" width="450"></p>
+<p>이미 실제로 운영 중인 프로젝트에 새로운 기능을 추가해야 했기 때문에, 기존 코드 베이스를 이해하는 것도 쉽지 않았다. <br>
+처음에는 코드가 어떻게 구성되고 작동하는지를 파악하는 데 시간이 많이 걸렸는데, 특히, 단순히 기능을 구현하는 것이 아니라 기존 코드와의 통합성을 고려해야 했기 때문에, 이해 없이 건너뛰려는 시도를 하다 보니 여러 차례 막히는 부분이 있었다. <br>
+이 경험을 통해, 전체적인 구조를 이해하는 것이 얼마나 중요한지를 다시 한번 깨달았다.</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/1a3305ce-5d6a-411a-b361-454916dd95b0" width="450"></p>
+<h2 id="성장한-점">성장한 점</h2>
+<p>지금 나는 프론트엔드와 백엔드 양쪽 모두에서 작업을 했기 때문에 정신없었지만, 다양한 기술을 익힐 수 있는 좋은 경험을 하고 있는 중이다.</p>
+<p>프론트엔드 작업을 하면서 HTML, CSS, JavaScript를 사용하여 다양한 레이아웃을 수정하고 UI를 개선하는 작업을 하고 있다. <br>
+이를 통해 사용자 경험을 고려하여 UI를 설계하고 테스트하면서, 사용자 중심의 디자인이 얼마나 중요한지를 깨달았다.</p>
+<p>백엔드에서는 SQL 쿼리를 수정하고 생성하는 작업을 통해, 데이터베이스 관리와 최적화에 대한 깊이 있는 경험을 쌓고 있다. <br>
+단순히 쿼리를 작성하는 것을 넘어, 효율적인 쿼리 작성법과 성능 최적화에 대한 중요성을 깨달았다. <br>
+또한, 프로젝트의 Spring 구조와 각 모듈 간의 역할 분담을 이해하면서, Spring 프로젝트에서의 각 기능별 역할, 구성, 코드 관리와 모듈화의 중요성을 체감했다.</p>
+<p>프로젝트 관리와 형상 관리를 위해 GitLab을 사용하면서 팀원들과의 코드 분업이 원활하게 이루어졌으며, 형상 관리와 코드 통합에 대한 경험을 쌓을 수 있었다. <br>
+브랜치를 분리해서 각자 작업하고 머지 하는 과정을 통해 코드 리뷰도 진행하고, 코드 품질을 유지하며 안정적인 배포를 할 수 있었다. <br> 이 과정에서 Git을 활용한 협업의 중요성과 효율성을 몸소 체험할 수 있었다.</p>
 <hr>
-<h2 id="그냥-나눠주면-안돼">그냥 나눠주면 안돼??</h2>
-<p>테이블을 만들 때 가장 신경 쓴 부분은 주어진 공간에 쉽게 알아볼 수 있는 크기로 각 칸을 나누는 것이다. <br> 부트스트랩의 그리드 시스템이 이 고민을 해결해 줄 수 있었다.</p>
-<p>12개의 열 시스템 어쩌구,, 6개의 기본 반응형 계층이 어쩌구,, 해서 모든 모양과 크기의 레이아웃을 빌드 할 수 있다고 하는데 이 그리드 시스템의 옵션이 6개가 있다고 한다. <br> 나는 이 그리드 옵션 부분에서 시간을 많이 썼던 것 같다.</p>
-<p>전체 테이블 코드의 일부분에는 <code>col</code>, <code>col-md</code>, <code>col-sm</code> 라고 <span style='color: #2D3748; background-color: #fff5b1'> div class </span>  안에 무언가 정의되어 있다.
-느낌 상 <code>col-md</code>는 중간 크기이고, <code>col-sm</code>은 조금 작게 설정해 주는 것 같다.</p>
-<p>col은 한 열의 너비를 설정해 주는데 <code>&lt;div class=&quot;row&quot;&gt;</code> 내부에 <code>&lt;div class=&quot;col&quot;&gt;</code> 를 여러 개 생성하면 그에 따라 row가 나눠진다. <br> 나는 5개의 행과 4개의 열로 구성된 테이블을 만들어야 했는데 맨 왼쪽 열이 다른 열들에 비해 너비가 조금 좁아야 했다.<br>(근데 왜 모두 균일하게 나눠지니..)</p>
-<hr>
-<p align="center"><img src="https://github.com/kmseunh/react-gallery/assets/105186724/dfb2c2c3-7da8-4d1d-87a6-897ad3fbc510" width="500"></p>
-<p>위 사진은 완성된 테이블이다.</p>
-<p>Chrome Devtools에 마진 값도 넣어보고,, 패딩 값도 수정해 보고,, 이것저것 시도하면서 영혼을 갈아 넣어서 결국 만족스러운 결과를 얻었다.</p></section>
+<p align="center"><img src="https://github.com/user-attachments/assets/c245f052-9be1-44ef-8e2e-09f7c2632ae7" width="450"></p>
+<p>이전에는 주로 작은 프로젝트들을 경험했었는데, 이번에는 조금 큰 규모의 프로젝트에 참여하게 되면서 팀원 간의 협업과 의사소통의 중요성을 새삼 느끼고 있다. <br>
+이번 프로젝트를 통해 아직 많이 부족한 점과 내 수준이 드러나 부끄럽기도 하지만, 좋은 선임 개발자분들과 함께 작업하며 많은 것을 배우고 성장하고 싶다.</p></section>
 
   
   
@@ -318,8 +328,8 @@ HTML에서 div 태그는 다른 요소들을 그룹화하거나 레이아웃을 
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/2023"
-      >2023</a
+      href="https://kmseunh.github.io/tags/2024"
+      >2024</a
     >
      
     <a
@@ -330,8 +340,8 @@ HTML에서 div 태그는 다른 요소들을 그룹화하거나 레이아웃을 
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/bootstrap"
-      >bootstrap</a
+      href="https://kmseunh.github.io/tags/blog"
+      >blog</a
     >
     
   </footer>
@@ -343,17 +353,11 @@ HTML에서 div 태그는 다른 요소들을 그룹화하거나 레이아웃을 
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/"
-      ><span class="mr-1.5">←</span><span>유연한 사고, 단순하지 않기</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-04-24-my-first-project-meeting/"
-      ><span>처음으로 프로젝트 미팅에 참여하게 되는데..</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2024-06-24-implement-authorization-management-functions/"
+      ><span>좌충우돌 권한관리 기능 구현하기</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
