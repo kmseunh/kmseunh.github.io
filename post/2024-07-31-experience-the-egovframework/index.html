@@ -51,7 +51,7 @@
   />
 
   
-  <title>데이터 비만에서 살아남기 - DevHvun</title>
+  <title>전자정부 프레임워크? 이것 뭐에요~? - DevHvun</title>
 
   
   <meta name="theme-color" />
@@ -59,14 +59,12 @@
   
   
   
-  <meta name="description" content="주간 회의 시간에 대표님께서 항상 말씀하시는 것이 있다. 
-현재 맡고 있는 프로젝트에 대해 항상 더 발전시키고 향상시킬 생각을 하자. 라는 말인데 이를 내가 맡은 프로젝트에 적용해 보면 어떤 부분이 있을까 하는 생각이 들었다. 
-고민을 해보니 대시보드 특성상 데이터가 늘어나고 이에 따라 처리가 느려지는 이슈가 생각이 났다.
-
-데이터가 늘어날수록 대량의 데이터를 빠르게 저장하고 검색하는 것은 쉽지 않으며, 이로 인해 성능 저하와 함께 데이터 분석에 소요되는 시간이 길어지는 문제가 발생한다. 
-검색해 보니 이에 대한 해결책으로 일라스틱 서치와 키바나의 조합이 빛을 발하고 있다고 한다.
-
-따라서 이번 글에서는 위 두가지에 대해 정리해보려 한다.
+  <meta name="description" content="이번 달부터 새로운 프로젝트에 참여하게 되었다.  프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. 
+( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )
+특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. 
+이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. 
+처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. 
+( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )
 " />
   <meta name="author" content="1020" />
   
@@ -129,17 +127,17 @@
 
   
   
-  <meta itemprop="name" content="데이터 비만에서 살아남기">
-  <meta itemprop="description" content="데이터가 늘어날수록 처리를 빠르게 해야한다">
-  <meta itemprop="datePublished" content="2023-08-21T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2023-08-21T00:00:00+00:00">
-  <meta itemprop="wordCount" content="274">
-  <meta itemprop="keywords" content="2023,Work,Blog">
+  <meta itemprop="name" content="전자정부 프레임워크? 이것 뭐에요~?">
+  <meta itemprop="description" content="JSP Spring을 사용한 프로젝트 참여 경험 기록">
+  <meta itemprop="datePublished" content="2024-07-31T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-07-31T00:00:00+00:00">
+  <meta itemprop="wordCount" content="405">
+  <meta itemprop="keywords" content="2024,Work,Blog">
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="데이터 비만에서 살아남기">
-  <meta name="twitter:description" content="데이터가 늘어날수록 처리를 빠르게 해야한다">
+  <meta name="twitter:title" content="전자정부 프레임워크? 이것 뭐에요~?">
+  <meta name="twitter:description" content="JSP Spring을 사용한 프로젝트 참여 경험 기록">
 
   
   
@@ -280,12 +278,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">데이터 비만에서 살아남기</h1>
+    <h1 class="!my-0 pb-2.5">전자정부 프레임워크? 이것 뭐에요~?</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Aug 21, 2023</time>
+      <time>Jul 31, 2024</time>
       
       
       
@@ -294,61 +292,35 @@
     
   </header>
 
-  <section><p>주간 회의 시간에 대표님께서 항상 말씀하시는 것이 있다. <br>
-<em>현재 맡고 있는 프로젝트에 대해 항상 더 발전시키고 향상시킬 생각을 하자.</em> 라는 말인데 이를 내가 맡은 프로젝트에 적용해 보면 어떤 부분이 있을까 하는 생각이 들었다. <br>
-고민을 해보니 대시보드 특성상 데이터가 늘어나고 이에 따라 처리가 느려지는 이슈가 생각이 났다.
-<br></p>
-<p>데이터가 늘어날수록 대량의 데이터를 빠르게 저장하고 검색하는 것은 쉽지 않으며, 이로 인해 성능 저하와 함께 데이터 분석에 소요되는 시간이 길어지는 문제가 발생한다. <br>
-검색해 보니 이에 대한 해결책으로 일라스틱 서치와 키바나의 조합이 빛을 발하고 있다고 한다.
-<br></p>
-<p>따라서 이번 글에서는 위 두가지에 대해 정리해보려 한다.</p>
-<p align="center"><img src="https://github.com/kmseunh/css-design-tools/assets/105186724/e08f6238-1cd3-4964-88a4-ec7c61daf13d" width="450"></p>
-<br>
-<h2 id="heading"></h2>
-<p>일라스틱 서치(Elasticsearch)와 키바나(Kibana)는 주로 데이터 분석 및 시각화를 위해 사용되는 오픈 소스 소프트웨어라고 한다. <br>
-두 제품은 주로 로그 및 이벤트 데이터와 같은 대량의 데이터를 저장, 검색 및 시각화하기 위해 설계되었고, Logstash라는 다른 오픈 소스 도구와 결합하여 사용될 때 전체적인 솔루션을 형성한다고 한다.</p>
-<blockquote>
-<blockquote>
-<p>이들은 일반적으로 ELK 스택이라고도 부른다.</p>
-</blockquote>
-</blockquote>
-<h2 id="일라스틱-서치의-역할">일라스틱 서치의 역할</h2>
-<ol>
-<li>
-<p>빠른 검색 및 분석 엔진 <br></p>
-<ul>
-<li>일라스틱 서치는 실시간 검색 및 분석 엔진으로, 데이터의 색인화와 검색을 빠르게 처리할 수 있다.</li>
-<li>대용량 데이터에 대한 탁월한 성능을 보장하며, 확장성 있는 아키텍처를 통해 데이터 양이 증가하더라도 높은 성능을 유지할 수 있다.</li>
-</ul>
-</li>
-<li>
-<p>분산 아키텍처 <br></p>
-<ul>
-<li>일라스틱 서치는 데이터를 분산하여 저장하고 처리함으로써 데이터 양의 증가에 유연하게 대응할 수 있다.</li>
-<li>클러스터링과 샤딩을 통해 데이터의 안정성과 가용성을 보장하면서도 성능을 향상시킨다.</li>
-</ul>
-</li>
-</ol>
-<br>
-<h2 id="키바나의-시각화와-인터랙션">키바나의 시각화와 인터랙션</h2>
-<ol>
-<li>
-<p>시각화 도구로 데이터 이해 <br></p>
-<ul>
-<li>키바나는 Elasticsearch에서 수집된 데이터를 시각적으로 표현할 수 있는 강력한 도구이다.</li>
-<li>다양한 차트와 그래프를 활용하여 데이터의 흐름과 경향을 빠르게 파악할 수 있다.</li>
-</ul>
-</li>
-<li>
-<p>대시보드 구축 <br></p>
-<ul>
-<li>키바나를 통해 직관적이고 사용자 친화적인 대시보드를 구축할 수 있다.</li>
-<li>이를 통해 데이터의 상태를 실시간으로 모니터링하고 필요한 정보에 빠르게 접근할 수 있다.</li>
-</ul>
-</li>
-</ol>
-<br>
-<p>지금 당장 두 가지를 배우고 사용할 수는 없지만 나중에 프로젝트가 마무리되고 더 개선할 수 있을 것 같다는 생각이 들어 추후에 공부해 보고 싶다.</p></section>
+  <section><p>이번 달부터 새로운 프로젝트에 참여하게 되었다. <br> 프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. <br>
+( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )</p>
+<p>특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. <br>
+이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. <br>
+처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. <br>
+( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e" width="450"></p>
+<h2 id="아무것도-모르는데-문제가-될까요">아무것도 모르는데,, 문제가 될까요?</h2>
+<p>데이터 수집과 DB 저장 과정에서 예상보다 많은 어려움을 겪었다. <br>
+데이터 수집이 예상했던 것보다 원활하지 않았고, 수집된 데이터를 적재하는 과정도 쉽지 않았다. <br>
+구체적으로는 데이터를 Vertica 테이블에 먼저 넣고, 이를 ETL(Extract, Transform, Load) 과정에서 변환한 후, 다시 Tibero 데이터베이스에 적재하는 작업이 포함되었는데, 이 과정에서 처음 접하는 ETL 도구에 익숙해지기까지 시간이 걸렸고, 예상치 못한 문제들도 발생했다.</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/f802e12e-6924-420b-bf02-ee45c7a64364" width="450"></p>
+<p>이미 실제로 운영 중인 프로젝트에 새로운 기능을 추가해야 했기 때문에, 기존 코드 베이스를 이해하는 것도 쉽지 않았다. <br>
+처음에는 코드가 어떻게 구성되고 작동하는지를 파악하는 데 시간이 많이 걸렸는데, 특히, 단순히 기능을 구현하는 것이 아니라 기존 코드와의 통합성을 고려해야 했기 때문에, 이해 없이 건너뛰려는 시도를 하다 보니 여러 차례 막히는 부분이 있었다. <br>
+이 경험을 통해, 전체적인 구조를 이해하는 것이 얼마나 중요한지를 다시 한번 깨달았다.</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/1a3305ce-5d6a-411a-b361-454916dd95b0" width="450"></p>
+<h2 id="경험치-2배-이벤트">경험치 2배 이벤트</h2>
+<p>지금 나는 프론트엔드와 백엔드 양쪽 모두에서 작업을 했기 때문에 정신없었지만, 다양한 기술을 익힐 수 있는 좋은 경험을 하고 있는 중이다.</p>
+<p>프론트엔드 작업을 하면서 HTML, CSS, JavaScript를 사용하여 다양한 레이아웃을 수정하고 UI를 개선하는 작업을 하고 있다. <br>
+이를 통해 사용자 경험을 고려하여 UI를 설계하고 테스트하면서, 사용자 중심의 디자인이 얼마나 중요한지를 깨달았다.</p>
+<p>백엔드에서는 SQL 쿼리를 수정하고 생성하는 작업을 통해, 데이터베이스 관리와 최적화에 대한 깊이 있는 경험을 쌓고 있다. <br>
+단순히 쿼리를 작성하는 것을 넘어, 효율적인 쿼리 작성법과 성능 최적화에 대한 중요성을 깨달았다. <br>
+또한, 프로젝트의 Spring 구조와 각 모듈 간의 역할 분담을 이해하면서, Spring 프로젝트에서의 각 기능별 역할, 구성, 코드 관리와 모듈화의 중요성을 체감했다.</p>
+<p>프로젝트 관리와 형상 관리를 위해 GitLab을 사용하면서 팀원들과의 코드 분업이 원활하게 이루어졌으며, 형상 관리와 코드 통합에 대한 경험을 쌓을 수 있었다. <br>
+브랜치를 분리해서 각자 작업하고 머지 하는 과정을 통해 코드 리뷰도 진행하고, 코드 품질을 유지하며 안정적인 배포를 할 수 있었다. <br> 이 과정에서 Git을 활용한 협업의 중요성과 효율성을 몸소 체험할 수 있었다.</p>
+<hr>
+<p align="center"><img src="https://github.com/user-attachments/assets/c245f052-9be1-44ef-8e2e-09f7c2632ae7" width="450"></p>
+<p>이전에는 주로 작은 프로젝트들을 경험했었는데, 이번에는 조금 큰 규모의 프로젝트에 참여하게 되면서 팀원 간의 협업과 의사소통의 중요성을 새삼 느끼고 있다. <br>
+이번 프로젝트를 통해 아직 많이 부족한 점과 내 수준이 드러나 부끄럽기도 하지만, 좋은 선임 개발자분들과 함께 작업하며 많은 것을 배우고 성장하고 싶다.</p></section>
 
   
   
@@ -356,8 +328,8 @@
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/2023"
-      >2023</a
+      href="https://kmseunh.github.io/tags/2024"
+      >2024</a
     >
      
     <a
@@ -381,17 +353,11 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/"
-      ><span class="mr-1.5">←</span><span>백업하기 vs 백업 안 하고 백억 받기</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-08-10-check-before-project-development/"
-      ><span>프로젝트 진행 전 체크사항</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2024-06-24-implement-authorization-management-functions/"
+      ><span>좌충우돌 권한관리 기능 구현하기</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
