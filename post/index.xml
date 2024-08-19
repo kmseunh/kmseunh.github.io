@@ -10,11 +10,11 @@
     <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>오라클 인스턴스 생성 및 서버 만들기</title>
+      <title>개인 서버가 있었으면 조켄네</title>
       <link>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;내가 만든 서비스를 다른 사람들이 사용하는 모습을 상상하면서, 개인 서버를 구축하고 싶다는 마음이 들었다. &lt;br&gt;&#xA;처음에 떠오른 것은 AWS 프리티어였는데, 채용 공고에서 AWS 경험을 중요시하는 경우가 많아 필수로 경험해야겠다고 생각했다. &lt;br&gt;&#xA;하지만 이전에 프리 티어 계정을 만들었던 경험이 있어, 몇 개월 후 예기치 않게 과금이 발생했던 기억이 있어서 조금 걱정이 되었다.&lt;/p&gt;&#xA;&lt;p&gt;그러던 중, 오라클 프리티어가 평생 무료로 서버를 제공한다는 매력적인 옵션을 발견했는데, 제한이 있긴 하지만 경제적인 부담 없이 개인 서버를 운영할 수 있다는 점에서 큰 매력을 느꼈다. &lt;br&gt;&#xA;그래서 바로 도전해 보기로 결심하고, 과정에서 겪은 여러 시행착오와 배운 점들을 기록하기로 했다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/f149f134-4264-4f11-80a3-4dd4329dca75&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>전자정부 프레임워크? 이것 뭐에요~?</title>
