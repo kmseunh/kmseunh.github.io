@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on DevHvun</title>
-    <link>https://kmseunh.github.io/series/</link>
+    <link>http://localhost:1313/series/</link>
     <description>Recent content in Series on DevHvun</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
     <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kmseunh.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memoirs</title>
-      <link>https://kmseunh.github.io/series/memoirs/</link>
+      <link>http://localhost:1313/series/memoirs/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/series/memoirs/</guid>
+      <guid>http://localhost:1313/series/memoirs/</guid>
       <description></description>
     </item>
     <item>
       <title>Worklog</title>
-      <link>https://kmseunh.github.io/series/worklog/</link>
+      <link>http://localhost:1313/series/worklog/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/series/worklog/</guid>
+      <guid>http://localhost:1313/series/worklog/</guid>
       <description></description>
     </item>
     <item>
       <title>Study</title>
-      <link>https://kmseunh.github.io/series/study/</link>
+      <link>http://localhost:1313/series/study/</link>
       <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/series/study/</guid>
+      <guid>http://localhost:1313/series/study/</guid>
       <description></description>
     </item>
   </channel>

@@ -37,16 +37,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://kmseunh.github.io/series/</loc>
-    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://kmseunh.github.io/tags/</loc>
-    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -407,6 +397,14 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://kmseunh.github.io/portfolio/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://kmseunh.github.io/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://kmseunh.github.io/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

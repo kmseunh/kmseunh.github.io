@@ -59,11 +59,7 @@
   
   
   
-  
-  <meta
-    name="description"
-    content="A personal blog"
-  />
+  <meta name="description" content="" />
   <meta name="author" content="1020" />
   
 
@@ -75,6 +71,12 @@
   
   <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
 
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
   
 
   
@@ -109,13 +111,6 @@
 
   
   
-  <link
-    rel="alternate"
-    type="application/rss&#43;xml"
-    href="https://kmseunh.github.io/series/index.xml"
-    title="DevHvun"
-  />
-  
 
   
   
@@ -127,8 +122,6 @@
   
   
   <meta itemprop="name" content="Series">
-  <meta itemprop="datePublished" content="2024-08-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-08-18T00:00:00+00:00">
   
   
   <meta name="twitter:card" content="summary">
@@ -218,8 +211,14 @@
       
       <a
         class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
-        href="404.html"
-        >Portfolio</a
+        href="/series/"
+        >Series</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/"
+        >Tags</a
       >
       
     </nav>
@@ -270,20 +269,25 @@
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
     >
       
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
+  <h1>Series</h1>
+  <ul class="series-list">
+    
+      <li>
+        <a href="/series/memoirs">memoirs</a>
+        <span>(7)</span>
+      </li>
+    
+      <li>
+        <a href="/series/study">study</a>
+        <span>(5)</span>
+      </li>
+    
+      <li>
+        <a href="/series/worklog">worklog</a>
+        <span>(27)</span>
+      </li>
+    
+  </ul>
 
     </main>
 
