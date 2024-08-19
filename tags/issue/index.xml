@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Issue on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/issue/</link>
+    <description>Recent content in Issue on DevHvun</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/issue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>새해 에러 많이 받으세요(?)</title>
+      <link>https://kmseunh.github.io/post/2024-01-02-date-issue-as-the-year-changes/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-01-02-date-issue-as-the-year-changes/</guid>
+      <description>&lt;p&gt;새해가 되면서 기존에 진행했던 프로젝트의 &lt;code&gt;Date&lt;/code&gt; 이슈가 우수수 쏟아졌다. &lt;br&gt;&#xA;현재 년도와 이전 년도의 데이터를 DB에서 &lt;code&gt;Date&lt;/code&gt; 기준으로 조회를 해서 가져와야하는데 그러지 못했다. &lt;br&gt;&#xA;&lt;code&gt;devtools&lt;/code&gt;에서 수많은 에러 로그들을 마주했을 때 기분이란 참.. 허허&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/til/assets/105186724/1ee48d9f-997f-409c-8663-1f4740b26131&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>점화식적 사고를 하자</title>
+      <link>https://kmseunh.github.io/post/2023-09-02-approach-as-a-problem-solving-to-recursive-formula/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-09-02-approach-as-a-problem-solving-to-recursive-formula/</guid>
+      <description>&lt;p&gt;프로젝트에서 문제가 발생하면 나는 항상 발생한 문제에 대응하여 해결책을 찾는 데 집중한다. &lt;br&gt;&#xA;하지만 문제를 해결하고 나면 별생각 없이 넘어가는 편이었다. &lt;br&gt;&#xA;그러나 비슷한 문제가 반복해서 발생하는 경우 매우 귀찮기도 하고 답답할 때가 많아서 대표님에게 조언을 구한 적이 있었다. &lt;br&gt;&#xA;대표님은 &lt;em&gt;&amp;lsquo;하나의 문제는 단 한 번만 발생해야 하며, 어떠한 문제에서 DP 규칙성을 찾아 그 규칙성으로 하여금 점화식을 찾아서 해결해야 한다.&amp;rsquo;&lt;/em&gt; 라고 말씀하셨다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 점화식적 사고를 도입하여 문제를 해결하는 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/problem-solving-python/assets/105186724/9a349e82-1fb2-4189-ba22-81f08cd2f909&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>백업하기 vs 백업 안 하고 백억 받기</title>
+      <link>https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-08-30-have-to-pay-attention-to-file-management/</guid>
+      <description>&lt;p&gt;오늘 크론탭을 수정해야 하는 이슈가 생겨서 코드를 수정하고 실행하고 반복하고 있었다. &lt;br&gt;&#xA;그런데 로그 찍히는 속도가 많이 더뎌서 코드의 문제인가 하고 살펴보니 디렉토리에 파일이 1000개 정도 있는 것이었다. &lt;br&gt;&#xA;바로 대표님의 호출.. 백업도 틈틈히 안한 이슈도 스윽 얹어서 파일 관리의 중요성에 대한 설명을 들었다.&lt;br&gt;&#xA;(평소에 정리랑 친하지가 않아서..)&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 파일 관리에 대해 정리해 보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/99a2d689-8622-4840-a424-64b7b23a7b1e&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>프로젝트 진행 전 체크사항</title>
+      <link>https://kmseunh.github.io/post/2023-08-10-check-before-project-development/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-08-10-check-before-project-development/</guid>
+      <description>&lt;p&gt;프로젝트를 진행하기 전에는 개발에만 집중하면 무난하게 흘러갈 줄 알았다. &lt;br&gt; 이 생각은 정확히 업무 메일을 받은 지 10분 만에 산산조각 나버렸다. &lt;br&gt; (근거 없는 자신감은 저를 불안하게 해요,,)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/b10d883b-46a0-4794-be35-c8a781e98a89&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>데이터: ㅇㅇ없어줄게</title>
+      <link>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</guid>
+      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;&#xA;&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>에러체크 딱딱딱</title>
+      <link>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-05-27-error-check-is-mandatory/</guid>
+      <description>&lt;p&gt;코드를 작성하다 보면 밥 먹듯이 에러가 발생하지만, 원인 모를 에러를 마주치면 하루 종일 또는 그 이상이 걸려도 해결하지 못할 때가 있다. &lt;br&gt;&#xA;만약 에러를 제대로 체크하지 않는다면 정말 간단한 에러를 해결하지 못하고 시간 낭비할 수 있다. &lt;br&gt; (그게… 접니다?)&lt;/p&gt;&#xA;&lt;p&gt;항상 대표님이 에러 로그를 확인하라고 강조하셨는데, 아직 익숙지 않아서 별거 아닌 에러에 삽질하는 상황이 자주 일어났다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 이러한 실수를 줄이기 위해 에러 조치를 어떻게 하면 잘할 수 있을지에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/94d340ed-0ae2-4524-864a-d4f970a18495&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>업무이해도의 중요성</title>
+      <link>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-05-14-importace-of-business-understanding/</guid>
+      <description>&lt;p&gt;프로젝트를 진행할 때 업무 이해도는 매우 중요하다.&lt;/p&gt;&#xA;&lt;p&gt;개발자는 개발만 잘하면 되는 거 아니냐라는 생각을 할 수 있지만, 본인이 개발을 할 프로젝트를 파악하지 못하고 클라이언트의 요구대로 완성시킨다는 건 불가능한 일이다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bdca6e1d-53ef-44f5-b97c-2c53308d4342&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>그래프 좋아하세요?</title>
+      <link>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-05-09-making-variety-of-graphs/</guid>
+      <description>&lt;p&gt;프로그래밍을 하다 보면 그래프를 작성해야 하는 상황이 많다. &lt;br&gt; 학생 때 수학 문제를 풀다가 그래프가 나오는 문제가 있으면 완전 땡큐였는데, 프로그래밍에서 그래프를 만나면 그 정도는 아닌 것 같다.&lt;/p&gt;&#xA;&lt;p&gt;그래프는 데이터를 시각적으로 표현하는데 수학적 함수, 수치 데이터, 통계 자료 등을 포함하여 다양한 유형의 데이터를 시각적으로 나타낼 수 있기 때문에 그래프를 사용하여 데이터의 관계와 추세를 분석할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 종류가 매우 다양하기 때문에 적절한 선택이 필요하다. &lt;br&gt; (많은 건 좋은데 애매하게 많다면..?)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/50d4f27b-e41f-4f7b-9a08-573b12ff7275&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>싱글벙글(?) 쿼리문 체험기</title>
+      <link>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</guid>
+      <description>&lt;p&gt;데이터베이스에는 프로젝트에 필요한 모든 데이터들이 존재한다. &lt;br&gt; 저장된 데이터들을 그대로 사용하는 경우도 있고 필요한 컬럼들을 가져오거나 데이터를 합치거나 다양하게 수정해서 원하는 데이터로 변환한 후 사용한다.&lt;/p&gt;&#xA;&lt;p&gt;이것이 바로 내가 백엔드 개발자로 진로를 정한 이유 중 하나였는데, 지금까지 CRUD 쿼리문을 사용하고 테이블에 저장된 컬럼들을 가져오는 것만 경험해 봤기 때문에 데이터 쪽을 너무 쉽게 생각하고 있었다. &lt;br&gt; (어떤 프로젝트든 한 가지 테이블만 사용하는 경우는 없으니까..)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/56645e45-defc-4b60-87ca-24f866c9d4a1&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ajax 요청을 최소화하자</title>
+      <link>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-05-01-minimize-ajax-requests/</guid>
+      <description>&lt;p&gt;Ajax는 &lt;code&gt;Asynchronous JavaScript and XML&lt;/code&gt;의 약자로, 웹 페이지에서 서버와 비동기적으로 데이터를 교환하면서 웹 페이지를 동적으로 업데이트하는 기술이다. &lt;br&gt; Ajax를 사용하면 페이지 이동 없이도 필요한 부분만 업데이트할 수 있으므로 UX를 개선할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;Dashboard를 만들 때 많은 데이터를 가지고 계산하고 출력해야 하므로 각각의 위치마다 같은 데이터를 사용하는 경우도 있고, 다른 데이터를 가져와야 하는 경우도 있었다.&lt;/p&gt;&#xA;&lt;p&gt;Ajax에 대해 제대로 이해하지 못해서 같은 데이터를 사용하지만 위치가 다르다고는 이유로 계속해서 Ajax 요청을 하고 있었던 것이다.&#xA;&lt;br&gt; (서버야 버텨줘..!!)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/86e4f977-c819-4508-a6fa-c64c423bd2fe&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>유연한 사고, 단순하지 않기</title>
+      <link>https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-04-28-breaking-thinking-simply/</guid>
+      <description>&lt;p&gt;어느 날 개발자는 항상 모든 일에 생각을 해야 한다는 말을 들었다.&lt;/p&gt;&#xA;&lt;p&gt;코드 한 줄을 짤 때에도 단순하게 ‘이렇게 하면 되겠지?’ 하고 바로 완성하는 게 아니라 어떻게 해야 더 간단하고 가독성이 높은 코드로 완성할 수 있을까에 대한 생각을 해야 한다.&lt;/p&gt;&#xA;&lt;p&gt;다른 주니어 개발자들은 어떤지 모르겠지만 나는 단순하게 코드를 완성하고 잘 작동이 되면 더 이상 신경을 쓰지 않았다. &lt;br&gt; 처음에는 에러만 안 나면 상관없겠지라는 생각이었지만, 점점 코드가 많아지면 많아질수록 가독성이나 효율적인 부분에서 떨어지게 된다는 것을 알았다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/4814cdda-194e-466a-8592-b102d05c7a4d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

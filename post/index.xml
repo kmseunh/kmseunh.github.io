@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>오라클 인스턴스 생성 및 서버 만들기</title>
+      <link>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>전자정부 프레임워크? 이것 뭐에요~?</title>
       <link>https://kmseunh.github.io/post/2024-07-31-experience-the-egovframework/</link>

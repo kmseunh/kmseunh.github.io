@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/data/</link>
+    <description>Recent content in Data on DevHvun</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>데이터 비만에서 살아남기</title>
+      <link>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</link>
+      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</guid>
+      <description>&lt;p&gt;주간 회의 시간에 대표님께서 항상 말씀하시는 것이 있다. &lt;br&gt;&#xA;&lt;em&gt;현재 맡고 있는 프로젝트에 대해 항상 더 발전시키고 향상시킬 생각을 하자.&lt;/em&gt; 라는 말인데 이를 내가 맡은 프로젝트에 적용해 보면 어떤 부분이 있을까 하는 생각이 들었다. &lt;br&gt;&#xA;고민을 해보니 대시보드 특성상 데이터가 늘어나고 이에 따라 처리가 느려지는 이슈가 생각이 났다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;데이터가 늘어날수록 대량의 데이터를 빠르게 저장하고 검색하는 것은 쉽지 않으며, 이로 인해 성능 저하와 함께 데이터 분석에 소요되는 시간이 길어지는 문제가 발생한다. &lt;br&gt;&#xA;검색해 보니 이에 대한 해결책으로 일라스틱 서치와 키바나의 조합이 빛을 발하고 있다고 한다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 위 두가지에 대해 정리해보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/e08f6238-1cd3-4964-88a4-ec7c61daf13d&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>데이터: ㅇㅇ없어줄게</title>
+      <link>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-06-07-if-no-data-from-project/</guid>
+      <description>&lt;p&gt;프로젝트를 진행할 때 중요한 요소 중 하나는 충분한 데이터를 확보하는 것이다. &lt;br&gt; 그러나 현실적인 이유로 인해 프로젝트를 위한 충분한 데이터를 확보하기 어려운 상황이 발생할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;일단은 가데이터를 작성하는 방법으로 진행했지만 가데이터를 작성하는 작업은 예상보다 번거로웠다. &lt;br&gt; (필요한 데이터가 너무 많아요…)&lt;/p&gt;&#xA;&lt;p&gt;따라서 데이터 부족으로 인해 직면한 어려움과 이를 해결하기 위한 개선 방안에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/9c7bb940-d083-45f1-891f-14fe87a5ea8d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/first/</link>
+    <description>Recent content in First on DevHvun</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>자네는 누가 뽑았나?</title>
+      <link>https://kmseunh.github.io/post/2023-04-22-memoirs-of-first-month-employment/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-04-22-memoirs-of-first-month-employment/</guid>
+      <description>&lt;p&gt;현재 나는 작은 IT 회사에서 프리랜서로 일을 하고 있다. &lt;br&gt;&#xA;개발자를 진로로 정하고 공부를 시작한 지 6개월 정도 지났는데, 우연히 이런 좋은 기회가 찾아와서 즐겁게 다니고 있다.&lt;/p&gt;&#xA;&lt;p&gt;혼자 유튜브나 책 등으로 공부를 하다 보니 실력적으로 성장이 더디다는 생각이 들어 조금 낙담하고 있었는데, 이번 기회로 많은 성장을 할 수 있기를 기대한다.&lt;/p&gt;&#xA;&lt;p&gt;첫 실무 경험이기도 하고 회사를 다니면서 겪은 경험을 기록하고 공유하고 싶어 1–3개월 주기로 회고록을 써보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/blog/assets/105186724/bfa388ed-86c2-4d3b-80ba-36ba1b0320ec&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>기술 블로그를 시작하면서</title>
+      <link>https://kmseunh.github.io/post/2022-09-12-start-blog/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2022-09-12-start-blog/</guid>
+      <description>&lt;p&gt;블로그 첫 포스팅은 개발 또는 코딩이라는 주제로 블로그를 시작한 이유, 방향성과 현재 나의 생각, 현실에 대해 적어보고자 한다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

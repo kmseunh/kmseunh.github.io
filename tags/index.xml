@@ -7,27 +7,83 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024</title>
       <link>https://kmseunh.github.io/tags/2024/</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/tags/2024/</guid>
       <description></description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>https://kmseunh.github.io/tags/blog/</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/blog/</guid>
+      <title>Indiv</title>
+      <link>https://kmseunh.github.io/tags/indiv/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/indiv/</guid>
       <description></description>
     </item>
     <item>
-      <title>Work</title>
-      <link>https://kmseunh.github.io/tags/work/</link>
+      <title>Start</title>
+      <link>https://kmseunh.github.io/tags/start/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/work/</guid>
+      <guid>https://kmseunh.github.io/tags/start/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Impl</title>
+      <link>https://kmseunh.github.io/tags/impl/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/impl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://kmseunh.github.io/tags/database/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sftp</title>
+      <link>https://kmseunh.github.io/tags/sftp/</link>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/sftp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Session</title>
+      <link>https://kmseunh.github.io/tags/session/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/session/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Timestamp</title>
+      <link>https://kmseunh.github.io/tags/timestamp/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/timestamp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://kmseunh.github.io/tags/javascript/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ui/Ux</title>
+      <link>https://kmseunh.github.io/tags/ui/ux/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/ui/ux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Issue</title>
+      <link>https://kmseunh.github.io/tags/issue/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/issue/</guid>
       <description></description>
     </item>
     <item>
@@ -38,6 +94,55 @@
       <description></description>
     </item>
     <item>
+      <title>Oracle</title>
+      <link>https://kmseunh.github.io/tags/oracle/</link>
+      <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://kmseunh.github.io/tags/cloud/</link>
+      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crontab</title>
+      <link>https://kmseunh.github.io/tags/crontab/</link>
+      <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/crontab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://kmseunh.github.io/tags/linux/</link>
+      <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backup</title>
+      <link>https://kmseunh.github.io/tags/backup/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data</title>
+      <link>https://kmseunh.github.io/tags/data/</link>
+      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business Trip</title>
+      <link>https://kmseunh.github.io/tags/business-trip/</link>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/business-trip/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Review</title>
       <link>https://kmseunh.github.io/tags/review/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
@@ -45,10 +150,10 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://kmseunh.github.io/tags/linux/</link>
+      <title>Tool</title>
+      <link>https://kmseunh.github.io/tags/tool/</link>
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/linux/</guid>
+      <guid>https://kmseunh.github.io/tags/tool/</guid>
       <description></description>
     </item>
     <item>
@@ -59,24 +164,17 @@
       <description></description>
     </item>
     <item>
-      <title>Error</title>
-      <link>https://kmseunh.github.io/tags/error/</link>
-      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/error/</guid>
+      <title>Log</title>
+      <link>https://kmseunh.github.io/tags/log/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/log/</guid>
       <description></description>
     </item>
     <item>
-      <title>Graph</title>
-      <link>https://kmseunh.github.io/tags/graph/</link>
+      <title>Plotly</title>
+      <link>https://kmseunh.github.io/tags/plotly/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/graph/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://kmseunh.github.io/tags/database/</link>
-      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/database/</guid>
+      <guid>https://kmseunh.github.io/tags/plotly/</guid>
       <description></description>
     </item>
     <item>
@@ -84,6 +182,27 @@
       <link>https://kmseunh.github.io/tags/bootstrap/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meeting</title>
+      <link>https://kmseunh.github.io/tags/meeting/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/meeting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First</title>
+      <link>https://kmseunh.github.io/tags/first/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/first/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Daily</title>
+      <link>https://kmseunh.github.io/tags/daily/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/tags/daily/</guid>
       <description></description>
     </item>
     <item>
@@ -98,13 +217,6 @@
       <link>https://kmseunh.github.io/tags/bootcamp/</link>
       <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/tags/bootcamp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://kmseunh.github.io/tags/git/</link>
-      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/tags/git/</guid>
       <description></description>
     </item>
   </channel>

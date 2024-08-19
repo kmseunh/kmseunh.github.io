@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Start on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/start/</link>
+    <description>Recent content in Start on DevHvun</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/start/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>전자정부 프레임워크? 이것 뭐에요~?</title>
+      <link>https://kmseunh.github.io/post/2024-07-31-experience-the-egovframework/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-07-31-experience-the-egovframework/</guid>
+      <description>&lt;p&gt;이번 달부터 새로운 프로젝트에 참여하게 되었다. &lt;br&gt; 프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. &lt;br&gt;&#xA;( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )&lt;/p&gt;&#xA;&lt;p&gt;특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. &lt;br&gt;&#xA;이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. &lt;br&gt;&#xA;처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. &lt;br&gt;&#xA;( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

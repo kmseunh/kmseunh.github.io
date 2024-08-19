@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>signed unsigned 데이터 타입</title>
+      <link>https://kmseunh.github.io/post/2024-05-20-signed-unsigned-data-type/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-05-20-signed-unsigned-data-type/</guid>
+      <description>&lt;p&gt;항상 출근하면 첫 번째로 하는 일은 대시보드 페이지에 접속해 어제와 현재의 각 공장별 데이터를 확인하여 이상이 없는지 점검하는 것이다.&lt;br&gt;&#xA;한동안 이상이 없었던 그래프가 지난주 금요일 데이터만 기하급수적으로 높게 치솟았고, SCADA에서 받아오는 데이터가 너무 높게 나오는 현상이 발생했다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/fecc2a85-8bc1-44de-b4f7-68601dc4ff8e&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>테이블구조를 안본건 너무 심했잖아..</title>
+      <link>https://kmseunh.github.io/post/2024-02-18-need-to-understand-the-structure-of-database-tables/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-02-18-need-to-understand-the-structure-of-database-tables/</guid>
+      <description>&lt;p&gt;기존에 진행한 프로젝트에 계정 관리 페이지를 만들어 달라는 요청이 있었다. &lt;br&gt;&#xA;이전에 비슷한 작업을 많이 해보았기 때문에 큰 어려움 없이 개발할 수 있을 거라고 생각했다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;하지만 로그에 에러가 계속 찍혀서 확인해 보니 회원가입 양식에 정보를 입력하고 제출하면, 해당 정보를 데이터베이스에 저장하는 과정에서 문제가 발생한 것이었다. &lt;br&gt;&#xA;(기존 로그들이 너무 많아서 정신 나가는 줄&amp;hellip;)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/kmseunh/assets/105186724/44fdb377-9ae9-4ff9-91dd-ee4383eea7ae&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>오라클 DB 간 환경 설정</title>
+      <link>https://kmseunh.github.io/post/2023-12-09-deliver-oracle-database-data-in-different-environments/</link>
+      <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2023-12-09-deliver-oracle-database-data-in-different-environments/</guid>
+      <description>&lt;p&gt;대시보드 데이터를 생성하는 여러 가지 방법 중 하나가 상대 서버와 우리 서버에 같은 형태의 오라클 DB로 전달해 주는 방법이다. &lt;br&gt;&#xA;해당 CLI가 매일 특정 시간에 실행되기 때문에 데이터 오류가 있으면 에러 로그를 보면 된다. &lt;br&gt;&#xA;그런데 데이터가 올라오지 않는 이슈가 생겨서 DB의 테이블을 조회하려고 하니까 &lt;code&gt;not a vaild month&lt;/code&gt; 에러가 발생했다.&lt;br&gt;&#xA;알고 보니 각각의 환경 설정이 달라서 생긴 에러였다.&lt;/p&gt;&#xA;&lt;p&gt;따라 이번 글에서는 서로 다른 환경에서 오라클 데이터베이스 전달 시 발생하는 문제에 대한 해결 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/31fdd8c2-6343-4b2a-b80f-4f52ee1e61f7&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>싱글벙글(?) 쿼리문 체험기</title>
       <link>https://kmseunh.github.io/post/2023-05-05-retrieve-desired-data-from-database/</link>

@@ -7,27 +7,27 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memoirs</title>
       <link>https://kmseunh.github.io/series/memoirs/</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/series/memoirs/</guid>
       <description></description>
     </item>
     <item>
-      <title>Review</title>
-      <link>https://kmseunh.github.io/series/review/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/series/review/</guid>
+      <title>Worklog</title>
+      <link>https://kmseunh.github.io/series/worklog/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/series/worklog/</guid>
       <description></description>
     </item>
     <item>
-      <title>First Post</title>
-      <link>https://kmseunh.github.io/series/first-post/</link>
-      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/series/first-post/</guid>
+      <title>Study</title>
+      <link>https://kmseunh.github.io/series/study/</link>
+      <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/series/study/</guid>
       <description></description>
     </item>
   </channel>
