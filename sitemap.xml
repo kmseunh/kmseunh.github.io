@@ -17,22 +17,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://kmseunh.github.io/tags/indiv/</loc>
-    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://kmseunh.github.io/categories/indiv/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://kmseunh.github.io/series/memoirs/</loc>
+    <loc>https://kmseunh.github.io/post/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://kmseunh.github.io/post/</loc>
+    <loc>https://kmseunh.github.io/tags/server/</loc>
+    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://kmseunh.github.io/series/study/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -153,11 +153,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://kmseunh.github.io/tags/oracle/</loc>
-    <lastmod>2023-12-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://kmseunh.github.io/series/study/</loc>
     <lastmod>2023-12-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -348,6 +343,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://kmseunh.github.io/tags/daily/</loc>
+    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://kmseunh.github.io/series/memoirs/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

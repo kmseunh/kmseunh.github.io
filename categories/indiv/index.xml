@@ -21,28 +21,28 @@
       <link>https://kmseunh.github.io/post/2023-12-09-deliver-oracle-database-data-in-different-environments/</link>
       <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2023-12-09-deliver-oracle-database-data-in-different-environments/</guid>
-      <description>&lt;p&gt;대시보드 데이터를 생성하는 여러 가지 방법 중 하나가 상대 서버와 우리 서버에 같은 형태의 오라클 DB로 전달해 주는 방법이다. &lt;br&gt;&#xA;해당 CLI가 매일 특정 시간에 실행되기 때문에 데이터 오류가 있으면 에러 로그를 보면 된다. &lt;br&gt;&#xA;그런데 데이터가 올라오지 않는 이슈가 생겨서 DB의 테이블을 조회하려고 하니까 &lt;code&gt;not a vaild month&lt;/code&gt; 에러가 발생했다.&lt;br&gt;&#xA;알고 보니 각각의 환경 설정이 달라서 생긴 에러였다.&lt;/p&gt;&#xA;&lt;p&gt;따라 이번 글에서는 서로 다른 환경에서 오라클 데이터베이스 전달 시 발생하는 문제에 대한 해결 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/31fdd8c2-6343-4b2a-b80f-4f52ee1e61f7&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;대시보드 데이터를 생성하는 여러 가지 방법 중 하나가 상대 서버와 우리 서버에 같은 형태의 오라클 DB로 전달해 주는 방법이다. &lt;br&gt;&#xA;해당 CLI가 매일 특정 시간에 실행되기 때문에 데이터 오류가 있으면 에러 로그를 보면 된다. &lt;br&gt;&#xA;그런데 데이터가 올라오지 않는 이슈가 생겨서 DB의 테이블을 조회하려고 하니까 &lt;code&gt;not a vaild month&lt;/code&gt; 에러가 발생했다.&lt;br&gt;&#xA;알고 보니 각각의 환경 설정이 달라서 생긴 에러였다.&lt;/p&gt;&#xA;&lt;p&gt;따라 이번 글에서는 서로 다른 환경에서 오라클 데이터베이스 전달 시 발생하는 문제에 대한 해결 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/4a2e2b3f-e6eb-4d40-9d3d-c92e05901bf7&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>프로젝트와 클라우드 연관성</title>
       <link>https://kmseunh.github.io/post/2023-11-24-how-projects-relate-to-the-cloud/</link>
       <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2023-11-24-how-projects-relate-to-the-cloud/</guid>
-      <description>&lt;p&gt;회의 시간에 클라우드에 대한 얘기가 나왔는데 잘 이해하지 못했다. &lt;br&gt;&#xA;클라우드 기술은 프로젝트 관리를 더욱 유연하고 효율적으로 만들어주며, 이를 통해 팀원들 간의 협업과 정보 공유가 원활해질 수 있기 때문에 배워야 할 중요한 기술 중 하나라는 생각이 들었다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에는 프로젝트와 클라우드의 연관성에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/d4612e91-6c84-4921-b811-14a435a94d74&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;회의 시간에 클라우드에 대한 얘기가 나왔는데 잘 이해하지 못했다. &lt;br&gt;&#xA;클라우드 기술은 프로젝트 관리를 더욱 유연하고 효율적으로 만들어주며, 이를 통해 팀원들 간의 협업과 정보 공유가 원활해질 수 있기 때문에 배워야 할 중요한 기술 중 하나라는 생각이 들었다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에는 프로젝트와 클라우드의 연관성에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/53a163ef-b46e-4231-b306-30033eaf8a1d&#34; width=&#34;500&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>크론탭 #!bin/sh</title>
       <link>https://kmseunh.github.io/post/2023-09-21-clone-tab-and-shell-scripts/</link>
       <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2023-09-21-clone-tab-and-shell-scripts/</guid>
-      <description>&lt;p&gt;크론탭은 리눅스 시스템에서 주기적으로 작업을 실행할 수 있게 해주는 유용한 도구이다.&lt;br&gt;&#xA;이를 활용하여 특정 시간에 스크립트를 실행하고 싶을 때, 쉘 스크립트는 강력한 도구가 된다.&lt;br&gt;&#xA;쉘 스크립트를 작성할 때 가장 먼저 보이는 &lt;code&gt;#!/bin/sh&lt;/code&gt;는 해당 스크립트가 어떤 쉘에서 실행되어야 하는지 지정하는 부분이다.&#xA;하지만 아직 크론탭에 익숙해져 있지 않아서 쉘의 경로를 지정하지 않고 작업하려고 하다가 삽질을 오래 한 적이 있다.&lt;br&gt;&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에는 다양한 환경에서 스크립트가 어떻게 작동하는지 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/ed89e9fc-fbc6-4276-9047-259dc857bb5a&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;크론탭은 리눅스 시스템에서 주기적으로 작업을 실행할 수 있게 해주는 유용한 도구이다.&lt;br&gt;&#xA;이를 활용하여 특정 시간에 스크립트를 실행하고 싶을 때, 쉘 스크립트는 강력한 도구가 된다.&lt;br&gt;&#xA;쉘 스크립트를 작성할 때 가장 먼저 보이는 &lt;code&gt;#!/bin/sh&lt;/code&gt;는 해당 스크립트가 어떤 쉘에서 실행되어야 하는지 지정하는 부분이다.&#xA;하지만 아직 크론탭에 익숙해져 있지 않아서 쉘의 경로를 지정하지 않고 작업하려고 하다가 삽질을 오래 한 적이 있다.&lt;br&gt;&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에는 다양한 환경에서 스크립트가 어떻게 작동하는지 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/10075c6b-a1e4-41e1-ac63-235066f56a09&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>데이터 비만에서 살아남기</title>
+      <title>데이터 증가 시 대처 방법</title>
       <link>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</link>
       <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/</guid>
-      <description>&lt;p&gt;주간 회의 시간에 대표님께서 항상 말씀하시는 것이 있다. &lt;br&gt;&#xA;&lt;em&gt;현재 맡고 있는 프로젝트에 대해 항상 더 발전시키고 향상시킬 생각을 하자.&lt;/em&gt; 라는 말인데 이를 내가 맡은 프로젝트에 적용해 보면 어떤 부분이 있을까 하는 생각이 들었다. &lt;br&gt;&#xA;고민을 해보니 대시보드 특성상 데이터가 늘어나고 이에 따라 처리가 느려지는 이슈가 생각이 났다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;데이터가 늘어날수록 대량의 데이터를 빠르게 저장하고 검색하는 것은 쉽지 않으며, 이로 인해 성능 저하와 함께 데이터 분석에 소요되는 시간이 길어지는 문제가 발생한다. &lt;br&gt;&#xA;검색해 보니 이에 대한 해결책으로 일라스틱 서치와 키바나의 조합이 빛을 발하고 있다고 한다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 위 두가지에 대해 정리해보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/e08f6238-1cd3-4964-88a4-ec7c61daf13d&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;주간 회의 시간에 대표님께서 항상 말씀하시는 것이 있다. &lt;br&gt;&#xA;&lt;em&gt;현재 맡고 있는 프로젝트에 대해 항상 더 발전시키고 향상시킬 생각을 하자.&lt;/em&gt; 라는 말인데 이를 내가 맡은 프로젝트에 적용해 보면 어떤 부분이 있을까 하는 생각이 들었다. &lt;br&gt;&#xA;고민을 해보니 대시보드 특성상 데이터가 늘어나고 이에 따라 처리가 느려지는 이슈가 생각이 났다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;데이터가 늘어날수록 대량의 데이터를 빠르게 저장하고 검색하는 것은 쉽지 않으며, 이로 인해 성능 저하와 함께 데이터 분석에 소요되는 시간이 길어지는 문제가 발생한다. &lt;br&gt;&#xA;검색해 보니 이에 대한 해결책으로 일라스틱 서치와 키바나의 조합이 빛을 발하고 있다고 한다.&#xA;&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;따라서 이번 글에서는 위 두가지에 대해 정리해보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/c8600d59-8178-419c-ad4f-5b71930f234c&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>iTerm2 vs VSCode in Linux</title>

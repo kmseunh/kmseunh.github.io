@@ -28,7 +28,7 @@
       <link>https://kmseunh.github.io/post/2023-12-09-deliver-oracle-database-data-in-different-environments/</link>
       <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2023-12-09-deliver-oracle-database-data-in-different-environments/</guid>
-      <description>&lt;p&gt;대시보드 데이터를 생성하는 여러 가지 방법 중 하나가 상대 서버와 우리 서버에 같은 형태의 오라클 DB로 전달해 주는 방법이다. &lt;br&gt;&#xA;해당 CLI가 매일 특정 시간에 실행되기 때문에 데이터 오류가 있으면 에러 로그를 보면 된다. &lt;br&gt;&#xA;그런데 데이터가 올라오지 않는 이슈가 생겨서 DB의 테이블을 조회하려고 하니까 &lt;code&gt;not a vaild month&lt;/code&gt; 에러가 발생했다.&lt;br&gt;&#xA;알고 보니 각각의 환경 설정이 달라서 생긴 에러였다.&lt;/p&gt;&#xA;&lt;p&gt;따라 이번 글에서는 서로 다른 환경에서 오라클 데이터베이스 전달 시 발생하는 문제에 대한 해결 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/css-design-tools/assets/105186724/31fdd8c2-6343-4b2a-b80f-4f52ee1e61f7&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;대시보드 데이터를 생성하는 여러 가지 방법 중 하나가 상대 서버와 우리 서버에 같은 형태의 오라클 DB로 전달해 주는 방법이다. &lt;br&gt;&#xA;해당 CLI가 매일 특정 시간에 실행되기 때문에 데이터 오류가 있으면 에러 로그를 보면 된다. &lt;br&gt;&#xA;그런데 데이터가 올라오지 않는 이슈가 생겨서 DB의 테이블을 조회하려고 하니까 &lt;code&gt;not a vaild month&lt;/code&gt; 에러가 발생했다.&lt;br&gt;&#xA;알고 보니 각각의 환경 설정이 달라서 생긴 에러였다.&lt;/p&gt;&#xA;&lt;p&gt;따라 이번 글에서는 서로 다른 환경에서 오라클 데이터베이스 전달 시 발생하는 문제에 대한 해결 방법에 대해 알아보려 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/4a2e2b3f-e6eb-4d40-9d3d-c92e05901bf7&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>싱글벙글(?) 쿼리문 체험기</title>

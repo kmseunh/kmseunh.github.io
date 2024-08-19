@@ -128,7 +128,7 @@
   <meta itemprop="description" content="부트스트랩을 사용해서 테이블 만든 후기">
   <meta itemprop="datePublished" content="2023-04-26T00:00:00+00:00">
   <meta itemprop="dateModified" content="2023-04-26T00:00:00+00:00">
-  <meta itemprop="wordCount" content="293">
+  <meta itemprop="wordCount" content="290">
   <meta itemprop="keywords" content="2023,Bootstrap">
   
   
@@ -299,24 +299,20 @@
 <p>처음 웹 페이지에 접속했을 때부터 수정했으면 좋겠다는 생각이 들었는데 이런 기회가..?? 입꼬리를 싸악 올리면서 도전해 보았다.</p>
 <p>하지만 부트스트랩을 사용해 본 적이 없어 조금 난감했다.</p>
 <p align="center"><img src="https://github.com/kmseunh/blog/assets/105186724/70f7f521-9294-47b9-8318-a2cf06b36b6a" width="500"></p>
-<br>
 <h2 id="부트스트랩이랑-친해지기">부트스트랩이랑 친해지기</h2>
 <p>나는 부트스트랩을 반응형 웹 디자인을 지원하는 프론트 엔드 개발 프레임워크라고만 알고 있었다. <br> 부트스트랩은 기본적으로 제공되는 스타일링, 레이아웃, 그리드 시스템, 폼 등의 디자인을 사용하여 웹 페이지를 구성할 수 있다고 한다.</p>
 <p>기존 테이블도 부트스트랩을 사용했기 때문에 수정하기 전에 코드 리뷰를 살짝 해보았다. <br>
 코드를 보고 3초 만에 든 생각은 div 태그가 진짜 많고.. 많고.. 많다?? <br>
 HTML에서 div 태그는 다른 요소들을 그룹화하거나 레이아웃을 만들기 위해 사용된다고 한다.</p>
 <p>이론상 ‘수많은 div 태그들로 그룹화하고 레이아웃을 만들면 된다’라고 나름 혼자서 간단하게 정의하고, 자신감이 생겨서 부트스트랩에서 기본적으로 제공되는 디자인을 사용하여 테이블을 만들기 시작했다. <br> (일단 무조건 직진하는 편)</p>
-<hr>
+<p align="center"><img src="https://github.com/user-attachments/assets/113a96f2-0899-46b2-bae2-7f84a35ddbab" width="500"></p>
 <h2 id="그냥-나눠주면-안돼">그냥 나눠주면 안돼??</h2>
 <p>테이블을 만들 때 가장 신경 쓴 부분은 주어진 공간에 쉽게 알아볼 수 있는 크기로 각 칸을 나누는 것이다. <br> 부트스트랩의 그리드 시스템이 이 고민을 해결해 줄 수 있었다.</p>
 <p>12개의 열 시스템 어쩌구,, 6개의 기본 반응형 계층이 어쩌구,, 해서 모든 모양과 크기의 레이아웃을 빌드 할 수 있다고 하는데 이 그리드 시스템의 옵션이 6개가 있다고 한다. <br> 나는 이 그리드 옵션 부분에서 시간을 많이 썼던 것 같다.</p>
 <p>전체 테이블 코드의 일부분에는 <code>col</code>, <code>col-md</code>, <code>col-sm</code> 라고 <span style='color: #2D3748; background-color: #fff5b1'> div class </span>  안에 무언가 정의되어 있다.
 느낌 상 <code>col-md</code>는 중간 크기이고, <code>col-sm</code>은 조금 작게 설정해 주는 것 같다.</p>
 <p>col은 한 열의 너비를 설정해 주는데 <code>&lt;div class=&quot;row&quot;&gt;</code> 내부에 <code>&lt;div class=&quot;col&quot;&gt;</code> 를 여러 개 생성하면 그에 따라 row가 나눠진다. <br> 나는 5개의 행과 4개의 열로 구성된 테이블을 만들어야 했는데 맨 왼쪽 열이 다른 열들에 비해 너비가 조금 좁아야 했다.<br>(근데 왜 모두 균일하게 나눠지니..)</p>
-<hr>
-<p align="center"><img src="https://github.com/kmseunh/react-gallery/assets/105186724/dfb2c2c3-7da8-4d1d-87a6-897ad3fbc510" width="500"></p>
-<p>위 사진은 완성된 테이블이다.</p>
-<p>Chrome Devtools에 마진 값도 넣어보고,, 패딩 값도 수정해 보고,, 이것저것 시도하면서 영혼을 갈아 넣어서 결국 만족스러운 결과를 얻었다.</p></section>
+<p>그래도 Chrome Devtools에 마진 값도 넣어보고,, 패딩 값도 수정해 보고,, 이것저것 시도하면서 영혼을 갈아 넣어서 결국 만족스러운 결과를 얻었다.</p></section>
 
   
   

@@ -21,7 +21,7 @@
       <link>https://kmseunh.github.io/post/2024-07-31-experience-the-egovframework/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2024-07-31-experience-the-egovframework/</guid>
-      <description>&lt;p&gt;이번 달부터 새로운 프로젝트에 참여하게 되었다. &lt;br&gt; 프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. &lt;br&gt;&#xA;( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )&lt;/p&gt;&#xA;&lt;p&gt;특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. &lt;br&gt;&#xA;이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. &lt;br&gt;&#xA;처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. &lt;br&gt;&#xA;( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;이번 달부터 새로운 프로젝트에 참여하게 되었다. &lt;br&gt; 프로젝트는 규모가 제법 크고, 팀원들도 많아서 내 역할이 아주 크지는 않지만, 처음부터 끝까지 모든 과정에 관여할 수 있는 기회를 얻게 되어 매우 기대되고 설레는 마음으로 참여하는 중이다. &lt;br&gt;&#xA;( Spring 프로젝트를 너무나도 경험해 보고 싶었다.. )&lt;/p&gt;&#xA;&lt;p&gt;특히 이번 프로젝트는 전자정부 프레임워크를 사용하고 있어서, 플러그인이나 외부 라이브러리 없이 순수 코딩으로 문제를 해결해야 했다. &lt;br&gt;&#xA;이 과정에서 내가 얼마나 플러그인이나 라이브러리에 의존해 왔는지를 깨닫게 되었고, 반성하게 되었다. &lt;br&gt;&#xA;처음에는 상당히 도전적으로 느껴져서 다소 불안하기도 했지만, 스스로의 개발 실력을 단련할 좋은 기회라는 생각이 들었다. &lt;br&gt;&#xA;( 뭔가 근본 넘치게 개발하는 느낌이랄까..?? )&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/424c199e-0028-4110-b199-21b644cf6c6e&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>좌충우돌 권한관리 기능 구현하기</title>
@@ -63,14 +63,14 @@
       <link>https://kmseunh.github.io/post/2024-02-02-html-caching-timestamp-on-real-time-queries/</link>
       <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2024-02-02-html-caching-timestamp-on-real-time-queries/</guid>
-      <description>&lt;p&gt;실시간으로 화면을 보여주는 기능을 구현해야 해서 개발을 하고 있었는데 브라우저를 리프레시만 하는 간단한 기능이라 크게 어려움은 없었다. &lt;br&gt;&#xA;그러나 살짝 쎄한 느낌이 들었는데, 아니나 다를까 실시간으로 업데이트된 내용이 화면에 보여져야 되는데 제대로 전달되지 않는 문제가 생긴 것이다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/svelte-projects/assets/105186724/91e763ba-b366-4cc7-896f-e60dc173435f&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;실시간으로 화면을 보여주는 기능을 구현해야 해서 개발을 하고 있었는데 브라우저를 리프레시만 하는 간단한 기능이라 크게 어려움은 없었다. &lt;br&gt;&#xA;그러나 살짝 쎄한 느낌이 들었는데, 아니나 다를까 실시간으로 업데이트된 내용이 화면에 보여져야 되는데 제대로 전달되지 않는 문제가 생긴 것이다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/48de88be-d328-4f65-afb3-88c6dddf94e3&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>괜히 JavsScript로 화면 그린 그날</title>
       <link>https://kmseunh.github.io/post/2024-01-30-problems-when-drawing-a-screen-with-javascript/</link>
       <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2024-01-30-problems-when-drawing-a-screen-with-javascript/</guid>
-      <description>&lt;p&gt;평소에는 HTML로 화면을 그리는 편인데, 오늘 처음으로 JavsScript로 도전하고 싶은 생각이 들었다. &lt;br&gt;&#xA;참지 못하고 저질러버렸는데&amp;hellip; div 태그로 각각 그리드 나누고 패딩 조절하는 것보다 훨씬 코드량도 적고 간단해서 좋았다. &lt;br&gt;&#xA;라고 생각한 지 10분도 안 돼서 문제가 생겼다..&lt;br&gt;&#xA;(코드가 짧고 단순하면 좋은 건 줄 알았지..)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/kmseunh/react-memo/assets/105186724/b74e60d9-a43a-4451-9652-f6322752e19a&#34; width=&#34;350&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;평소에는 HTML로 화면을 그리는 편인데, 오늘 처음으로 JavsScript로 도전하고 싶은 생각이 들었다. &lt;br&gt;&#xA;참지 못하고 저질러버렸는데&amp;hellip; div 태그로 각각 그리드 나누고 패딩 조절하는 것보다 훨씬 코드량도 적고 간단해서 좋았다. &lt;br&gt;&#xA;라고 생각한 지 10분도 안 돼서 문제가 생겼다..&lt;br&gt;&#xA;(코드가 짧고 단순하면 좋은 건 줄 알았지..)&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/29c789e2-1e01-4f9a-88e1-7026d18f2383&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>기획하는 승현 감성 모르면 나가라</title>
