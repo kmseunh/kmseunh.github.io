@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on DevHvun</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kmseunh.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>우분투 세팅을 해보자</title>
+      <link>https://kmseunh.github.io/post/2024-08-20-set-up-ubuntu/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-08-20-set-up-ubuntu/</guid>
+      <description>&lt;p&gt;나만의 서버가 생겼으니까 세팅을 해보려고 한다. &lt;br&gt;&#xA;세팅을 어렵지 않고 간단했지만 중간에 SSH 설정하면서 삽질을 좀 해가지고 시간이 오래걸렸다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

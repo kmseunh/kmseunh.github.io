@@ -1,0 +1,546 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>우분투 세팅을 해보자 - DevHvun</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="나만의 서버가 생겼으니까 세팅을 해보려고 한다. 
+세팅을 어렵지 않고 간단했지만 중간에 SSH 설정하면서 삽질을 좀 해가지고 시간이 오래걸렸다." />
+  <meta name="author" content="1020" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://kmseunh.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/linkedin.svg" />
+  
+  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.133.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+
+
+  
+  
+  <meta itemprop="name" content="우분투 세팅을 해보자">
+  <meta itemprop="description" content="우분투 설정">
+  <meta itemprop="datePublished" content="2024-08-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="696">
+  <meta itemprop="keywords" content="2024,Server,Ubuntu">
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="우분투 세팅을 해보자">
+  <meta name="twitter:description" content="우분투 설정">
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://kmseunh.github.io/"
+      >DevHvun</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="https://thundering-ursinia-ede.notion.site/62c63b5726ac4e269be8c08e97d6e0eb?pvs=4"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/series/"
+        >Series</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/"
+        >Tags</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/seunghyun-kim-250b562a6"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://kmseunh.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">우분투 세팅을 해보자</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Aug 20, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>나만의 서버가 생겼으니까 세팅을 해보려고 한다. <br>
+세팅을 어렵지 않고 간단했지만 중간에 SSH 설정하면서 삽질을 좀 해가지고 시간이 오래걸렸다.</p>
+<h2 id="기본-패키지-설치">기본 패키지 설치</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install net-tools
+</span></span></code></pre></div><ul>
+<li><code>net-tools</code> 패키지를 설치하면 여러 유용한 네트워크 관련 명령어를 사용할 수 있게 된다.</li>
+</ul>
+<h2 id="vim-설정">vim 설정</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">number</span>                  <span style="color:#75715e">&#34; 행 번호 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">showcmd</span>                 <span style="color:#75715e">&#34; 명령어 입력 시 명령어 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">showmatch</span>               <span style="color:#75715e">&#34; 매칭되는 괄호 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">cursorline</span>              <span style="color:#75715e">&#34; 커서가 있는 줄 강조</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">hlsearch</span>                <span style="color:#75715e">&#34; 검색 내용 하이라이트</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">wildmenu</span>                <span style="color:#75715e">&#34; 명령어 자동 완성 시 메뉴 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">wmnu</span>                    <span style="color:#75715e">&#34; tab 자동완성 목록 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">nowrap</span>                  <span style="color:#75715e">&#34; 명령어 자동 완성 시 메뉴 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">tabstop</span>=<span style="color:#ae81ff">4</span>               <span style="color:#75715e">&#34; 탭을 4칸으로 설정</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">shiftwidth</span>=<span style="color:#ae81ff">4</span>            <span style="color:#75715e">&#34; 자동 들여쓰기 시 4칸 이동</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">expandtab</span>               <span style="color:#75715e">&#34; 탭을 스페이스로 변환</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">autoindent</span>              <span style="color:#75715e">&#34; 자동 들여쓰기</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamedplus</span>   <span style="color:#75715e">&#34; 시스템 클립보드 사용</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#a6e22e">ignorecase</span>              <span style="color:#75715e">&#34; 대소문자 구별 X</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">syntax</span> <span style="color:#a6e22e">on</span>                   <span style="color:#75715e">&#34; 구문 강조 활성화</span>
+</span></span></code></pre></div><p>vim이 기본으로 설치되어 있어서 설정만 추가했다.</p>
+<h2 id="ssh-접속-포트-변경">SSH 접속 포트 변경</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># SSH 설정 편집</span>
+</span></span><span style="display:flex;"><span>sudo vim /etc/ssh/sshd_config
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 15번 라인: 새로운 포트 지정</span>
+</span></span><span style="display:flex;"><span>Port <span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span>Port <span style="color:#ae81ff">10002</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 58번 라인: ssh key 파일 대신 password 입력 방식</span>
+</span></span><span style="display:flex;"><span>PasswordAuthentication yes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 59번 라인 암호 없는 유저 로그인 x</span>
+</span></span><span style="display:flex;"><span>PermitEmptyPasswords no
+</span></span></code></pre></div><p>58번과 59번 라인이 주석이 되어 있어서 둘 다 주석을 해제했다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># SSH 설정 적용</span>
+</span></span><span style="display:flex;"><span>sudo systemctl restart ssh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 현재 실행 중인 SSH 서버 프로세스의 네트워크 상태 확인</span>
+</span></span><span style="display:flex;"><span>sudo netstat -tnlp | grep sshd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 현재 설정된 포트 확인</span>
+</span></span><span style="display:flex;"><span>cat /etc/ssh/sshd_config | egrep ^<span style="color:#ae81ff">\#</span>?Port
+</span></span></code></pre></div><h2 id="ufw-방화벽-설정">ufw 방화벽 설정</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 방화벽 상태 확인</span>
+</span></span><span style="display:flex;"><span>sudo ufw status
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 방화벽 실행</span>
+</span></span><span style="display:flex;"><span>ufw enable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 추가한 포트 열기</span>
+</span></span><span style="display:flex;"><span>sudo ufw allow 10002/tcp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ssh 접속 확인</span>
+</span></span><span style="display:flex;"><span>ssh &lt;username&gt;@&lt;server_ip&gt; -p <span style="color:#ae81ff">2222</span>
+</span></span></code></pre></div><h2 id="sudo-권한-계정-추가">sudo 권한 계정 추가</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 사용자 계정 생성</span>
+</span></span><span style="display:flex;"><span>sudo adduser &lt;계정 이름&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 계정 생성 확인</span>
+</span></span><span style="display:flex;"><span>grep /bin/bash /etc/passwd | cut -f1 -d:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sudo 권한 추가</span>
+</span></span><span style="display:flex;"><span>sudo usermod -aG sudo &lt;계정 이름&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 생성된 계정 접속</span>
+</span></span><span style="display:flex;"><span>su &lt;계정 이름&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sudo 권한 확인</span>
+</span></span><span style="display:flex;"><span>groups
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 새로 생성한 계정 SSH 접속</span>
+</span></span><span style="display:flex;"><span>ssh &lt;계정 이름&gt;@&lt;server_ip&gt; -p <span style="color:#ae81ff">2222</span>
+</span></span></code></pre></div><p>특정 사용자에게 관리자 권한을 부여하여 시스템의 설정을 변경하거나 프로그램을 설치할 수 있게 해주는 과정이다.</p>
+<h2 id="ssh-사용자-접근-제한">SSH 사용자 접근 제한</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># SSH 설정 변경</span>
+</span></span><span style="display:flex;"><span>sudo vim /etc/ssh/sshd_config
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 14번 라인: 새로 추가한 계정 혀용, 기본값(ubuntu, opc)은 차단</span>
+</span></span><span style="display:flex;"><span>AllowUsers &lt;계정 이름&gt;
+</span></span><span style="display:flex;"><span>DenyUsers ubuntu, opc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># SSH 재시작</span>
+</span></span><span style="display:flex;"><span>sudo systemctl restart ssh
+</span></span></code></pre></div><p>특정 사용자만 SSH 접속을 허용하거나 특정 사용자의 SSH 접속을 차단하여 보안을 강화할 수 있다고 한다.</p>
+<h2 id="타임존time-zone-설정">타임존(Time Zone) 설정</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 현재 타임존 확인</span>
+</span></span><span style="display:flex;"><span>timedatectl
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 타임존(Time Zone) 설정</span>
+</span></span><span style="display:flex;"><span>sudo timedatectl set-timezone Asia/Seoul
+</span></span></code></pre></div><h2 id="swap-메모리-설정">Swap 메모리 설정</h2>
+<p>스왑 메모리(Swap Memory)는 시스템의 물리적 메모리(RAM)가 부족할 때 디스크 공간을 임시 메모리로 사용하는 기능으로 메모리가 초과되었을 때, 메모리 부족 현상을 해결할 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Swap 메모리 상태 확인</span>
+</span></span><span style="display:flex;"><span>free -h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Swap 파일 생성</span>
+</span></span><span style="display:flex;"><span>sudo falocate -l 8G /swapfile
+</span></span><span style="display:flex;"><span>sudo chmod <span style="color:#ae81ff">600</span> /swapfile
+</span></span><span style="display:flex;"><span>sudo mkswap /swapfile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Swap 파일 활성화</span>
+</span></span><span style="display:flex;"><span>sudo swapon /swapfile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Swap 파일 자동 마운트 설정</span>
+</span></span><span style="display:flex;"><span>sudo vim /etc/fstab
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 맨 마지막 줄에 추가</span>
+</span></span><span style="display:flex;"><span>/swapfile swap swap defaults <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><h2 id="fail2ban-설치">fail2ban 설치</h2>
+<p>fail2ban은 서버에서 SSH, FTP, HTTP 등의 서비스에 대해 비정상적인 접근 시도를 감지하고 차단하는 도구이다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># fail2ban 설치</span>
+</span></span><span style="display:flex;"><span>sudo apt install fail2ban
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 기본 설정 파일 복사</span>
+</span></span><span style="display:flex;"><span>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># jail.local 파일 수정</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>DEFAULT<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>bantime  <span style="color:#f92672">=</span> 10m      <span style="color:#75715e"># 접속 차단 시간</span>
+</span></span><span style="display:flex;"><span>findtime  <span style="color:#f92672">=</span> 10m     <span style="color:#75715e"># 공격 시도로 간주되는 시간</span>
+</span></span><span style="display:flex;"><span>maxretry  <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>       <span style="color:#75715e"># 최대 로그인 시도 횟수</span>
+</span></span><span style="display:flex;"><span>backend   <span style="color:#f92672">=</span> auto
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>sshd<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>enabled   <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>port      <span style="color:#f92672">=</span> ssh
+</span></span><span style="display:flex;"><span>logpath   <span style="color:#f92672">=</span> %<span style="color:#f92672">(</span>sshd_log<span style="color:#f92672">)</span>s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fail2ban 재시작</span>
+</span></span><span style="display:flex;"><span>sudo systemctl restart fail2ban
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fail2ban 상태 확인</span>
+</span></span><span style="display:flex;"><span>sudo systemctl status fail2ban
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># checkban 명령 alias 추가</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span>bash
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Bash 설정 파일 수정</span>
+</span></span><span style="display:flex;"><span>vim ~/.bashrc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 맨 아래줄에 추가</span>
+</span></span><span style="display:flex;"><span>alias checkban<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo tail -f /var/log/fail2ban.log&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 설정 파일 적용</span>
+</span></span><span style="display:flex;"><span>source ~/.bashrc
+</span></span></code></pre></div><p><span style='color: #2D3748; background-color: #fff5b1'> &lsquo;sudo tail -f /var/log/fail2ban.log&rsquo; </span>은 fail2ban 로그 파일에서 발생하는 모든 실시간 활동을 볼 수 있는 명령어이다.</p>
+<h2 id="issue-상황">ISSUE 상황</h2>
+<p>기존 포트 22가 아닌 다른 포트로 SSH 접속을 설정하기 위해 <code>sshd_config</code>에 포트를 추가하고 오라클 인스턴스의 수신 규칙 목록에 등록도 했는데 방화벽 포트를 열어두지 않고 로그아웃을 해버렸다. 22 포트를 지워버린 상태라 접속할 수 있는 방법이 사라져버린 것이다..</p>
+<p>진짜 너무 당황스러워서 GPT와 구글링으로 해결 방법을 검색하고 시도해 봤는데, 오라클 인스턴스에 Shell로 접속이 가능하다는 것을 알았다. OCI에 접속하고 인스턴스 페이지에 들어가면 리소스 항목에 콘솔 접속이라는 메뉴가 있다. 콘솔 접속에 들어가서 Cloud Shell 접속 실행을 하면 접속이 가능했다.</p>
+<p>인스턴스를 삭제하고 다시 생성해야 하나 고민을 했지만 방법이 있어서 다행이었다..</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/63ce090b-b23a-4920-9e74-d11ee5156403" width="400"></p></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/2024"
+      >2024</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/server"
+      >server</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://kmseunh.github.io/tags/ubuntu"
+      >ubuntu</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/"
+      ><span>개인 서버가 있었으면 조켄네</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="giscus mt-24"></div>
+    <script src="https://giscus.app/client.js"
+          data-repo="kmseunh/kmseunh.github.io"
+          data-repo-id="R_kgDOKefbLg"
+          data-category="Comments"
+          data-category-id="DIC_kwDOKefbLs4Cgyq5"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="transparent_dark"
+          data-lang="ko"
+          data-loading="anonymous"
+          crossorigin="anonymous"
+          async>
+    </script>
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://kmseunh.github.io/">DevHvun</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
