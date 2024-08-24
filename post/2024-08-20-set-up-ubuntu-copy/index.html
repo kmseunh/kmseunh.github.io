@@ -445,8 +445,11 @@
 </span></span><span style="display:flex;"><span>source ~/.bashrc
 </span></span></code></pre></div><p><span style='color: #2D3748; background-color: #fff5b1'> &lsquo;sudo tail -f /var/log/fail2ban.log&rsquo; </span>은 fail2ban 로그 파일에서 발생하는 모든 실시간 활동을 볼 수 있는 명령어이다.</p>
 <h2 id="issue-상황">ISSUE 상황</h2>
-<p>기존 포트 22가 아닌 다른 포트로 SSH 접속을 설정하기 위해 <code>sshd_config</code>에 포트를 추가하고 오라클 인스턴스의 수신 규칙 목록에 등록도 했는데 방화벽 포트를 열어두지 않고 로그아웃을 해버렸다. 22 포트를 지워버린 상태라 접속할 수 있는 방법이 사라져버린 것이다..</p>
-<p>진짜 너무 당황스러워서 GPT와 구글링으로 해결 방법을 검색하고 시도해 봤는데, 오라클 인스턴스에 Shell로 접속이 가능하다는 것을 알았다. OCI에 접속하고 인스턴스 페이지에 들어가면 리소스 항목에 콘솔 접속이라는 메뉴가 있다. 콘솔 접속에 들어가서 Cloud Shell 접속 실행을 하면 접속이 가능했다.</p>
+<p>기존 포트 22가 아닌 다른 포트로 SSH 접속을 설정하기 위해 <code>sshd_config</code>에 포트를 추가하고 오라클 인스턴스의 수신 규칙 목록에 등록도 했는데 방화벽 포트를 열어두지 않고 로그아웃을 해버렸다. <br>
+22 포트를 지워버린 상태라 접속할 수 있는 방법이 사라져버린 것이다..</p>
+<p>진짜 너무 당황스러워서 GPT와 구글링으로 해결 방법을 검색하고 시도해 봤는데, 오라클 인스턴스에 Shell로 접속이 가능하다는 것을 알았다. <br>
+OCI에 접속하고 인스턴스 페이지에 들어가면 리소스 항목에 콘솔 접속이라는 메뉴가 있다. <br>
+콘솔 접속에 들어가서 Cloud Shell 접속 실행을 하면 접속이 가능했다.</p>
 <p>인스턴스를 삭제하고 다시 생성해야 하나 고민을 했지만 방법이 있어서 다행이었다..</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/63ce090b-b23a-4920-9e74-d11ee5156403" width="400"></p></section>
 
