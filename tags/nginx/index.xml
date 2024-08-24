@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Server on DevHvun</title>
-    <link>https://kmseunh.github.io/tags/server/</link>
-    <description>Recent content in Server on DevHvun</description>
+    <title>Nginx on DevHvun</title>
+    <link>https://kmseunh.github.io/tags/nginx/</link>
+    <description>Recent content in Nginx on DevHvun</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
     <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kmseunh.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kmseunh.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker에 Nginx 웹 서버를 구축해 보자</title>
       <link>https://kmseunh.github.io/post/2024-08-22-set-up-docker/</link>
       <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://kmseunh.github.io/post/2024-08-22-set-up-docker/</guid>
       <description>&lt;p&gt;웹 서버(Web Server)는 웹 페이지와 애플리케이션을 인터넷이나 네트워크를 통해 사용자에게 제공한다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;클라이언트(일반적으로 웹 브라우저)로부터의 요청을 처리하고, 해당 요청에 맞는 데이터를 서버에서 찾아 응답으로 반환하는 역할을 한다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 밸런서, 캐싱 등의 다양한 기능을 제공한다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;웹 애플리케이션의 성능, 보안, 효율성을 크게 개선할 수 있다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;도커(Docker)는 컨테이너화 기술을 기반으로 하는 오픈 소스 플랫폼이다. &lt;br&gt;&#xA;리눅스에서 애플리케이션을 실행할 수 있는 독립된 환경을 제공하는데 이때, 독립된 환경을 컨테이너라고 한다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;컨테이너는 애플리케이션을 실행할 수 있는 환경&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;원래는 서버 전역에 Nginx를 설치하여 사용하는 방법을 고려했지만, Docker를 활용하면 Nginx와 각 프로젝트의 환경을 완전히 분리할 수 있다. &lt;br&gt;&#xA;또한, Docker를 사용하면 각 프로젝트 내 애플리케이션을 독립적으로 관리할 수 있어, 유지보수 및 확장성 측면에서 이점이 있다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;이러한 이유로 Docker를 사용해 보려고 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/344f7915-4cee-493c-b311-a8382fb18a3c&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ubuntu 세팅을 해보자</title>
-      <link>https://kmseunh.github.io/post/2024-08-20-set-up-ubuntu/</link>
-      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/post/2024-08-20-set-up-ubuntu/</guid>
-      <description>&lt;p&gt;나만의 서버가 생겼으니까 세팅을 해보려고 한다. &lt;br&gt;&#xA;세팅을 어렵지 않고 간단했지만 중간에 SSH 설정하면서 삽질을 좀 해가지고 시간이 오래걸렸다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>개인 서버가 있었으면 조켄네</title>
-      <link>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://kmseunh.github.io/post/2024-08-18-creating-oracle-instances-and-server/</guid>
-      <description>&lt;p&gt;내가 만든 서비스를 다른 사람들이 사용하는 모습을 상상하면서, 개인 서버를 구축하고 싶다는 마음이 들었다. &lt;br&gt;&#xA;처음에 떠오른 것은 AWS 프리티어였는데, 채용 공고에서 AWS 경험을 중요시하는 경우가 많아 필수로 경험해야겠다고 생각했다. &lt;br&gt;&#xA;하지만 이전에 프리 티어 계정을 만들었던 경험이 있어, 몇 개월 후 예기치 않게 과금이 발생했던 기억이 있어서 조금 걱정이 되었다.&lt;/p&gt;&#xA;&lt;p&gt;그러던 중, 오라클 프리티어가 평생 무료로 서버를 제공한다는 매력적인 옵션을 발견했는데, 제한이 있긴 하지만 경제적인 부담 없이 개인 서버를 운영할 수 있다는 점에서 큰 매력을 느꼈다. &lt;br&gt;&#xA;그래서 바로 도전해 보기로 결심하고, 과정에서 겪은 여러 시행착오와 배운 점들을 기록하기로 했다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/f149f134-4264-4f11-80a3-4dd4329dca75&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

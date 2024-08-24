@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/categories/indiv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker에 Nginx 웹 서버를 구축해 보자</title>
+      <link>https://kmseunh.github.io/post/2024-08-22-set-up-docker/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-08-22-set-up-docker/</guid>
+      <description>&lt;p&gt;웹 서버(Web Server)는 웹 페이지와 애플리케이션을 인터넷이나 네트워크를 통해 사용자에게 제공한다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;클라이언트(일반적으로 웹 브라우저)로부터의 요청을 처리하고, 해당 요청에 맞는 데이터를 서버에서 찾아 응답으로 반환하는 역할을 한다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 밸런서, 캐싱 등의 다양한 기능을 제공한다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;웹 애플리케이션의 성능, 보안, 효율성을 크게 개선할 수 있다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;도커(Docker)는 컨테이너화 기술을 기반으로 하는 오픈 소스 플랫폼이다. &lt;br&gt;&#xA;리눅스에서 애플리케이션을 실행할 수 있는 독립된 환경을 제공하는데 이때, 독립된 환경을 컨테이너라고 한다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;컨테이너는 애플리케이션을 실행할 수 있는 환경&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;원래는 서버 전역에 Nginx를 설치하여 사용하는 방법을 고려했지만, Docker를 활용하면 Nginx와 각 프로젝트의 환경을 완전히 분리할 수 있다. &lt;br&gt;&#xA;또한, Docker를 사용하면 각 프로젝트 내 애플리케이션을 독립적으로 관리할 수 있어, 유지보수 및 확장성 측면에서 이점이 있다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;이러한 이유로 Docker를 사용해 보려고 한다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/344f7915-4cee-493c-b311-a8382fb18a3c&#34; width=&#34;400&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ubuntu 세팅을 해보자</title>
       <link>https://kmseunh.github.io/post/2024-08-20-set-up-ubuntu/</link>
