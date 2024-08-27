@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portainer와 Jenkins를 설치해보자</title>
+      <link>https://kmseunh.github.io/post/2024-08-26-install-portainer-and-jenkins/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-08-26-install-portainer-and-jenkins/</guid>
+      <description>&lt;p&gt;웹 서버를 구축하고 4일 동안 정말 고통스러운 시간이었다. &lt;br&gt;&#xA;&lt;code&gt;Portainer&lt;/code&gt;와 &lt;code&gt;Jenkins&lt;/code&gt;을 설치하고 Https 프록시 설정을 하고 싶었는데 쉴 틈 없이 쏟아지는 에러들로 하염없이 시간을 보내버렸다. &lt;br&gt;&#xA;Portainer는 오래 걸리지 않았는데, Jenkins을 설치할 때 정말 많은 시간이 걸렸다.&lt;br&gt;&#xA;( 프로젝트 진행한 다음에 설치해도 되는데 왜 그랬을까&amp;hellip; )&lt;/p&gt;&#xA;&lt;p&gt;Portainer는 Docker 환경을 관리하기 위한 웹 기반 관리 도구로, Docker 컨테이너, 이미지, 볼륨 등을 직관적인 사용자 인터페이스를 통해 쉽게 관리할 수 있다. &lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Jenkins는 CI/CD(지속적 통합 및 지속적 배포)를 자동화하는 도구로, 코드 변경 사항을 자동으로 빌드, 테스트, 배포하는 파이프라인을 구축할 수 있다.&lt;/p&gt;&#xA;&lt;p&gt;특히 Jenkins를 활용하여 개발 및 배포 프로세스를 자동화하고, GitHub와 연동하여 파이프라인을 구축해 보고 싶다.&lt;/p&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/e3d93ca0-9e74-429a-b368-47d5786069de&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Docker에 Nginx 웹 서버를 구축해 보자</title>
       <link>https://kmseunh.github.io/post/2024-08-22-set-up-docker/</link>
