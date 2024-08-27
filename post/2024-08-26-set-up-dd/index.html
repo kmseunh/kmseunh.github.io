@@ -42,7 +42,7 @@
   style="--bg: #faf8f1"
   lang="en-us"
 >
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -51,7 +51,7 @@
   />
 
   
-  <title>Docker에 Nginx 웹 서버를 구축해 보자 - DevHvun</title>
+  <title>Portainer와 Jenkins를 설치해보자 - DevHvun</title>
 
   
   <meta name="theme-color" />
@@ -86,19 +86,19 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
   
   
   
-  <link rel="preload stylesheet" as="style" href="https://kmseunh.github.io/main.min.css" />
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
   <script
     defer
-    src="https://kmseunh.github.io/highlight.min.js"
+    src="http://localhost:1313/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
   
 
   
    
-  <link rel="preload" as="image" href="https://kmseunh.github.io/theme.png" />
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
   
   
@@ -108,47 +108,26 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
   
 
   
-  <link rel="preload" as="image" href="https://kmseunh.github.io/github.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
   
-  <link rel="preload" as="image" href="https://kmseunh.github.io/linkedin.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
   
-  <link rel="preload" as="image" href="https://kmseunh.github.io/rss.svg" />
-  
-  
-
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
   
   
 
   
-  <link rel="icon" href="https://kmseunh.github.io/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
+  
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png" />
 
   
   <meta name="generator" content="Hugo 0.133.0">
 
   
   
-
-  
-  
-  
-  
-  
-
-
-  
-  
-  <meta itemprop="name" content="Docker에 Nginx 웹 서버를 구축해 보자">
-  <meta itemprop="description" content="Docker 설정">
-  <meta itemprop="datePublished" content="2024-08-22T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-08-22T00:00:00+00:00">
-  <meta itemprop="wordCount" content="831">
-  <meta itemprop="keywords" content="2024,Server,Docker,Nginx">
-  
-  
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Docker에 Nginx 웹 서버를 구축해 보자">
-  <meta name="twitter:description" content="Docker 설정">
 
   
   
@@ -159,7 +138,7 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
   <div class="relative z-50 mr-auto flex items-center">
     <a
       class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
-      href="https://kmseunh.github.io/"
+      href="http://localhost:1313/"
       >DevHvun</a
     >
     <div
@@ -275,7 +254,7 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
       <a
         class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./rss.svg)"
-        href="https://kmseunh.github.io/index.xml"
+        href="http://localhost:1313/index.xml"
         target="_blank"
         rel="alternate"
       >
@@ -295,12 +274,12 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Docker에 Nginx 웹 서버를 구축해 보자</h1>
+    <h1 class="!my-0 pb-2.5">Portainer와 Jenkins를 설치해보자</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Aug 22, 2024</time>
+      <time>Aug 26, 2024</time>
       
       
       
@@ -375,43 +354,45 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># docker-compose.yml 작성</span>
 </span></span><span style="display:flex;"><span>vi docker-compose.yml
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># docker-compose.yml</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.9&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">nginx</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx:latest</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">80</span>:<span style="color:#ae81ff">80</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">443</span>:<span style="color:#ae81ff">443</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./conf/nginx.conf:/etc/nginx/nginx.conf</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/conf:/etc/letsencrypt</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/www:/var/www/certbot</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">certbot</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">certbot/certbot</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/conf:/etc/letsencrypt</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/www:/var/www/certbot</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># conf 폴더 생성</span>
+</span></span><span style="display:flex;"><span>version: <span style="color:#e6db74">&#39;3.9&#39;</span>
+</span></span><span style="display:flex;"><span>services:
+</span></span><span style="display:flex;"><span>  nginx:
+</span></span><span style="display:flex;"><span>    image: nginx:latest
+</span></span><span style="display:flex;"><span>    restart: unless-stopped
+</span></span><span style="display:flex;"><span>    ports:
+</span></span><span style="display:flex;"><span>      - 80:80
+</span></span><span style="display:flex;"><span>      - 443:443
+</span></span><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>      - ./conf/nginx.conf:/etc/nginx/nginx.conf
+</span></span><span style="display:flex;"><span>      - ./data/certbot/conf:/etc/letsencrypt
+</span></span><span style="display:flex;"><span>      - ./data/certbot/www:/var/www/certbot
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  certbot:
+</span></span><span style="display:flex;"><span>    image: certbot/certbot
+</span></span><span style="display:flex;"><span>    restart: unless-stopped
+</span></span><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>      - ./data/certbot/conf:/etc/letsencrypt
+</span></span><span style="display:flex;"><span>      - ./data/certbot/www:/var/www/certbot
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># conf 폴더 생성</span>
 </span></span><span style="display:flex;"><span>mkdir conf
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># nginx.conf 파일 작성</span>
 </span></span><span style="display:flex;"><span>vi conf/nginx.conf
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#75715e"># nginx.conf
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">server</span> {
-</span></span><span style="display:flex;"><span>     <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>     <span style="color:#f92672">server_name</span> <span style="color:#e6db74">&lt;구매한</span> <span style="color:#e6db74">도메인&gt;</span>;
+</span></span><span style="display:flex;"><span>server <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>     listen 80;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>     <span style="color:#f92672">location</span> <span style="color:#e6db74">/.well-known/acme-challenge/</span> {
-</span></span><span style="display:flex;"><span>             <span style="color:#f92672">allow</span> <span style="color:#e6db74">all</span>;
-</span></span><span style="display:flex;"><span>             <span style="color:#f92672">root</span> <span style="color:#e6db74">/var/www/certbot</span>;
-</span></span><span style="display:flex;"><span>     } 
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># docker-compose 실행</span>
+</span></span><span style="display:flex;"><span>     server_name &lt;구매한 도메인&gt;;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     location /.well-known/acme-challenge/ <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>             allow all;
+</span></span><span style="display:flex;"><span>             root /var/www/certbot;
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># docker-compose 실행</span>
 </span></span><span style="display:flex;"><span>docker-compose -f docker-compose.yml up -d
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 컨테이너 상태 확인</span>
@@ -433,82 +414,80 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 인증서 발급 스크립트 실행</span>
 </span></span><span style="display:flex;"><span>sudo ./init-letsencrypt.sh
 </span></span></code></pre></div><h3 id="https-적용-및-자동-갱신-설정">HTTPS 적용 및 자동 갱신 설정</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#75715e"># nginx.conf 수정
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">user</span> <span style="color:#e6db74">nginx</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># nginx.conf 수정</span>
+</span></span><span style="display:flex;"><span>user nginx;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">worker_processes</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>worker_processes 1;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">events</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">worker_connections</span> <span style="color:#ae81ff">1024</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>events <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    worker_connections 1024;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">http</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/mime.types</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default_type</span> <span style="color:#e6db74">application/octet-stream</span>;
+</span></span><span style="display:flex;"><span>http <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    include /etc/nginx/mime.types;
+</span></span><span style="display:flex;"><span>    default_type application/octet-stream;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server_name</span> <span style="color:#e6db74">&lt;구매한</span> <span style="color:#e6db74">도메인&gt;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server_tokens</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>    server <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        listen 80;
+</span></span><span style="display:flex;"><span>        server_name &lt;구매한 도메인&gt;;
+</span></span><span style="display:flex;"><span>        server_tokens off;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">location</span> <span style="color:#e6db74">/.well-known/acme-challenge/</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">allow</span> <span style="color:#e6db74">all</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">root</span> <span style="color:#e6db74">/var/www/certbot</span>;
-</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        location /.well-known/acme-challenge/ <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            allow all;
+</span></span><span style="display:flex;"><span>            root /var/www/certbot;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">return</span> <span style="color:#ae81ff">301</span> <span style="color:#e6db74">https://</span>$host$request_uri;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>        location / <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">301</span> https://$host$request_uri;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">listen</span> <span style="color:#ae81ff">443</span> <span style="color:#e6db74">ssl</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server_name</span> <span style="color:#e6db74">&lt;구매한</span> <span style="color:#e6db74">도메인&gt;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server_tokens</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>    server <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        listen <span style="color:#ae81ff">443</span> ssl;
+</span></span><span style="display:flex;"><span>        server_name &lt;구매한 도메인&gt;;
+</span></span><span style="display:flex;"><span>        server_tokens off;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ssl_certificate</span> <span style="color:#e6db74">/etc/letsencrypt/live/&lt;구매한</span> <span style="color:#e6db74">도메인&gt;/fullchain.pem</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ssl_certificate_key</span> <span style="color:#e6db74">/etc/letsencrypt/live/&lt;구매한</span> <span style="color:#e6db74">도메인&gt;/privkey.pem</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ssl_protocols</span> <span style="color:#e6db74">TLSv1.2</span> <span style="color:#e6db74">TLSv1.3</span>;
+</span></span><span style="display:flex;"><span>        ssl_certificate /etc/letsencrypt/live/&lt;구매한 도메인&gt;/fullchain.pem;
+</span></span><span style="display:flex;"><span>        ssl_certificate_key /etc/letsencrypt/live/&lt;구매한 도메인&gt;/privkey.pem;
+</span></span><span style="display:flex;"><span>        include /etc/letsencrypt/options-ssl-nginx.conf;
+</span></span><span style="display:flex;"><span>        ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/letsencrypt/options-ssl-nginx.conf</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ssl_dhparam</span> <span style="color:#e6db74">/etc/letsencrypt/ssl-dhparams.pem</span>;
+</span></span><span style="display:flex;"><span>        location / <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            root /usr/share/nginx/html;
+</span></span><span style="display:flex;"><span>            index index.html index.htm;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">root</span> <span style="color:#e6db74">/usr/share/nginx/html</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">index</span> <span style="color:#e6db74">index.html</span> <span style="color:#e6db74">index.htm</span>;
-</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        error_page <span style="color:#ae81ff">500</span> <span style="color:#ae81ff">502</span> <span style="color:#ae81ff">503</span> <span style="color:#ae81ff">504</span>   /50x.html;
+</span></span><span style="display:flex;"><span>        location <span style="color:#f92672">=</span> /50x.html <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            root /usr/share/nginx/html;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">error_page</span> <span style="color:#ae81ff">500</span> <span style="color:#ae81ff">502</span> <span style="color:#ae81ff">503</span> <span style="color:#ae81ff">504</span>   <span style="color:#e6db74">/50x.html</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">location</span> = <span style="color:#e6db74">/50x.html</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">root</span> <span style="color:#e6db74">/usr/share/nginx/html</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># docker-compose.yml 수정</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.9&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">nginx</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx:latest</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">80</span>:<span style="color:#ae81ff">80</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">443</span>:<span style="color:#ae81ff">443</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./conf/nginx.conf:/etc/nginx/nginx.conf</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/conf:/etc/letsencrypt</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/www:/var/www/certbot</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Nginx 웹 서버를 실행하고 주기적으로 Nginx 설정을 다시 로드하는 명령어</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">command</span>: <span style="color:#e6db74">&#39;/bin/sh -c &#39;&#39;while :; do sleep 6h &amp; wait $${!}; nginx -s reload; done &amp; nginx -g &#34;daemon off;&#34;&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># docker-compose.yml 수정</span>
+</span></span><span style="display:flex;"><span>version: <span style="color:#e6db74">&#39;3.9&#39;</span>
+</span></span><span style="display:flex;"><span>services:
+</span></span><span style="display:flex;"><span>  nginx:
+</span></span><span style="display:flex;"><span>    image: nginx:latest
+</span></span><span style="display:flex;"><span>    restart: unless-stopped
+</span></span><span style="display:flex;"><span>    ports:
+</span></span><span style="display:flex;"><span>      - 80:80
+</span></span><span style="display:flex;"><span>      - 443:443
+</span></span><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>      - ./conf/nginx.conf:/etc/nginx/nginx.conf
+</span></span><span style="display:flex;"><span>      - ./data/certbot/conf:/etc/letsencrypt
+</span></span><span style="display:flex;"><span>      - ./data/certbot/www:/var/www/certbot
+</span></span><span style="display:flex;"><span>    command: <span style="color:#e6db74">&#39;/bin/sh -c &#39;&#39;while :; do sleep 6h &amp; wait $${!}; nginx -s reload; done &amp; nginx -g &#34;daemon off;&#34;&#39;&#39;&#39;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">certbot</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">certbot/certbot</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/conf:/etc/letsencrypt</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data/certbot/www:/var/www/certbot</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 컨테이너가 실행되는 동안 12시간마다 Certbot을 사용해 SSL 인증서를 갱신하는 무한 루프를 실행하는 명령어</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">entrypoint</span>: <span style="color:#e6db74">&#34;/bin/sh -c &#39;trap exit TERM; while :; do certbot renew; sleep 12h &amp; wait $${!}; done;&#39;&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># docker compose 실행</span>
+</span></span><span style="display:flex;"><span>  certbot:
+</span></span><span style="display:flex;"><span>    image: certbot/certbot
+</span></span><span style="display:flex;"><span>    restart: unless-stopped
+</span></span><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>      - ./data/certbot/conf:/etc/letsencrypt
+</span></span><span style="display:flex;"><span>      - ./data/certbot/www:/var/www/certbot
+</span></span><span style="display:flex;"><span>    entrypoint: <span style="color:#e6db74">&#34;/bin/sh -c &#39;trap exit TERM; while :; do certbot renew; sleep 12h &amp; wait </span>$$<span style="color:#e6db74">{!}; done;&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># docker compose 실행</span>
 </span></span><span style="display:flex;"><span>docker-compose -f docker-compose.yml up -d
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 인증서 발급 스크립트 실행</span>
@@ -516,7 +495,7 @@ Nginx는 웹 서버 소프트웨어로, 웹 서버, 리버스 프록시, 로드 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 컨테이너 상태 확인</span>
 </span></span><span style="display:flex;"><span>docker ps
-</span></span></code></pre></div><h4 id="서버의-디렉토리-구조">서버의 디렉토리 구조</h4>
+</span></span></code></pre></div><p>서버의 디렉토리 구조</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>~/docker/
 </span></span><span style="display:flex;"><span>└── nginx/
 </span></span><span style="display:flex;"><span>    ├── conf/
@@ -542,25 +521,25 @@ docker와 nginx와 같은 서버와 인프라에 대한 지식이 없어서 당�
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/2024"
+      href="http://localhost:1313/tags/2024"
       >2024</a
     >
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/server"
+      href="http://localhost:1313/tags/server"
       >server</a
     >
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/docker"
+      href="http://localhost:1313/tags/docker"
       >docker</a
     >
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/nginx"
+      href="http://localhost:1313/tags/nginx"
       >nginx</a
     >
     
@@ -576,8 +555,8 @@ docker와 nginx와 같은 서버와 인프라에 대한 지식이 없어서 당�
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2024-08-20-set-up-ubuntu/"
-      ><span>Ubuntu 세팅을 해보자</span><span class="ml-1.5">→</span></a
+      href="http://localhost:1313/post/2024-08-22-set-up-docker/"
+      ><span>Docker에 Nginx 웹 서버를 구축해 보자</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
@@ -620,7 +599,7 @@ docker와 nginx와 같은 서버와 인프라에 대한 지식이 없어서 당�
 >
   <div class="mr-auto">
     &copy; 2024
-    <a class="link" href="https://kmseunh.github.io/">DevHvun</a>
+    <a class="link" href="http://localhost:1313/">DevHvun</a>
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >Powered by Hugo️️</a

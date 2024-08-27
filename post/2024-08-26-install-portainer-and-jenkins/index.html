@@ -1,0 +1,467 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Portainer와 Jenkins를 설치해보자 - DevHvun</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="웹 서버를 구축하고 4일 동안 정말 고통스러운 시간이었다. 
+Portainer와 Jenkins을 설치하고 Https 프록시 설정을 하고 싶었는데 쉴 틈 없이 쏟아지는 에러들로 하염없이 시간을 보내버렸다. 
+Portainer는 오래 걸리지 않았는데, Jenkins을 설치할 때 정말 많은 시간이 걸렸다.
+( 프로젝트 진행한 다음에 설치해도 되는데 왜 그랬을까&hellip; )
+Portainer는 Docker 환경을 관리하기 위한 웹 기반 관리 도구로, Docker 컨테이너, 이미지, 볼륨 등을 직관적인 사용자 인터페이스를 통해 쉽게 관리할 수 있다. 
+Jenkins는 CI/CD(지속적 통합 및 지속적 배포)를 자동화하는 도구로, 코드 변경 사항을 자동으로 빌드, 테스트, 배포하는 파이프라인을 구축할 수 있다.
+특히 Jenkins를 활용하여 개발 및 배포 프로세스를 자동화하고, GitHub와 연동하여 파이프라인을 구축해 보고 싶다.
+" />
+  <meta name="author" content="1020" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/d3/03/96/d303960c44b99e5b86d361890a53cb9c.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="http://localhost:1313/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.133.0">
+
+  
+  
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="http://localhost:1313/"
+      >DevHvun</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="https://thundering-ursinia-ede.notion.site/62c63b5726ac4e269be8c08e97d6e0eb?pvs=4"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/series/"
+        >Series</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/tags/"
+        >Tags</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/kmseunh"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/seunghyun-kim-250b562a6"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="http://localhost:1313/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Portainer와 Jenkins를 설치해보자</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Aug 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>웹 서버를 구축하고 4일 동안 정말 고통스러운 시간이었다. <br>
+<code>Portainer</code>와 <code>Jenkins</code>을 설치하고 Https 프록시 설정을 하고 싶었는데 쉴 틈 없이 쏟아지는 에러들로 하염없이 시간을 보내버렸다. <br>
+Portainer는 오래 걸리지 않았는데, Jenkins을 설치할 때 정말 많은 시간이 걸렸다.<br>
+( 프로젝트 진행한 다음에 설치해도 되는데 왜 그랬을까&hellip; )</p>
+<p>Portainer는 Docker 환경을 관리하기 위한 웹 기반 관리 도구로, Docker 컨테이너, 이미지, 볼륨 등을 직관적인 사용자 인터페이스를 통해 쉽게 관리할 수 있다. <br></p>
+<p>Jenkins는 CI/CD(지속적 통합 및 지속적 배포)를 자동화하는 도구로, 코드 변경 사항을 자동으로 빌드, 테스트, 배포하는 파이프라인을 구축할 수 있다.</p>
+<p>특히 Jenkins를 활용하여 개발 및 배포 프로세스를 자동화하고, GitHub와 연동하여 파이프라인을 구축해 보고 싶다.</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/e3d93ca0-9e74-429a-b368-47d5786069de" width="450"></p>
+<h2 id="portainer--jenkins-설치">Portainer &amp; Jenkins 설치</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># docker-compose.yml에 Portainer &amp; Jenkins 서비스 추가</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">portainer</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">portainer/portainer-ce:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">portainer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">9000</span>:<span style="color:#ae81ff">9000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#39;/var/run/docker.sock:/var/run/docker.sock&#39;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#39;./portainer_data:/data&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">jenkins</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">jenkins/jenkins:lts</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">jenkins</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">8080</span>:<span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">50000</span>:<span style="color:#ae81ff">50000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#39;./jenkins_home:/var/jenkins_home&#39;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#39;/var/run/docker.sock:/var/run/docker.sock&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">JENKINS_OPTS=--prefix=/jenkins</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">user</span>: <span style="color:#ae81ff">root</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">portainer_data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">jenkins_home</span>:
+</span></span></code></pre></div><p>Jenkins와 Portainer 데이터는 로컬 볼륨에 저장되므로 컨테이너가 재시작되더라도 데이터가 유지된다.</p>
+<h2 id="https-프록시-설정">HTTPS 프록시 설정</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#75715e"># nginx.conf에 Portainer &amp; Jenkins 프록시 설정 추가
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">location</span> <span style="color:#e6db74">/jenkins/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://jenkins:8080/jenkins/</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $host;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $scheme;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">location</span> <span style="color:#e6db74">/portainer/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://portainer:9000/</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $host;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $scheme;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">try_files</span> $uri $uri/ =<span style="color:#ae81ff">404</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>리버스 프록시를 설정하여 <code>/jenkins/</code>와 <code>/portainer/</code> 경로를 통해 각 서비스에 접근할 수 있다.</p>
+<h4 id="서버의-디렉토리-구조">서버의 디렉토리 구조</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>~/docker/
+</span></span><span style="display:flex;"><span>└── nginx/
+</span></span><span style="display:flex;"><span>    ├── conf/
+</span></span><span style="display:flex;"><span>    │   └── nginx.conf
+</span></span><span style="display:flex;"><span>    ├── data/
+</span></span><span style="display:flex;"><span>    │   └── certbot/
+</span></span><span style="display:flex;"><span>    │       └── www/
+</span></span><span style="display:flex;"><span>    ├── docker-compose.yml
+</span></span><span style="display:flex;"><span>    ├── init-letsencrypt.sh
+</span></span><span style="display:flex;"><span>    ├── jenkins_home
+</span></span><span style="display:flex;"><span>    └── portainer_data
+</span></span></code></pre></div><h2 id="issue-상황">ISSUE 상황</h2>
+<p>이 작업이 예상보다 4일이나 걸린 이유를 곰곰이 생각해 보았다. <br>
+작업 중 주요하게 발생한 에러는 <code>403 Forbidden</code>과 <code>404 Not Found</code>였는데, <code>redirect.js</code> 및 login 페이지가 <code>/usr/share/nginx/html</code>에 존재함에도 불구하고 해당 파일을 찾지 못했다. <br>
+또한 Jenkins 관련 디렉토리와 파일의 권한을 모두 일치시켰음에도 불구하고 동일한 에러가 반복해서 발생했다.</p>
+<p>문제를 해결하기 위해 <code>docker-compose.yml</code>에서 <code>Jenkins</code> 서비스를 설정할 때,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">JENKINS_OPTS=--prefix=/jenkins</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">user</span>: <span style="color:#ae81ff">root</span>
+</span></span></code></pre></div><p>를 추가한 결과, 문제가 해결되었다.</p>
+<p><span style='color: #2D3748; background-color: #fff5b1'> &lsquo;JENKINS_OPTS=&ndash;prefix=/jenkins&rsquo; </span> 는 Jenkins가 <code>/jenkins</code> 경로 아래에서 실행되도록 하고, <span style='color: #2D3748; background-color: #fff5b1'> &lsquo;user: root&rsquo; </span> 는 Jenkins를 루트 사용자로 실행함으로써, 파일 시스템의 접근 권한 문제를 해결해 준다고 한다.</p>
+<hr>
+<p>생각보다 오래 걸리고 해결되지 않아 막막했지만, 결국 여차저차 성공하게 되어 다행이다. <br>
+100번의 에러에 짜증 나도 1번 성공할 때의 그 도파민 어쩔껀데~</p>
+<p>이제 Git으로 프로젝트를 내려받고, Docker를 이용해 이미지를 생성하여 Docker Hub에 push 해보려 한다.</p></section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="http://localhost:1313/tags/2024"
+      >2024</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="http://localhost:1313/tags/server"
+      >server</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="http://localhost:1313/tags/docker"
+      >docker</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="http://localhost:1313/tags/jenkins"
+      >jenkins</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="http://localhost:1313/post/2024-08-22-set-up-docker/"
+      ><span>Docker에 Nginx 웹 서버를 구축해 보자</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="giscus mt-24"></div>
+    <script src="https://giscus.app/client.js"
+          data-repo="kmseunh/kmseunh.github.io"
+          data-repo-id="R_kgDOKefbLg"
+          data-category="Comments"
+          data-category-id="DIC_kwDOKefbLs4Cgyq5"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="transparent_dark"
+          data-lang="ko"
+          data-loading="anonymous"
+          crossorigin="anonymous"
+          async>
+    </script>
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="http://localhost:1313/">DevHvun</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
