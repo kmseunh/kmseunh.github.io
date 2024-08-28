@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2023, Kim Seunghyun and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kmseunh.github.io/tags/2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CI/CD를 구축해보자</title>
+      <link>https://kmseunh.github.io/post/2024-08-28-install-portainer-and-jenki/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://kmseunh.github.io/post/2024-08-28-install-portainer-and-jenki/</guid>
+      <description>&lt;p&gt;서비스를 배포하려면 개발, 테스트, 빌드, 배포 등 여러 단계를 거쳐야 하며, 코드 변경 시마다 이 과정을 반복하는 것은 굉장히 번거롭다. &lt;br&gt;&#xA;CI/CD는 이러한 반복 과정을 자동화하여 애플리케이션을 빠르고 안정적으로 배포하며, 개발자가 빌드나 배포에 소요하는 시간을 줄여 개발에 더 집중할 수 있게 도와준다고 한다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CI (Continuous Integration): 빌드, 테스트의 자동화&lt;/li&gt;&#xA;&lt;li&gt;CD (Continuous Delivery/Deployment): 배포의 자동화&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;다양한 CI/CD 도구 중에서 Jenkins와 GitHub Actions을 고민하고 있었다. &lt;br&gt;&#xA;고민하던 중 두 가지 도구를 함께 사용하는 방법이 효과적이라는 것을 알게 되었고, 이를 각각 CI와 CD에 활용해 보고 싶다는 생각이 들었다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Jenkins와 GitHub Actions을 각각 CI와 CD에 활용하면, Jenkins는 복잡한 빌드와 테스트 과정을 효과적으로 관리하고, GitHub Actions은 간편하게 배포를 자동화하여 전체 CI/CD 프로세스가 더 효율적이고 안정적으로 진행된다고 한다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p align=&#34;center&#34;&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/8dccbcfb-8862-4110-9cfe-6401fc94fbeb&#34; width=&#34;450&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Portainer와 Jenkins를 설치해보자</title>
       <link>https://kmseunh.github.io/post/2024-08-26-install-portainer-and-jenkins/</link>
