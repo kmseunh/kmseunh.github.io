@@ -112,7 +112,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://kmseunh.github.io/tags/start/</loc>
+    <loc>https://kmseunh.github.io/tags/review/</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -298,11 +298,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://kmseunh.github.io/post/2023-07-18-review-first-project-service-open/</loc>
-    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://kmseunh.github.io/tags/review/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
