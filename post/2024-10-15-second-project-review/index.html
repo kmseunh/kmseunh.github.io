@@ -51,7 +51,7 @@
   />
 
   
-  <title>백업하기 vs 백업 안 하고 백억 받기 - DevHvun</title>
+  <title>[Review] 나의 두 번째 프로젝트 - DevHvun</title>
 
   
   <meta name="theme-color" />
@@ -59,12 +59,9 @@
   
   
   
-  <meta name="description" content="오늘 크론탭을 수정해야 하는 이슈가 생겨서 코드를 수정하고 실행하고 반복하고 있었다. 
-그런데 로그 찍히는 속도가 많이 더뎌서 코드의 문제인가 하고 살펴보니 디렉토리에 파일이 1000개 정도 있는 것이었다. 
-바로 대표님의 호출.. 백업도 틈틈히 안한 이슈도 스윽 얹어서 파일 관리의 중요성에 대한 설명을 들었다.
-(평소에 정리랑 친하지가 않아서..)
-
-따라서 이번 글에서는 파일 관리에 대해 정리해 보려 한다.
+  <meta name="description" content="3개월간 진행한 기업금융분석지원시스템(EFAS) 고도화 사업 프로젝트가 마무리되었다. 
+이번 프로젝트는 기업 금융 통계 정보를 더욱 신뢰성 있고 효율적으로 제공하며, 사용자 편의성을 강화하는 것을 목표로 진행되었다.
+이번 글에서는 프로젝트를 돌아보며 경험과 배운 점을 정리하려 한다.
 " />
   <meta name="author" content="1020" />
   
@@ -124,17 +121,17 @@
   
   
   
-  <meta itemprop="name" content="백업하기 vs 백업 안 하고 백억 받기">
-  <meta itemprop="description" content="파일 관리에 주의를 기울여야 한다.">
-  <meta itemprop="datePublished" content="2023-08-30T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2023-08-30T00:00:00+00:00">
-  <meta itemprop="wordCount" content="198">
-  <meta itemprop="keywords" content="2023,Backup,Issue">
+  <meta itemprop="name" content="[Review] 나의 두 번째 프로젝트">
+  <meta itemprop="description" content="두 번째로 참여한 프로젝트 리뷰">
+  <meta itemprop="datePublished" content="2024-10-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="392">
+  <meta itemprop="keywords" content="2024,Review">
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="백업하기 vs 백업 안 하고 백억 받기">
-  <meta name="twitter:description" content="파일 관리에 주의를 기울여야 한다.">
+  <meta name="twitter:title" content="[Review] 나의 두 번째 프로젝트">
+  <meta name="twitter:description" content="두 번째로 참여한 프로젝트 리뷰">
 
   
   
@@ -281,12 +278,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">백업하기 vs 백업 안 하고 백억 받기</h1>
+    <h1 class="!my-0 pb-2.5">[Review] 나의 두 번째 프로젝트</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Aug 30, 2023</time>
+      <time>Oct 15, 2024</time>
       
       
       
@@ -295,24 +292,41 @@
     
   </header>
 
-  <section><p>오늘 크론탭을 수정해야 하는 이슈가 생겨서 코드를 수정하고 실행하고 반복하고 있었다. <br>
-그런데 로그 찍히는 속도가 많이 더뎌서 코드의 문제인가 하고 살펴보니 디렉토리에 파일이 1000개 정도 있는 것이었다. <br>
-바로 대표님의 호출.. 백업도 틈틈히 안한 이슈도 스윽 얹어서 파일 관리의 중요성에 대한 설명을 들었다.<br>
-(평소에 정리랑 친하지가 않아서..)
-<br></p>
-<p>따라서 이번 글에서는 파일 관리에 대해 정리해 보려 한다.</p>
-<p align="center"><img src="https://github.com/user-attachments/assets/8a48a45e-cb66-4132-b1fd-e0ef2a977c2e" width="500"></p>
-<h2 id="백업은-생명줄">백업은 생명줄..??</h2>
-<p>내가 백업이 중요하다고 느꼈던 것은 이전 버전(?)의 코드를 가져와야 했을 때다. <br>
-Git을 사용하고 싶었지만 (잘 몰라서 배우고 싶었는데..) 그럴 수 없는 상황이라 백업 스크립트를 만들어서 사용하고 있는데 제일 피하고 싶은 상황은 백업을 하지 않고 코드를 수정하고 저장했을 때 수정 전으로 돌려달라 하는 상황이다. <br></p>
-<p>백업이 필요한 가장 큰 이유는 데이터 손실을 방지하고 데이터를 빠르게 복구할 수 있도록 도와주기 때문이다. <br>
-하지만 나처럼 디렉토리에 파일이 1000개 정도 있는 상황이라면 문제를 발생시킬 수 있다. <br>
-디렉토리가 꽉 차있기 때문에 백업 파일도 저장 공간을 많이 차지할 것이고, 백업 시간이 오래 걸릴 것이다. <br>
-또한 파일이 많으면 백업 및 복구 중에 파일 간의 충돌이나 중복으로 인한 오류가 발생할 가능성이 높다고 한다.</p>
-<p align="center"><img src="https://github.com/user-attachments/assets/0d712c02-8626-4d23-a757-e06c591a1a0f" width="400"></p>
-<p>따라서 파일이 많을 경우에는 다양한 접근 방법을 고려해야 한다. <br>
-우선 디렉토리와 파일을 구조화하여 효율적으로 관리할 수 있도록 구성해야 하고, 사용하지 않는 파일이나 불필요한 파일을 정기적으로 정리해야 한다. <br>
-아니며 중요한 파일이나 변경된 파일에 중점을 두어 선택적으로 백업하는 방법도 있다.</p></section>
+  <section><p>3개월간 진행한 기업금융분석지원시스템(EFAS) 고도화 사업 프로젝트가 마무리되었다. <br>
+이번 프로젝트는 기업 금융 통계 정보를 더욱 신뢰성 있고 효율적으로 제공하며, 사용자 편의성을 강화하는 것을 목표로 진행되었다.</p>
+<p>이번 글에서는 프로젝트를 돌아보며 경험과 배운 점을 정리하려 한다.</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/d75b8034-808a-4433-80ed-d46435cf7ec3" width="450"></p>
+<h2 id="성공적인-부분">성공적인 부분</h2>
+<h3 id="1-메뉴-체계-및-디자인-개선">1. 메뉴 체계 및 디자인 개선</h3>
+<p>기존 페이지를 최신 디자인 트렌드에 맞게 개선하며 사용자 접근성과 편의성을 개선했다. <br>
+폰트, 색상, 메뉴 배치, 시각화 스타일을 홈페이지 전체에 일관되게 적용하였고, 카테고리 및 하위 메뉴 구성으로 사용자별 작업 흐름에 최적화된 메뉴 체계를 구축하였다. <br>
+향후 디자인 변경 및 배너 게시가 용이하도록 유연한 구조를 설계하여, 정보 탐색과 작업 수행이 더 쉽고 빠르게 이루어질 수 있도록 했다.</p>
+<h3 id="2-산업-단위-통계정보-세밀화">2. 산업 단위 통계정보 세밀화</h3>
+<p>기업금융통계 서비스를 세분화하기 위해 기업 휴폐업 포함 여부에 따라 신용공여 통계 정보를 차등 제공하는 기능을 구현했다. <br>
+기존 쿼리를 개선하고 수집된 기업 데이터를 연계하여, 신용평가 데이터의 정확성을 크게 향상시켰다.</p>
+<h3 id="3-산업기업-개요-및-뉴스-콘텐츠-bi-서비스">3. 산업/기업 개요 및 뉴스 콘텐츠 BI 서비스</h3>
+<p>66개 기업금융 분류 단위의 <strong>산업 요약 정보 기능</strong>을 구현했다. <br>
+생성된 정보는 주기적으로 업데이트되며, 조회 조건에 따라 데이터를 표와 테이블로 시각화하여 제공하고, 산업 및 기업군별 데이터의 체계적 제공으로 금융 업무 효율성을 높였다.</p>
+<h3 id="4-산업-cacredit-analytics-bi-서비스">4. 산업 CA(Credit Analytics) BI 서비스</h3>
+<p>기업 개요, KSIC-기간산업 정보와 결합한 CA 데이터 분석 기능을 구현했다.<br>
+조회 조건과 산업에 따라 CA 스코어 분포를 분석 및 시각화(히스토그램, 원그래프 제공) 하였고, 필터링 된 기업별 CA 데이터를 신속히 확인할 수 있는 기능을 제공해, 기업 신용 평가의 효율성을 극대화했다.</p>
+<h2 id="배운-점">배운 점</h2>
+<h3 id="1-대규모-데이터-처리와-db-마이그레이션-경험">1. 대규모 데이터 처리와 DB 마이그레이션 경험</h3>
+<p>Vertica와 Tibero 같은 서로 다른 DBMS 간의 데이터 이관에서 발생하는 문제를 해결하며 많은 것을 배웠다. <br>
+특히, ETL Tool을 활용한 데이터 추출, 변환, 적재(ETL) 과정을 체계적으로 이해하며, 데이터 흐름을 보다 명확히 파악할 수 있었다. <br>
+이로 인해 ETL 단계별 오류를 분석하고 처리하는 능력을 발전시킬 수 있었다.</p>
+<h3 id="2-sql-쿼리-최적화-기술">2. SQL 쿼리 최적화 기술</h3>
+<p>대규모 데이터를 다루며 SQL 성능 튜닝의 중요성을 실감했다. <br>
+기존 쿼리를 최적화하여 성능을 개선하는 과정에서, 효율적인 쿼리 설계와 실행 계획 분석 능력을 발전시킬 수 있었다.</p>
+<h3 id="3-spring-mapper와-백엔드-로직-구현">3. Spring Mapper와 백엔드 로직 구현</h3>
+<p>Spring Mapper를 사용해 SQL 쿼리를 효과적으로 호출하고, 비즈니스 로직과 연결 구조를 설계하는 경험을 쌓았다. <br><br>
+이를 통해 개선된 쿼리를 기반으로 한 백엔드 로직을 효율적으로 구현하여 서비스 품질을 한 단계 끌어올릴 수 있었다.</p>
+<h3 id="4-문서화와-단위-테스트의-중요성">4. 문서화와 단위 테스트의 중요성</h3>
+<p>프로젝트의 안정성과 유지 보수를 위해 체계적인 문서화와 단위 테스트 작업이 필수적임을 다시금 느꼈다. <br>
+철저한 단위 테스트로 코드 안정성을 확보하고, 문서화를 통해 팀원 간 협업과 향후 유지 보수 작업의 효율성을 증가시켰다.</p>
+<hr>
+<p>프로젝트에 참여할 수 있는 기간이 조금 더 있었으면 좋았을 거 같다는 생각이 든다. <br>
+기술적 성장도 있었지만, 무엇보다 단위 테스트와 문서화의 중요성을 깊이 깨닫게 된 소중한 경험이었다.</p></section>
 
   
   
@@ -320,20 +334,14 @@ Git을 사용하고 싶었지만 (잘 몰라서 배우고 싶었는데..) 그럴
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/2023"
-      >2023</a
+      href="https://kmseunh.github.io/tags/2024"
+      >2024</a
     >
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/backup"
-      >backup</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://kmseunh.github.io/tags/issue"
-      >issue</a
+      href="https://kmseunh.github.io/tags/review"
+      >review</a
     >
     
   </footer>
@@ -345,17 +353,11 @@ Git을 사용하고 싶었지만 (잘 몰라서 배우고 싶었는데..) 그럴
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-09-02-approach-as-a-problem-solving-to-recursive-formula/"
-      ><span class="mr-1.5">←</span><span>점화식적 사고를 하자</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://kmseunh.github.io/post/2023-08-21-data-grows-processing-needs-to-be-done-faster/"
-      ><span>데이터 증가 시 대처 방법</span><span class="ml-1.5">→</span></a
+      href="https://kmseunh.github.io/post/2024-09-05-reduce-the-degree-of-inter-service-coupling/"
+      ><span>서비스 간 결합도를 줄여보자</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
