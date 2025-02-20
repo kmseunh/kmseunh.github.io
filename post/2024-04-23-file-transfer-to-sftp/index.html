@@ -111,7 +111,7 @@ SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호�
   <link rel="apple-touch-icon" href="https://kmseunh.github.io/apple-touch-icon.png" />
 
   
-  <meta name="generator" content="Hugo 0.139.0">
+  <meta name="generator" content="Hugo 0.144.1">
 
   
   
@@ -317,8 +317,7 @@ SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호�
 일반적으로 SSH나 SFTP를 통해 서버에 연결할 때는 서버의 파일 시스템에 직접 접근할 수 있지만 Docker와 같은 컨테이너 기술을 사용할 때는 이러한 접근이 제한될 수 있다고 한다. <br></p>
 <p>도커 컨테이너 내부에서 실행 중인 서비스나 어플리케이션은 호스트 시스템과 완전히 분리되어 있으며, 도커 호스트와는 별도의 파일 시스템을 가지고 있기 때문에 도커 컨테이너 내부에서는 호스트 시스템의 파일 시스템에 직접 접근할 수 없다고 한다.</p>
 <blockquote>
-<p>따라서 파일을 서버로 업로드할 때는 도커 컨테이너 내부의 경로가 아닌 도커 호스트의 경로를 사용해야 한다.</p>
-</blockquote>
+<p>따라서 파일을 서버로 업로드할 때는 도커 컨테이너 내부의 경로가 아닌 도커 호스트의 경로를 사용해야 한다.</p></blockquote>
 <p align="center"><img src="https://github.com/kmseunh/til/assets/105186724/a0f66fc2-e5ab-4430-851c-0c6f1513607c" width="450"></p>
 <p>새로 알게 된 부분 중에 제일 인상적인 것은 도커 호스트의 데이터베이스를 수정하면 서버 내부의 데이터베이스도 영향을 받는다는 점이었다. <br>
 도커 컨테이너 내부로 sql 파일을 어떻게 옮길지 고민했는데 다행이었다. <br></p></section>
@@ -400,7 +399,7 @@ SSH(Secure Shell)의 확장인 SFTP를 사용하면 데이터 전송이 암호�
   class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
 >
   <div class="mr-auto">
-    &copy; 2024
+    &copy; 2025
     <a class="link" href="https://kmseunh.github.io/">DevHvun</a>
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
